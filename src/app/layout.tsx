@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import { Header } from '@/components/shared/header';
+import Footer from '@/components/shared/footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,7 +49,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppinsLight.variable} ${ivyModeSemiBold.variable} ${ivyModeRegular.variable} antialiased`}
       >
+        <Header/>
         {children}
+        <Footer />
       </body>
     </html>
   );

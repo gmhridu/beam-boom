@@ -16,7 +16,7 @@ export type NavigationItem = NavigationLink | NavigationGroup;
 
 export const navigationData = [
   { name: "HOME", href: "/" as Href },
-  { name: "ABOUT US", href: "/about" as Href },
+  { name: "ABOUT US", href: "/about-us" as Href },
   {
     name: "TREATMENTS",
     children: [
