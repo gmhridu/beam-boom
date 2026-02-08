@@ -19,48 +19,14 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "Pulse Laser Skin and Aesthetics",
-    title: "Make your skin shine",
+    subtitle: "PLUSE LASER",
+    title: "About Us",
     description:
-      "Pulse Laser Aesthetic Clinic is a specialist clinic situated on Mortimer Street in Fitzrovia. For over 13 years our dedicated team of experts have offered the very best in non-surgical cosmetic, laser and skin treatments.",
+      "Located in the prestigious Fitzrovia area of London, Pulse Laser Aesthetic Clinic is a distinguished clinic, established in 2012 by sister duo and recognised for its expertise in all non-surgical aesthetic, laser and skin procedures.",
     backgroundImage:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2550-edit-Edit-copy-scaled.jpg",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-scaled.jpg",
-    buttonText: "Contact Us",
-  },
-  {
-    id: 2,
-    subtitle: "Pulse Laser",
-    title: "Award Winning Aesthetic Clinic",
-    description: "in the heart of London",
-    backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2759-edit-Edit-copy-scaled.jpg",
-    foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-1-scaled.jpg",
-    buttonText: "Contact Us",
-  },
-  {
-    id: 3,
-    subtitle: "Pulse Laser Skin and Aesthetics",
-    title: "Make your skin shine",
-    description:
-      "Pulse Laser Aesthetic Clinic is a specialist clinic situated on Mortimer Street in Fitzrovia. For over 13 years our dedicated team of experts have offered the very best in non-surgical cosmetic, laser and skin treatments.",
-    backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2550-edit-Edit-copy-scaled.jpg",
-    foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-scaled.jpg",
-    buttonText: "Contact Us",
-  },
-  {
-    id: 4,
-    subtitle: "Pulse Laser",
-    title: "Award Winning Aesthetic Clinic",
-    description: "in the heart of London",
-    backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2759-edit-Edit-copy-scaled.jpg",
-    foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-1-scaled.jpg",
+      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/07/Maria-and-christina.jpg",
     buttonText: "Contact Us",
   },
 ];
@@ -147,7 +113,7 @@ export default function Banner() {
         ))}
 
         {/* Slider Controls */}
-        <div className="absolute right-72.5 bottom-10 transform -translate-y-1/2 space-x-2 z-10 hidden md:flex">
+        {/* <div className="absolute right-72.5 bottom-10 transform -translate-y-1/2 space-x-2 z-10 hidden md:flex">
           <button
             type="button"
             onClick={prevSlide}
@@ -164,7 +130,7 @@ export default function Banner() {
           >
             <CaretRightIcon size={20} />
           </button>
-        </div>
+        </div> */}
 
         {/* Social Media */}
         <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
