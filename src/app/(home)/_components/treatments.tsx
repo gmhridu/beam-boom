@@ -225,7 +225,7 @@ export default function Treatments() {
                 href={`/treatment/${treatment.slug}` as Href}
                 className="group"
               >
-                <div className="relative h-[280px] sm:h-[320px] md:h-[380px] lg:h-[450px] xl:h-[470px] w-full overflow-hidden rounded-lg bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700">
+                <div className="relative h-70 sm:h-80 md:h-95 lg:h-112.5 xl:h-117.5 w-full overflow-hidden rounded-lg bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700">
                   <Image
                     src={treatment.image}
                     alt={treatment.name}
@@ -233,7 +233,7 @@ export default function Treatments() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 sm:p-4">
+                  <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-3 sm:p-4">
                     <h3 className="text-white font-medium text-xs sm:text-sm md:text-base">
                       {treatment.name}
                     </h3>
