@@ -17,21 +17,21 @@ const treatments: Treatment[] = [
     id: "1",
     name: "Soprano Titanium Laser Hair Removal",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/R6II4178-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384969/truuane3zvtwvoa0cv3f.avif",
     slug: "soprano-titanium-laser-hair-removal",
   },
   {
     id: "2",
     name: "Laser Tattoo Removal",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/09/R6II4136-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772385034/qc9zryo3c7azpjwsvb8e.avif",
     slug: "laser-tattoo-removal",
   },
   {
     id: "3",
     name: "Laser for Red Facial Veins and Rosacea",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/1A610C79-3EA3-4C72-B496-F2A10626F82C.webp",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772385109/czivv7uasw1cctnri2el.avif",
     slug: "laser-for-red-facial-veins",
   },
   {

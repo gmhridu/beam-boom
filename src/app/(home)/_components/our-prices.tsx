@@ -243,103 +243,102 @@ export default function OurPrices() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-10 md:mb-14 items-end">
+    <section className="py-10 sm:py-14 md:py-18 lg:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 lg:gap-10 mb-10 md:mb-14">
           <div className="order-2 lg:order-1">
-            <p className="pulse-light-description text-sm sm:text-base max-w-full font-sans text-gray-600 dark:text-gray-300">
-              Please speak to a member of the reception team for more
-              information. This is what helps us deliver the superior results
-              our clients have come to expect of us.
+            <p className="pulse-light-description text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
+              Please speak to a member of the reception team for more information. This is what helps us deliver the superior results our clients have come to expect of us.
             </p>
-            {/* Navigation arrows */}
-            <div className="flex items-center gap-2 mt-4 sm:mt-6">
+
+            {/* Arrows – bigger touch target on mobile */}
+            <div className="flex items-center gap-3 mt-5 sm:mt-6">
               <button
                 onClick={() => scroll("left")}
-                className="w-8 h-8 sm:w-10 sm:h-10 border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                className="p-3 sm:p-4 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
+                aria-label="Scroll left"
               >
-                <ChevronLeft
-                  size={16}
-                  className="sm:w-[18px] sm:h-[18px] text-gray-800 dark:text-gray-200"
-                />
+                <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700 dark:text-gray-200" />
               </button>
               <button
                 onClick={() => scroll("right")}
-                className="w-8 h-8 sm:w-10 sm:h-10 border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                className="p-3 sm:p-4 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
+                aria-label="Scroll right"
               >
-                <ChevronRight
-                  size={16}
-                  className="sm:w-[18px] sm:h-[18px] text-gray-800 dark:text-gray-200"
-                />
+                <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700 dark:text-gray-200" />
               </button>
             </div>
           </div>
+
           <div className="text-left lg:text-right order-1 lg:order-2">
-            <span className="pulse-subtitle text-xs sm:text-sm tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400 font-medium">
+            <span className="pulse-subtitle text-xs sm:text-sm md:text-base tracking-wider uppercase font-medium text-gray-600 dark:text-gray-400 block mb-2">
               Pulse Laser
             </span>
-            <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-4">
+            <h2 className="pulse-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
               Our Prices
             </h2>
           </div>
         </div>
 
-        {/* Price cards */}
+        {/* Cards slider */}
         <div
           ref={sliderRef}
-          className="flex overflow-x-auto gap-4 sm:gap-6 pb-6 sm:pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0"
+          className="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:gap-5 md:gap-6 pb-6 sm:pb-8 scrollbar-hide scroll-smooth -mx-4 px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0"
+          style={{ scrollSnapType: "x mandatory" }} // fallback + stronger enforcement
         >
           {pricingCategories.map((card, i) => (
             <div
-              key={i}
-              className="min-w-[260px] sm:min-w-[280px] md:min-w-[300px] lg:min-w-[320px] flex-none snap-start bg-white dark:bg-gray-900 shadow-lg p-5 sm:p-6 md:p-8 flex flex-col items-center text-center group transition-all duration-300 hover:shadow-xl dark:hover:shadow-2xl border border-gray-100 dark:border-gray-700"
+              key={card.id || i}
+              className={`
+                flex-none w-[85vw] sm:w-[75vw] md:w-[45vw] lg:w-[38vw] xl:w-[32vw] 2xl:w-[28vw]
+                max-w-[340px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[460px]
+                snap-start
+                bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl dark:hover:shadow-2xl
+                border border-gray-100 dark:border-gray-700
+                transition-all duration-300
+              `}
             >
-              <div className="our-price-item flex-1 w-full flex flex-col items-center">
-                <h3 className="review-title mb-3 sm:mb-4 text-gray-900 dark:text-white text-lg sm:text-xl md:text-2xl">
+              <div className="p-5 sm:p-6 md:p-7 lg:p-8 flex flex-col h-full text-center">
+                <h3 className="review-title text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                   {card.title}
                 </h3>
 
                 {card.subtitle && (
-                  <div className="mb-4 sm:mb-6 w-full flex justify-center">
-                    <span className="detail inline-block border-b-2 border-blue-400 dark:border-blue-500 pb-1 uppercase tracking-wider text-xs sm:text-sm">
+                  <div className="mb-4 sm:mb-6">
+                    <span className="detail inline-block border-b-2 border-blue-500 dark:border-blue-600 pb-1 text-xs sm:text-sm uppercase tracking-wider font-medium text-gray-600 dark:text-gray-300">
                       {card.subtitle}
                     </span>
                   </div>
                 )}
 
                 {card.note && (
-                  <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-3 sm:mb-4 italic">
+                  <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic mb-4 sm:mb-6">
                     {card.note}
                   </p>
                 )}
 
-                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 w-full">
+                <div className="space-y-2.5 sm:space-y-3 md:space-y-3.5 flex-1 mb-6 sm:mb-8">
                   {card.items.map((item, j) => (
                     <div
                       key={j}
-                      className="text-gray-600 dark:text-gray-300 font-light text-sm sm:text-base md:text-lg flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2"
+                      className="flex flex-wrap justify-center items-baseline gap-x-2 gap-y-1 text-sm sm:text-base text-gray-700 dark:text-gray-200"
                     >
-                      <span className="text-center">{item.name}</span>
+                      <span className="font-light text-center">{item.name}</span>
                       {item.price && (
-                        <>
-                          <span className="hidden sm:inline opacity-0 group-hover:opacity-100 transition-opacity text-gray-300 dark:text-gray-600">
-                            -
-                          </span>
-                          <span className="font-medium text-gray-900 dark:text-white text-sm sm:text-base">
-                            {item.price}
-                          </span>
-                        </>
+                        <span className="font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                          {item.price}
+                        </span>
                       )}
                     </div>
                   ))}
                 </div>
-              </div>
 
-              <button className="w-full bg-black dark:bg-white dark:text-black text-white py-2.5 sm:py-3 px-4 sm:px-6 flex items-center justify-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide font-medium mt-auto">
-                <ArrowRight size={14} className="sm:w-4 sm:h-4" />
-                Book Now
-              </button>
+                <button className="mt-auto w-full bg-black dark:bg-white dark:text-black text-white py-3 sm:py-3.5 px-5 sm:px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors text-sm sm:text-base font-medium uppercase tracking-wide">
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Book Now
+                </button>
+              </div>
             </div>
           ))}
         </div>

@@ -24,9 +24,9 @@ const slides: Slide[] = [
     description:
       "Pulse Laser Aesthetic Clinic is a specialist clinic situated on Mortimer Street in Fitzrovia. For over 13 years our dedicated team of experts have offered the very best in non-surgical cosmetic, laser and skin treatments.",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2550-edit-Edit-copy-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384150/slvk8vgfnqpmrvczmhx3.avif",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384505/uozrnomlb8uh6e6p1x5y.avif",
     buttonText: "Contact Us",
   },
   {
@@ -35,34 +35,12 @@ const slides: Slide[] = [
     title: "Award Winning Aesthetic Clinic",
     description: "in the heart of London",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2759-edit-Edit-copy-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-1-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384505/uozrnomlb8uh6e6p1x5y.avif",
     buttonText: "Contact Us",
   },
-  {
-    id: 3,
-    subtitle: "Pulse Laser Skin and Aesthetics",
-    title: "Make your skin shine",
-    description:
-      "Pulse Laser Aesthetic Clinic is a specialist clinic situated on Mortimer Street in Fitzrovia. For over 13 years our dedicated team of experts have offered the very best in non-surgical cosmetic, laser and skin treatments.",
-    backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2550-edit-Edit-copy-scaled.jpg",
-    foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-scaled.jpg",
-    buttonText: "Contact Us",
-  },
-  {
-    id: 4,
-    subtitle: "Pulse Laser",
-    title: "Award Winning Aesthetic Clinic",
-    description: "in the heart of London",
-    backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2759-edit-Edit-copy-scaled.jpg",
-    foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/R6II4050-1-scaled.jpg",
-    buttonText: "Contact Us",
-  },
+
 ];
 
 export default function Banner() {
@@ -94,12 +72,11 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
           >
             {/* Background Image */}
-            <div className="absolute inset-0 banner-img max-w-372 z-10">
+            <div className="absolute inset-0 banner-img max-w-392 z-10">
               <Image
                 src={slide.backgroundImage}
                 alt={slide.title}
@@ -115,7 +92,7 @@ export default function Banner() {
               <div className="flex h-full">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 w-full items-center">
                   {/* Left Content */}
-                  <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 sm:pt-20 md:pt-24 lg:pt-0">
+                  <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
                     <span className="pulse-subtitle text-xs sm:text-sm md:text-base font-medium tracking-wide uppercase">
                       {slide.subtitle}
                     </span>
@@ -133,16 +110,24 @@ export default function Banner() {
                     </ViewTransitionLink>
                   </div>
                 </div>
-                {/* Foreground Image - Hidden on mobile, shown on larger screens */}
-                <div className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 h-100 xl:h-125 2xl:h-140 w-2/5 xl:w-1/3">
+                {/* Right Image */}
+
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
                   <Image
                     src={slide.foregroundImage}
                     alt={slide.title}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg hidden md:block"
                     loading={index === 0 ? "eager" : "lazy"}
                     sizes="(min-width: 1024px) 33vw, 50vw"
                   />
+
+                  <div className="absolute top-45 -right-23.75 w-20 h-20 md:w-132">
+                    <img
+                      src={"/images/round-shape-img.svg"}
+                      alt="Round shape"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
