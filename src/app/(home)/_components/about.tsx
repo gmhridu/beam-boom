@@ -34,7 +34,7 @@ export default function About() {
       </div>
 
       {/* Right gray vertical panel */}
-      <div className="absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden sm:absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
@@ -84,7 +84,7 @@ export default function About() {
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/09/0O9A2759-edit-Edit-copy-scaled.jpg"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif"
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-lg"
