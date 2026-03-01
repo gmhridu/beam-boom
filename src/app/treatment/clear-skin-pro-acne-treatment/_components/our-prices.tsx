@@ -65,302 +65,120 @@ export default function OurPrices() {
       subtitle: "Prices from, Per session",
       items: [
         { name: "Underarms & full bikini", session: "1 session", price: "£60", note: "" },
-        { name: "Underarms & full bikini", session: "2 sessions", price: "£160", note: "" },
-        { name: "Underarms & full bikini", session: "3 sessions", price: "£300", note: "" },
         { name: "Lower legs,underarms & full bikini", session: "1 session", price: "£140", note: "" },
-        { name: "Lower legs,underarms & full bikini", session: "2 session", price: "£375", note: "" },
-        { name: "Lower legs,underarms & full bikini", session: "3 session", price: "£675", note: "" },
         { name: "Full legs, underarms & full bikini", session: "1 session", price: "£160", note: "" },
-        { name: "Full legs, underarms & full bikini", session: "2 session", price: "£425", note: "" },
-        { name: "Full legs, underarms & full bikini", session: "3 session", price: "£750", note: "" },
         {
           name: "Full body",
           session: "1 session",
           price: "£600",
           note: "",
         },
-        {
-          name: "Full body",
-          session: "2 session",
-          price: "£1500",
-          note: "",
-        },
-        {
-          name: "Full body",
-          session: "3 session",
-          price: "£2500",
-          note: "",
-        },
+
         {
           name: "Nipples / naval line / hands / feet",
           session: "1 session",
           price: "£40",
           note: "",
         },
-        {
-          name: "Nipples / naval line / hands / feet",
-          session: "2 session",
-          price: "£100",
-          note: "",
-        },
-        {
-          name: "Nipples / naval line / hands / feet",
-          session: "3 session",
-          price: "£175",
-          note: "",
-        },
+
         {
           name: "Underarms",
           session: "1 session",
           price: "£30",
           note: "",
         },
-        {
-          name: "Underarms",
-          session: "2 session",
-          price: "£80",
-          note: "",
-        },
-        {
-          name: "Underarms",
-          session: "3 session",
-          price: "£150",
-          note: "",
-        },
+
         {
           name: "Bikini line",
           session: "1 session",
           price: "£20",
           note: "",
         },
-        {
-          name: "Bikini line",
-          session: "2 session",
-          price: "£50",
-          note: "",
-        },
-        {
-          name: "Bikini line",
-          session: "3 session",
-          price: "£90",
-          note: "",
-        },
+
         {
           name: "Upper lip & chin",
           session: "1 session",
           price: "£35",
           note: "",
         },
-        {
-          name: "Upper lip & chin",
-          session: "2 session",
-          price: "£95",
-          note: "",
-        },
-        {
-          name: "Upper lip & chin",
-          session: "3 session",
-          price: "£180",
-          note: "",
-        },
+
         {
           name: "Lower Face",
           session: "1 session",
           price: "£45",
           note: "",
         },
-        {
-          name: "Lower Face",
-          session: "2 session",
-          price: "£120",
-          note: "",
-        },
-        {
-          name: "Lower Face",
-          session: "3 session",
-          price: "£220",
-          note: "",
-        },
+
         {
           name: "Brazilian bikini (inc. peri-anal)",
           session: "1 session",
           price: "£55",
           note: "",
         },
-        {
-          name: "Brazilian bikini (inc. peri-anal)",
-          session: "2 session",
-          price: "£150",
-          note: "",
-        },
-        {
-          name: "Brazilian bikini (inc. peri-anal)",
-          session: "3 session",
-          price: "£280",
-          note: "",
-        },
+
         {
           name: "Hollywood bikini (inc. peri-anal)",
           session: "1 session",
           price: "£55",
           note: "",
         },
-        {
-          name: "Hollywood bikini (inc. peri-anal)",
-          session: "2 session",
-          price: "£150",
-          note: "",
-        },
-        {
-          name: "Hollywood bikini (inc. peri-anal)",
-          session: "3 session",
-          price: "£280",
-          note: "",
-        },
+
         {
           name: "Lower leg & knee",
           session: "1 session",
           price: "£60",
           note: "",
         },
-        {
-          name: "Lower leg & knee",
-          session: "2 session",
-          price: "£160",
-          note: "",
-        },
-        {
-          name: "Lower leg & knee",
-          session: "3 session",
-          price: "£300",
-          note: "",
-        },
+
         {
           name: "Lower face & neck",
           session: "1 session",
           price: "£60",
           note: "",
         },
-        {
-          name: "Lower face & neck",
-          session: "2 session",
-          price: "£160",
-          note: "",
-        },
-        {
-          name: "Lower face & neck",
-          session: "3 session",
-          price: "£300",
-          note: "",
-        },
+
         {
           name: "Full arms (inc. hands & fingers)",
           session: "1 session",
           price: "£70",
           note: "",
         },
-        {
-          name: "Full arms (inc. hands & fingers)",
-          session: "2 session",
-          price: "£190",
-          note: "",
-        },
-        {
-          name: "Full arms (inc. hands & fingers)",
-          session: "3 session",
-          price: "£350",
-          note: "",
-        },
+
         {
           name: "Full face & neck",
           session: "1 session",
           price: "£70",
           note: "",
         },
-        {
-          name: "Full face & neck",
-          session: "2 session",
-          price: "£190",
-          note: "",
-        },
-        {
-          name: "Full face & neck",
-          session: "3 session",
-          price: "£350",
-          note: "",
-        },
+
         {
           name: "Full back",
           session: "1 session",
           price: "£100",
           note: "",
         },
-        {
-          name: "Full back",
-          session: "2 session",
-          price: "£280",
-          note: "",
-        },
-        {
-          name: "Full back",
-          session: "3 session",
-          price: "£500",
-          note: "",
-        },
+
         {
           name: "Chest & abdomen",
           session: "1 session",
           price: "£100",
           note: "",
         },
-        {
-          name: "Chest & abdomen",
-          session: "2 session",
-          price: "£280",
-          note: "",
-        },
-        {
-          name: "Chest & abdomen",
-          session: "3 session",
-          price: "£500",
-          note: "",
-        },
+
         {
           name: "Upper legs & knee",
           session: "1 session",
           price: "£60",
           note: "",
         },
-        {
-          name: "Upper legs & knee",
-          session: "2 session",
-          price: "£160",
-          note: "",
-        },
-        {
-          name: "Upper legs & knee",
-          session: "3 session",
-          price: "£300",
-          note: "",
-        },
+
         {
           name: "Full legs (inc. feet & toes)",
           session: "1 session",
           price: "£80",
           note: "",
         },
-        {
-          name: "Full legs (inc. feet & toes)",
-          session: "2 session",
-          price: "£210",
-          note: "",
-        },
-        {
-          name: "Full legs (inc. feet & toes)",
-          session: "3 session",
-          price: "£1400",
-          note: "",
-        },
+
       ],
     },
     {
@@ -369,20 +187,10 @@ export default function OurPrices() {
       subtitle: "Prices from, per session",
       items: [
         { name: "Half face", session: "1 session", price: "£200", note: "" },
-        { name: "Half face", session: "2 session", price: "£500", note: "" },
-        { name: "Half face", session: "3 session", price: "£900", note: "" },
         { name: "Full face", session: "1 session", price: "£400", note: "" },
-        { name: "Full face", session: "2 session", price: "£900", note: "" },
-        { name: "Full face", session: "3 session", price: "£1600", note: "" },
         { name: "Full face & neck", session: "1 session", price: "£500", note: "" },
-        { name: "Full face & neck", session: "2 session", price: "£1275", note: "" },
-        { name: "Full face & neck", session: "3 session", price: "£2200", note: "" },
         { name: "Stretch Marks (starting from)", session: "1 session", price: "£200-£400", note: "" },
-        { name: "Stretch Marks (starting from)", session: "2 session", price: "£500-£1000", note: "" },
-        { name: "Stretch Marks (starting from)", session: "3 session", price: "£1500-£2000", note: "" },
         { name: "Decolletage", session: "1 session", price: "£250", note: "" },
-        { name: "Decolletage", session: "2 session", price: "£675", note: "" },
-        { name: "Decolletage", session: "3 session", price: "£1,050", note: "" },
       ],
     },
     {
@@ -406,21 +214,9 @@ export default function OurPrices() {
       items: [
         { name: "Eyebrows", session: "1 session", price: "£80", note: "" },
         { name: "Extra small (up to 3cm)", session: "1 session", price: "£30", note: "" },
-        { name: "Extra small (up to 3cm)", session: "3 session", price: "£81", note: "" },
-        { name: "Extra small (up to 3cm)", session: "6 session", price: "£153", note: "" },
-        { name: "Extra small (up to 3cm)", session: "9 session", price: "£216", note: "" },
         { name: "Small (4-6cm)", session: "1 session", price: "£50", note: "" },
-        { name: "Small (4-6cm)", session: "3 session", price: "£135", note: "" },
-        { name: "Small (4-6cm)", session: "6 session", price: "£255", note: "" },
-        { name: "Small (4-6cm)", session: "9 session", price: "£360", note: "" },
         { name: "Medium (7-9cm)", session: "1 session", price: "£100", note: "" },
-        { name: "Medium (7-9cm)", session: "3 session", price: "£270", note: "" },
-        { name: "Medium (7-9cm)", session: "6 session", price: "£510", note: "" },
-        { name: "Medium (7-9cm)", session: "9 session", price: "£720", note: "" },
         { name: "Large (10-12cm)", session: "1 session", price: "£150", note: "" },
-        { name: "Large (10-12cm)", session: "3 session", price: "£405", note: "" },
-        { name: "Large (10-12cm)", session: "6 session", price: "£765", note: "" },
-        { name: "Large (10-12cm)", session: "9 session", price: "£1080", note: "" },
         { name: "Major (<13cm)", session: "by consultation", price: "", note: "" },
       ],
       note: "",
