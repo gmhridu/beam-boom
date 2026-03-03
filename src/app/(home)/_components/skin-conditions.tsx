@@ -20,149 +20,48 @@ const skinConditions: SkinCondition[] = [
     link: "https://www.pulse-clinic.co.uk/skin-condition/acne-scarring/",
   },
   {
-    name: "Acne",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-15-5-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/acne-2/",
-  },
-  {
-    name: "Roseacea / Flushing",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rosacea.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/roseacea-redness-reduction/",
-  },
-  {
-    name: "Spider / Thread Veins",
+    name: "Surgical scars",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-15-4-1-1.png",
     link: "https://www.pulse-clinic.co.uk/skin-condition/spider-thread-veins/",
   },
   {
-    name: "Fine lines / Wrinkle Reduction",
+    name: "Stretch marks",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-16-6-1-1.png",
     link: "https://www.pulse-clinic.co.uk/skin-condition/anti-ageing-wrinkle-reduction/",
   },
   {
-    name: "Eyebags / Tired looking eyes",
+    name: "Fine lines and wrinkles",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/young-caucasian-woman-demonstrating-dark-600nw-2192342775.webp",
     link: "https://www.pulse-clinic.co.uk/skin-condition/eyebags-tired-looking-eyes/",
   },
   {
-    name: "Double chin / Saggy neck",
+    name: "Sun damage",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/before-1.jpg",
     link: "https://www.pulse-clinic.co.uk/skin-condition/double-chin-saggy-neck/",
   },
   {
-    name: "Stretch Marks",
+    name: "Pigmentation irregularities",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/istockphoto-1392771337-612x612-1.jpg",
     link: "https://www.pulse-clinic.co.uk/skin-condition/stretch-marks/",
   },
   {
-    name: "Milia Spots",
+    name: "Enlarged pores",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Hero_Article_Milia-Treatment-compressor.jpg",
     link: "https://www.pulse-clinic.co.uk/skin-condition/milia-spots/",
   },
   {
-    name: "Seborrheic Keratosis",
+    name: "Oily skin",
     image:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Seborrheic-Keratosis-Removal-in-NYC.webp",
     link: "https://www.pulse-clinic.co.uk/skin-condition/seborrhoeic-warts/",
   },
-  {
-    name: "Sebaceous cysts",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-18-3-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/sebaceous-cysts/",
-  },
-  {
-    name: "Cherry Angioma (blood spots)",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Health-GettyImages-1269238447-16c2da32f08d42a8af0fadb4ece718dc.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/cherry-angioma-blood-spots/",
-  },
-  {
-    name: "Common Warts",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Common-warts-body-1.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/comman-warts/",
-  },
-  {
-    name: "Verrucas",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-15-2-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/verrucae/",
-  },
-  {
-    name: "Nail Fungus",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-18-5-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/nail-fungus/",
-  },
-  {
-    name: "Aged Hands",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/young-old-hand-touching-each-600nw-2344016019.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/aged-hands/",
-  },
-  {
-    name: "Aged Skin",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-16-6-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/aged-skin/",
-  },
-  {
-    name: "Bingo wings",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/iStock-1354614333-1024x683-1.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/bingo-wings/",
-  },
-  {
-    name: "Dermatosa Papulosa Nigra",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Dermatosis-Papulosa-Nigra.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/dermatosa-papulosa-nigra/",
-  },
-  {
-    name: "Dry / Sensitive skin",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/AdobeStock_168085268-scaled.jpeg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/dry-sensitive-skin/",
-  },
-  {
-    name: "Enlarged pores/ Blackheads",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/asian-male-nose-cheek-close-260sw-2175602373-e1719396361699.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/enlarged-pores-blackheads/",
-  },
-  {
-    name: "Female Hair Loss",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/IMG_7150-e1765268481442.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/hair-loss/",
-  },
-  {
-    name: "Hooded eyelids",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/droopy-eyelid-causes.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/hooded-eyelids/",
-  },
-  {
-    name: "Hyperhidrosis",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/sculpturelle-treating-hyperhidrosis-using-botox.jpeg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/hyperhidrosis/",
-  },
-  {
-    name: "Male Hair Loss",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/istockphoto-1092119550-612x612-1.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/male-hair-loss/",
-  },
+
 ];
 
 export default function SkinConditions() {

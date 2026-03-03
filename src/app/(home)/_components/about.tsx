@@ -41,7 +41,7 @@ export default function About() {
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
             <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase">
-              Pulse Laser
+              BEAM & BLOOM CLINIC
             </span>
             <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               About Us
@@ -49,25 +49,15 @@ export default function About() {
             <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl mb-6 md:mb-10 space-y-3 md:space-y-4">
               <p>
                 <span className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
-                  Located in the prestigious Fitzrovia area of London,{" "}
+                  Beam and Bloom is a specialist skin and laser clinic based in Dartford, founded from Baiba’s passion for helping people feel confident in their own skin.
                 </span>
-                Pulse Laser Aesthetic Clinic is a distinguished clinic
-                recognised for its outstanding results, state-of-the-art
-                procedures, and unmatched client service. The clinic was
-                established in 2012 by sisters Maria Dinopoulos and Dr Christina
-                Philippeos who have a shared passion for aesthetic treatments
-                with a personal touch. Our ethos revolves around crafting a
-                bespoke journey for each client, utilising cutting-edge and
-                scientifically backed treatments to deliver unmatched results in
-                our luxurious and welcoming facility.
+                With advanced training in Permanent Make Up (PMU), laser hair removal, laser tattoo removal and Fractional CO2 resurfacing, Baiba combines clinical precision with a gentle, artistic approach to deliver natural, confidence-enhancing results.
               </p>
               <p>
-                We are one of the very first clinics in London to launch the
-                revolutionary Alma Hybrid Fractional CO2 Laser for scars and
-                facial rejuvenation, as well as the Soprano Titanium for Laser
-                Hair Removal. Specialising in the latest laser and skin
-                rejuvenation treatments, we aim to provide safe and effective
-                treatments in a professional, and clean environment.
+                Every journey begins with a conversation. From consultation to aftercare, Beam and Bloom offers a warm, welcoming space where treatments are tailored to you, using modern, clinically proven technology with safety and care at the forefront.
+              </p>
+              <p>
+                Beam and Bloom isn’t just about aesthetics. It’s about helping you beam with confidence and bloom into your best self.
               </p>
             </div>
             <ViewTransitionLink
