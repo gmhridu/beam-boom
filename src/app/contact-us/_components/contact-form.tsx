@@ -43,7 +43,7 @@ const ContactFormSection = () => {
       <div className="container mx-auto px-5 sm:px-8 lg:px-12 relative z-10 max-w-7xl">
         <div className="grid lg:grid-cols-12 gap-10 xl:gap-16 items-start">
           {/* Form – takes ~7/12 columns on lg+ */}
-          <div className="lg:col-span-7 bg-white rounded-2xl shadow-xl border border-gray-100/80 p-8 md:p-10 lg:p-12">
+          <div className="lg:col-span-7 bg-white rounded-2xl shadow border border-gray-100/80 p-8 md:p-10 lg:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center lg:text-left">
               Get in Touch
             </h2>
@@ -60,9 +60,8 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${
-                      isFieldInvalid("firstName") ? "border-red-400" : ""
-                    }`}
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("firstName") ? "border-red-400" : ""
+                      }`}
                     placeholder=" "
                   />
                   <label
@@ -82,9 +81,8 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${
-                      isFieldInvalid("lastName") ? "border-red-400" : ""
-                    }`}
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("lastName") ? "border-red-400" : ""
+                      }`}
                     placeholder=" "
                   />
                   <label
@@ -107,9 +105,8 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${
-                      isFieldInvalid("phone") ? "border-red-400" : ""
-                    }`}
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("phone") ? "border-red-400" : ""
+                      }`}
                     placeholder=" "
                   />
                   <label
@@ -129,9 +126,8 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${
-                      isFieldInvalid("email") ? "border-red-400" : ""
-                    }`}
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("email") ? "border-red-400" : ""
+                      }`}
                     placeholder=" "
                   />
                   <label
@@ -153,9 +149,8 @@ const ContactFormSection = () => {
                   onBlur={handleBlur}
                   required
                   rows={5}
-                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 resize-none ${
-                    isFieldInvalid("message") ? "border-red-400" : ""
-                  }`}
+                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 resize-none ${isFieldInvalid("message") ? "border-red-400" : ""
+                    }`}
                   placeholder=" "
                 />
                 <label
@@ -198,7 +193,7 @@ const ContactFormSection = () => {
   lg:col-span-5
   bg-white
   rounded-2xl
-  shadow-xl
+  shadow
   border border-gray-100
   p-8 md:p-10
   max-w-2xl

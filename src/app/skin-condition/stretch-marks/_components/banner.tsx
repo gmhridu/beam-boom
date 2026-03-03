@@ -16,6 +16,7 @@ interface Slide {
   buttonText: string;
 }
 
+
 const slides: Slide[] = [
   {
     id: 1,
@@ -29,7 +30,6 @@ const slides: Slide[] = [
     buttonText: "Contact Us",
   },
 ];
-
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -43,7 +43,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="banner-wrp relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative banner-wrp h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -51,9 +51,8 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
           >
             {/* Background Image */}
             <div className="absolute inset-0 banner-img max-w-372 z-10">
@@ -62,7 +61,7 @@ export default function Banner() {
                 alt={slide.title}
                 fill
                 className="object-cover"
-                priority={true}
+                priority={index === 0}
                 sizes="(min-width: 1024px) 100vw, 100vw"
               />
             </div>
@@ -72,7 +71,7 @@ export default function Banner() {
               <div className="flex  h-full">
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
-                  <div className="lg:col-span-8 space-y-6">
+                  <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
                     <span className="pulse-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
                       {slide.subtitle}
                     </span>
@@ -95,7 +94,7 @@ export default function Banner() {
                     src={slide.foregroundImage}
                     alt={slide.title}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg hidden md:block"
                     loading={index === 0 ? "eager" : "lazy"}
                     sizes="(min-width: 1024px) 33vw, 50vw"
                   />
