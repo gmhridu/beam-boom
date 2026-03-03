@@ -25,38 +25,23 @@ export default function About() {
               Pulse Laser
             </span>
             <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Laser Tattoo Removal
+              Laser Tattoo Removal at Beam and Bloom
             </h2>
             <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
-                Do you have a tattoo that you regret and want it removed for
-                good? Pulse Laser Aesthetic Clinic specialises in removing
-                tattoos of all sizes and colours. We have both a PicoWay
-                picosecond laser from Candela as well as Q-switched ND:YAG laser
-                from Alma Lasers which allows us to treat tattoos of all colours
-                very safely and effectively on all skin types. These lasers are
-                non-invasive and can safely remove your tattoo, whilst
-                minimizing the risks of scarring or loss of skin colour
-                (hypopigmentation). For any questions and to speak to a member
-                of our team contact team on 020 3405 8483 or via
-                info@pulse-clinic.co.uk.
+                Do you have a tattoo you regret and want safely removed? At Beam and Bloom in Dartford, we specialise in advanced laser tattoo removal for tattoos of all sizes and colours.
               </p>
               <p>
-                We apply powerful picosecond laser energy, with very short
-                pulses, to the unwanted tattoo. These pulses penetrate through
-                the top layer of skin and shatter the tattoo ink into tiny
-                fragments, without causing damage to the skin. Over time, your
-                body's natural healing processes (the lymphatic system) remove
-                the ink fragments from your body. This allows your tattoo to
-                fade with only minimal risks of scarring or skin discoloration.
+                Using high-powered laser technology, we deliver precise energy in ultra-short pulses directly into the tattoo ink. This energy breaks the ink down into tiny fragments without damaging the surrounding skin. Over time, your body’s natural healing processes gradually flush away these fragments, allowing the tattoo to fade safely and effectively.
               </p>
               <p>
-                Every colour of ink requires a different wavelength of light and
-                amount of energy to be efficiently removed. At Pulse Laser
-                Aesthetic Clinic, our lasers can operate at two different
-                wavelengths to be effective with darker colours (blacks and
-                blues, 1064nm), as well brighter colours, like red and orange
-                (532nm).
+                Our advanced laser system can target different ink colours using specific wavelengths of light. Darker pigments such as black and blue respond to 1064nm wavelengths, while brighter colours such as red and orange are treated using 532nm. This allows us to treat a wide range of tattoo colours across different skin types.
+              </p>
+              <p>
+                Laser tattoo removal is non-invasive and designed to minimise the risk of scarring or unwanted pigmentation changes. Every treatment begins with a consultation to assess your skin and create a personalised treatment plan.
+              </p>
+              <p>
+                If you have any questions or would like to book a consultation at our Dartford clinic, our team at Beam and Bloom will be happy to help.
               </p>
             </div>
             <div className="pt-2">
