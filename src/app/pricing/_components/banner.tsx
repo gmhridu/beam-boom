@@ -52,7 +52,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative banner-wrp h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -60,12 +60,11 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
           >
             {/* Background Image */}
-            <div className="absolute inset-0 banner-img max-w-372">
+            <div className="absolute inset-0 banner-img max-w-392 z-10">
               <Image
                 src={slide.backgroundImage}
                 alt={slide.title}
@@ -77,11 +76,11 @@ export default function Banner() {
             </div>
 
             {/* Content */}
-            <div className="relative container mx-auto h-full ">
+            <div className="relative container mx-auto h-full z-20">
               <div className="flex  h-full">
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
-                  <div className="lg:col-span-8 space-y-6">
+                  <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
                     <span className="pulse-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
                       {slide.subtitle}
                     </span>
@@ -97,40 +96,29 @@ export default function Banner() {
                     </ViewTransitionLink>
                   </div>
                 </div>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8">
+                {/* Right Image */}
+
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
                   <Image
                     src={slide.foregroundImage}
                     alt={slide.title}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg hidden md:block"
                     loading={index === 0 ? "eager" : "lazy"}
                     sizes="(min-width: 1024px) 33vw, 50vw"
                   />
+
+                  <div className="absolute top-45 -right-23.75 w-20 h-20 md:w-132">
+                    <img
+                      src={"/images/round-shape-img.svg"}
+                      alt="Round shape"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         ))}
-
-        {/* Slider Controls */}
-        {/* <div className="absolute right-72.5 bottom-10 transform -translate-y-1/2 space-x-2 z-10 hidden md:flex">
-          <button
-            type="button"
-            onClick={prevSlide}
-            className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors"
-            aria-label="Previous slide"
-          >
-            <CaretLeftIcon size={20} />
-          </button>
-          <button
-            type="button"
-            onClick={nextSlide}
-            className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors"
-            aria-label="Next slide"
-          >
-            <CaretRightIcon size={20} />
-          </button>
-        </div> */}
 
         {/* Social Media */}
         <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">

@@ -5,14 +5,14 @@ import { ExternalLink } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white relative">
+    <section id="about" className="py-8 md:py-16 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300">
       {/* Left leaf decoration (behind everything) */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
         <img src={"/images/about-us-leaves.png"} alt="Round shape" />
       </div>
 
       {/* Right gray vertical panel */}
-      <div className="absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
 
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">

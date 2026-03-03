@@ -36,19 +36,19 @@ export default function About() {
       {/* Right gray vertical panel */}
       <div className="hidden sm:absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
             <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase">
               Pulse Laser
             </span>
-            <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               About Us
             </h2>
             <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl mb-6 md:mb-10 space-y-3 md:space-y-4">
               <p>
-                <span className="pulse-description">
+                <span className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
                   Located in the prestigious Fitzrovia area of London,{" "}
                 </span>
                 Pulse Laser Aesthetic Clinic is a distinguished clinic
