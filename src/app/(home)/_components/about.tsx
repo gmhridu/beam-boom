@@ -30,11 +30,15 @@ export default function About() {
     >
       {/* Left leaf decoration (behind everything) */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img
+          src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"
+          alt="Decorative leaves"
+          className="object-contain"
+        />
       </div>
 
       {/* Right gray vertical panel */}
-      <div className="hidden sm:absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden sm:block absolute top-0 right-0 bottom-0 w-[17.7%] bg-gray-50 z-0 pointer-events-none" />
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
@@ -78,53 +82,10 @@ export default function About() {
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-lg"
+                loading="lazy"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw"
               />
             </div>
-          </div>
-        </div>
-
-        {/* Reviews Section - Hidden on mobile, shown on larger screens */}
-        <div className="hidden lg:block absolute top-0 -right-24 bottom-0 w-75 md:w-102.5 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-          <div className="flex flex-col h-full w-full justify-center gap-4 md:gap-6 p-4 md:p-6">
-            {reviews.map((review) => (
-              <ViewTransitionLink
-                key={review.platform}
-                href={review.link as Href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors p-6 md:p-8 rounded-lg text-center"
-              >
-                <h3 className="block-title mb-2 group-hover:scale-105 transition-transform text-xl md:text-2xl">
-                  {review.rating}
-                </h3>
-                <p className="block-details text-sm md:text-base">
-                  {review.platform}
-                </p>
-              </ViewTransitionLink>
-            ))}
-          </div>
-        </div>
-
-        {/* Mobile Reviews Section */}
-        <div className="lg:hidden mt-8 md:mt-12">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {reviews.map((review) => (
-              <ViewTransitionLink
-                key={review.platform}
-                href={review.link as Href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors p-4 md:p-6 rounded-lg text-center"
-              >
-                <h3 className="block-title mb-2 group-hover:scale-105 transition-transform text-lg md:text-xl">
-                  {review.rating}
-                </h3>
-                <p className="block-details text-xs md:text-sm">
-                  {review.platform}
-                </p>
-              </ViewTransitionLink>
-            ))}
           </div>
         </div>
       </div>

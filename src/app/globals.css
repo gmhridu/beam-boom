@@ -346,7 +346,7 @@ a:hover {
 /* skin conditions section */
 
 .skin-conditions-wrp {
-  background-image: url(https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/skin-conditions-bg.jpg);
+  background-image: url(https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995436/ywrw1y72yrvrepwiknqv.avif);
   padding: clamp(2.5rem, 5vw, 4.375rem) clamp(1rem, 3vw, 2.8125rem);
   background-repeat: no-repeat;
   background-size: cover;
@@ -354,7 +354,7 @@ a:hover {
 
 .skin-conditions-wrp::before {
   content: "";
-  background-image: url(https://www.pulse-clinic.co.uk/wp-content/themes/pulselaser/assets/images/about-us-leaves.png);
+  background-image: url(https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   opacity: 0.2;
