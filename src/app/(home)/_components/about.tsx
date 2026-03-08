@@ -30,7 +30,11 @@ export default function About() {
     >
       {/* Left leaf decoration (behind everything) */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img
+          src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"
+          alt="Decorative leaves"
+          className="object-contain"
+        />
       </div>
 
       {/* Right gray vertical panel */}
@@ -78,6 +82,7 @@ export default function About() {
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-lg"
+                loading="lazy"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw"
               />
             </div>

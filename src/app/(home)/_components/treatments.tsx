@@ -96,7 +96,7 @@ export default function Treatments() {
           </div>
           <div className="text-left md:text-right order-1 md:order-2">
             <span className="pulse-subtitle text-xs sm:text-sm tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400">
-              Pulse Laser
+              Beam & Bloom
             </span>
             <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white">
               Treatments
