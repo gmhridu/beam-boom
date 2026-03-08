@@ -16,50 +16,50 @@ const skinConditions: SkinCondition[] = [
   {
     name: "Acne Scarring",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/iStock-1140170080-1.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/acne-scarring/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772992781/vcdffpmmkqzw0lmtx1ux.avif",
+    link: "/skin-condition/acne-scarring",
   },
   {
     name: "Surgical scars",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-15-4-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/spider-thread-veins/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772992921/rotjwqq8gcfxwbcaldhf.avif",
+    link: "/skin-condition/spider-thread-veins",
   },
   {
     name: "Stretch marks",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-16-6-1-1.png",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/anti-ageing-wrinkle-reduction/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993005/lssgwszxv71txe1nthao.avif",
+    link: "/skin-condition/anti-ageing-wrinkle-reduction",
   },
   {
     name: "Fine lines and wrinkles",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/young-caucasian-woman-demonstrating-dark-600nw-2192342775.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/eyebags-tired-looking-eyes/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993127/cq5rswcqdbjg7jsc5bwa.avif",
+    link: "/skin-condition/eyebags-tired-looking-eyes",
   },
   {
     name: "Sun damage",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/before-1.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/double-chin-saggy-neck/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993217/szmjskfdtek4ljtaqbjv.avif",
+    link: "/skin-condition/double-chin-saggy-neck",
   },
   {
     name: "Pigmentation irregularities",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/istockphoto-1392771337-612x612-1.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/stretch-marks/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993299/s8s6a6bjxpuyn1x2sahj.avif",
+    link: "/skin-condition/stretch-marks",
   },
   {
     name: "Enlarged pores",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Hero_Article_Milia-Treatment-compressor.jpg",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/milia-spots/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993399/kh33o6tibmia7fmjneza.avif",
+    link: "/skin-condition/milia-spots",
   },
   {
     name: "Oily skin",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Seborrheic-Keratosis-Removal-in-NYC.webp",
-    link: "https://www.pulse-clinic.co.uk/skin-condition/seborrhoeic-warts/",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993476/wsvyx9zomqhnpxov5tih.avif",
+    link: "/skin-condition/seborrhoeic-warts",
   },
 
 ];
@@ -102,7 +102,7 @@ export default function SkinConditions() {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <span className="pulse-subtitle text-xs sm:text-sm md:text-base tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400 font-medium">
-            Pulse Laser
+            Beam & Bloom
           </span>
           <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
             Skin Conditions

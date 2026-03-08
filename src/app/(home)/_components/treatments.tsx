@@ -15,151 +15,40 @@ interface Treatment {
 const treatments: Treatment[] = [
   {
     id: "1",
-    name: "Diode Laser Hair Removal for Women",
+    name: "Carbon Facial",
     image:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384969/truuane3zvtwvoa0cv3f.avif",
-    slug: "diode-laser-hair-removal-for-women",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994603/qk87bczojxeck00uocno.avif",
+    slug: "carbon-facial",
   },
   {
     id: "2",
-    name: "3D VJUE™ Fractional Co2 Laser",
+    name: "Laser Hair Removal",
     image:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772385034/qc9zryo3c7azpjwsvb8e.avif",
-    slug: "3d-vjue-fractional-co2-laser",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994082/msa5pc4eegltkmxs4xbu.avif",
+    slug: "laser-hair-removal",
   },
   {
     id: "3",
-    name: "Permanent Make Up",
+    name: "Tattoo Removal",
     image:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772385109/czivv7uasw1cctnri2el.avif",
-    slug: "permanent-make-up",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994511/rw4xxhodkhwk6kvlng9q.avif",
+    slug: "tattoo-removal",
   },
+
   {
     id: "4",
-    name: "Laser Tattoo Removal",
+    name: "Fractional Co2 Laser",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/DSC9156MAX-scaled.jpg",
-    slug: "laser-tattoo-removal",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994743/vsigx1j85gkxrqzv3awk.avif",
+    slug: "fractional-co2-laser",
   },
   {
     id: "5",
-    name: "Advanced Carbon Laser Facial",
+    name: "Permanent Make Up",
     image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/AdobeStock_216793051-e1556147202225-1024x751-1-1.jpeg",
-    slug: "advanced-carbon-laser-facial",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994826/mrndkv0n5vidqhzi7dmg.avif",
+    slug: "permanent-make-up",
   },
-  {
-    id: "6",
-    name: "Skin and Injectable Treatments",
-    image:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/N8A1104.jpg",
-    slug: "skin-and-injectable-treatments",
-  },
-  // {
-  //   id: "7",
-  //   name: "ClearLift Laser Facelift",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Sheffield_Skincare_Clinic_-_Non_Surgical_Facelift_-_ClearLift_4D.webp",
-  //   slug: "clearlift-laser-facelift",
-  // },
-  // {
-  //   id: "8",
-  //   name: "Alma TED Advanced Hair Restoration",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2025/04/R6II4105-scaled.jpg",
-  //   slug: "hair-loss-and-thinning-calecim-treatment",
-  // },
-  // {
-  //   id: "9",
-  //   name: "MeLine® Dark Circle Treatment",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2025/11/Meline®_02_DarkCircles_DSC01212-scaled-1.jpg",
-  //   slug: "meline-dark-circle-treatment",
-  // },
-  // {
-  //   id: "10",
-  //   name: "Lesion Removal – Skin Tag, Milia and Wart Removal",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/IMG_6837.jpg",
-  //   slug: "skin-tag-milia-and-wart-removal",
-  // },
-  // {
-  //   id: "11",
-  //   name: "Morpheus8 – Face & Neck lift",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/aestheticallyyou-treatment-skin-morpheus8-prime-pfuv02c02yrvn7fnt5tiup29r67ewda1vxkwnfx5v8.jpg",
-  //   slug: "morpheus8-face-neck-lift",
-  // },
-  // {
-  //   id: "12",
-  //   name: "Medical Facials",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-18-1-1-2.png",
-  //   slug: "skin-resurfacing-facial",
-  // },
-  // {
-  //   id: "13",
-  //   name: "ClearSkin Pro Acne Treatment",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/clearskin-laser-podmladjivanje.jpg",
-  //   slug: "clearskin-acne-treatment",
-  // },
-  // {
-  //   id: "14",
-  //   name: "Near Infra-Red (NIR) Skin Tightening",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/632A9001-scaled-1.jpg",
-  //   slug: "near-infra-red-nir-skin-tightening",
-  // },
-  // {
-  //   id: "15",
-  //   name: "Laser for Leg Veins (LP Nd:YAG)",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/02_Clearvein-Vein-Removal.jpg",
-  //   slug: "laser-for-leg-veins-lp-ndyag",
-  // },
-  // {
-  //   id: "16",
-  //   name: "iPixel Laser Skin Resurfacing",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/ipixel_1-1024x1024-1.jpg",
-  //   slug: "ipixel-laser-skin-resurfacing",
-  // },
-  // {
-  //   id: "17",
-  //   name: "Anti-Wrinkle Injections",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/istockphoto-1311483932-612x612-1.jpg",
-  //   slug: "anti-wrinkle-injections",
-  // },
-  // {
-  //   id: "18",
-  //   name: "Dermal Fillers",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/lips-8704166_1280.webp",
-  //   slug: "injectable-treatments-2",
-  // },
-  // {
-  //   id: "19",
-  //   name: "Skin Boosters / Biostimulators",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/cosmetic-aesthetic-treatment-face-caucasian-260sw-2419112687-e1727863055754.webp",
-  //   slug: "skin-boosters-biostimulators",
-  // },
-  // {
-  //   id: "20",
-  //   name: "Cosmelan Depigmentation peel",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/cosmelan-1-y-2-e1680507552266.jpg",
-  //   slug: "cosmelan-depigmentation-peel",
-  // },
-  // {
-  //   id: "21",
-  //   name: "Exosome Treatment",
-  //   image:
-  //     "https://www.pulse-clinic.co.uk/wp-content/uploads/2025/04/R6II4105-scaled.jpg",
-  //   slug: "exosome-treatment",
-  // },
 ];
 
 export default function Treatments() {
@@ -232,6 +121,7 @@ export default function Treatments() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    loading="lazy"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-3 sm:p-4">
                     <h3 className="text-white font-medium text-xs sm:text-sm md:text-base">

@@ -8,15 +8,13 @@ export default function BookConsultation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <span className="pulse-subtitle text-xs sm:text-sm md:text-base tracking-wide uppercase block mb-3 sm:mb-4 text-gray-600 dark:text-gray-400">
-            Pulse Laser
+            Beam & Bloom
           </span>
           <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900 dark:text-white">
             Book a Consultation
           </h2>
           <p className="pulse-light-description text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-gray-600 dark:text-gray-300">
-            Please speak to a member of our reception team for more information.
-            This is what helps us deliver the superior results our clients have
-            come to expect of us.
+            Please get in touch with us to discuss your treatment and any questions you may have. We’ll be happy to guide you through the options and help you achieve the best possible results.
           </p>
           <ViewTransitionLink
             href={"/contact-us" as Href}
