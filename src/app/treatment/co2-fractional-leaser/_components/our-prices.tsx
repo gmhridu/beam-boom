@@ -286,7 +286,7 @@ export default function OurPrices() {
       <div className="hidden lg:block absolute top-0 left-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
           <img
-            src="/images/about-us-leaves.png"
+            src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"
             alt="Decorative leaves"
             className="object-contain"
           />
@@ -300,9 +300,7 @@ export default function OurPrices() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10 lg:mb-14 items-end">
           <div>
             <p className="pulse-light-description font-sans text-sm sm:text-base">
-              Please speak to a member of the reception team for more
-              information. This is what helps us deliver the superior results
-              our clients have come to expect of us.
+              If you would like more information about any of our treatments, please get in touch with us. We’ll be happy to guide you through the options and help you achieve the best possible results.
             </p>
             {/* Navigation arrows */}
             <div className="flex items-center gap-2 mt-4 sm:mt-6">
@@ -323,7 +321,7 @@ export default function OurPrices() {
 
           <div className="text-left sm:text-right">
             <span className="pulse-subtitle tracking-wide uppercase block mb-2 text-gray-600 font-medium text-xs sm:text-sm">
-              Pulse Laser
+              Beam & Bloom
             </span>
             <h2 className="pulse-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2 sm:mb-4">
               Our Prices

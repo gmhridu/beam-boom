@@ -671,6 +671,10 @@ a:hover {
   z-index: 5;
 }
 
+.transition-max-height {
+  transition-property: max-height;
+}
+
 /* ===== Banner Wrapper Background Decoration ===== */
 
 .banner-wrp {

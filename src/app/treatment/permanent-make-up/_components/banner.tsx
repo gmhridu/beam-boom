@@ -16,8 +16,19 @@ interface Slide {
   buttonText: string;
 }
 
-const slides: Slide[] = [{ id: 1, subtitle: "Beam & Boom", title: "Laser Tattoo Removal", description: "", backgroundImage: "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif", foregroundImage: "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif", buttonText: "Contact Us", },];
-
+const slides: Slide[] = [
+  {
+    id: 1,
+    subtitle: "Beam & Bloom",
+    title: "Permanent Make Up",
+    description: "",
+    backgroundImage:
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073965/uaivrlrzkufsl05d9cib.avif",
+    foregroundImage:
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773074012/kt07fqypbhg11obwytx1.avif",
+    buttonText: "Contact Us",
+  },
+];
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -27,14 +38,6 @@ export default function Banner() {
     }, 8000);
     return () => clearInterval(timer);
   }, []);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
 
   return (
     <section
@@ -58,6 +61,7 @@ export default function Banner() {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
                 sizes="(min-width: 1024px) 100vw, 100vw"
               />
             </div>
@@ -106,7 +110,6 @@ export default function Banner() {
             </div>
           </div>
         ))}
-
 
         {/* Scroll Down */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">

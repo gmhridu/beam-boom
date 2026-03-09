@@ -11,34 +11,45 @@ export default function Procedure() {
           <div className="flex flex-col gap-6">
             <div className="space-y-4 text-[#757575]">
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                You are most likely to develop stretch marks during:
+                Stretch marks are a common type of skin scarring that occur when the skin stretches or shrinks rapidly. This sudden change can cause the collagen and elastin fibres that support the skin to break down. As the skin heals, stretch marks may form.
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                – Growth spurts in puberty
-                <br />
-                – Pregnancy
-                <br />
-                – Rapid weight loss or gain
-                <br />– Weight training with rapid muscle growth
+                Although stretch marks are very common, not everyone develops them. Hormonal changes, genetics, and rapid changes in body size can all increase the likelihood of stretch marks appearing.
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                When stretch marks first appear, they are usually red, purple,
-                pink, reddish-brown, or dark brown, depending on your skin
-                colour. Early stretch marks may feel slightly raised and can be
-                itchy.
+                Stretch marks often develop during periods of rapid physical change, including:
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Over time, the colour fades and the narrow bands sink beneath
-                the skin.
+                <span className="text-black font-medium mr-1">•</span> Growth spurts during puberty
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Treatments to look for: SkinPen Microneedling, Hybrid CO2 Laser,
-                Ipixel.
+                <span className="text-black font-medium mr-1">•</span> Pregnancy
               </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                <span className="text-black font-medium mr-1">•</span> Rapid weight loss or gain
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                <span className="text-black font-medium mr-1">•</span> Weight training with rapid muscle growth
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                When stretch marks first appear, they may be <span className="text-black font-medium">red, purple, pink, or dark brown</span>, depending on your skin tone. At this stage they can sometimes feel slightly raised or itchy.
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                Over time, stretch marks typically fade in colour and become lighter or silvery in appearance as they settle into the skin.
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                At <span className="text-black font-medium">Beam & Bloom</span>, we offer advanced treatments designed to improve the appearance of stretch marks by stimulating collagen production and encouraging the skin to repair and regenerate. Our personalised treatment plans are tailored to your skin type and concerns to help achieve smoother, healthier-looking skin.
+              </p>
+
             </div>
           </div>
 
@@ -50,7 +61,7 @@ export default function Procedure() {
               h-64 sm:h-80 md:h-100 lg:h-125
               overflow-hidden z-10">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/istockphoto-1300473170-612x612-1.jpg"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773080339/dm3i9p9pizrudpxicfs4.avif"
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-sm"

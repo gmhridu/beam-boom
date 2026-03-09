@@ -19,14 +19,14 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
-    title: "About Us",
+    subtitle: "Beam & Bloom",
+    title: "Pricing",
     description:
-      "Located in the prestigious Fitzrovia area of London, Pulse Laser Aesthetic Clinic is a distinguished clinic, established in 2012 by sister duo and recognised for its expertise in all non-surgical aesthetic, laser and skin procedures.",
+      "At Beam & Bloom, we offer a range of treatments to help you achieve your desired results. Our prices are transparent and competitive, and we offer a range of payment options to make our treatments accessible to everyone.",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/banner-bg-img-5.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2759-edit-Edit-copy-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif",
     buttonText: "Contact Us",
   },
 ];
@@ -71,6 +71,7 @@ export default function Banner() {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
                 sizes="(min-width: 1024px) 100vw, 100vw"
               />
             </div>
@@ -110,7 +111,7 @@ export default function Banner() {
 
                   <div className="absolute top-45 -right-23.75 w-20 h-20 md:w-132">
                     <img
-                      src={"/images/round-shape-img.svg"}
+                      src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993867/lefcoitigvkj21s8geax.avif"}
                       alt="Round shape"
                     />
                   </div>
@@ -120,83 +121,6 @@ export default function Banner() {
           </div>
         ))}
 
-        {/* Social Media */}
-        <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
-          <ul className="flex items-center p-0 m-0">
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
-              <a
-                href="https://www.facebook.com/PulseLaserClinic/"
-                target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
-              >
-                <svg
-                  className="svg-inline--fa fa-facebook-f h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="facebook-f"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                  ></path>
-                </svg>
-                <span className="ml-2.5">Facebook</span>
-              </a>
-            </li>
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
-              <a
-                href="https://twitter.com/PulseClinicLDN"
-                target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
-              >
-                <svg
-                  className="svg-inline--fa fa-x-twitter h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="x-twitter"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                  ></path>
-                </svg>
-                <span className="ml-2.5">Twitter</span>
-              </a>
-            </li>
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
-              <a
-                href="https://www.instagram.com/pulse_laser/"
-                target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
-              >
-                <svg
-                  className="svg-inline--fa fa-instagram h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="instagram"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  ></path>
-                </svg>
-                <span className="ml-2.5">Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
 
         {/* Scroll Down */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">

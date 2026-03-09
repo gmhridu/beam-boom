@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className="py-8 md:py-16 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300">
       {/* Left leaf decoration (behind everything) */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Round shape" />
       </div>
 
       {/* Right gray vertical panel */}
