@@ -33,12 +33,12 @@ export const navigationData = [
         href: "/treatment/skin-boosters-biostimulators" as Href,
       },
       {
-        name: "Anti-Wrinkle Injections",
-        href: "/treatment/anti-wrinkle-injections" as Href,
+        name: "Permanent Make Up",
+        href: "/treatment/permanent-make-up" as Href,
       },
       {
-        name: "ClearSkin Pro Acne Treatment",
-        href: "/treatment/clear-skin-pro-acne-treatment" as Href,
+        name: "CO2 Fractional Leaser",
+        href: "/treatment/co2-fractional-leaser" as Href,
       },
     ],
   },
@@ -82,11 +82,9 @@ export const navigationData = [
     ],
   },
   { name: "PRICING", href: "/pricing" as Href },
-  { name: "SHOP", href: "/shop" as Href },
   {
     name: "MORE INFO",
     children: [
-      { name: "Products", href: "/products" as Href },
       { name: "Special Offers", href: "/special-offers" as Href },
       { name: "Testimonials", href: "/testimonials" as Href },
     ],

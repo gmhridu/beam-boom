@@ -9,53 +9,43 @@ export default function Procedure() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center justify-between mb-12">
           <div className="flex flex-col gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
+              Acne Scarring
+            </h2>
             <div className="space-y-4 text-[#757575]">
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Acne scarring can sometimes develop as a complication of acne.
-                Any type of acne spot can lead to scarring, but it’s more common
-                when the most serious types of spots (nodules and cysts) burst
-                and damage nearby skin.Scarring can also occur if you pick or
-                squeeze your spots, so it’s important not to do this.There are
-                three main types of acne scars:
+                Acne scarring can develop as a result of severe or prolonged acne. When inflammation damages the skin tissue, it can leave behind marks or indentations that remain long after the acne has cleared.
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="font-bold text-gray-800">
-                  • ice pick scars{" "}
-                </span>{" "}
-                - small, deep holes in the surface of your skin that look like
-                the skin has been punctured with a sharp object
+                Scarring is more likely to occur with deeper types of acne such as nodules and cysts, particularly if the skin is squeezed or picked during breakouts. These scars can vary in appearance depending on how the skin heals.
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="font-bold text-gray-800">
-                  • rolling scars{" "}
-                </span>{" "}
-                - caused by bands of scar tissue that form under the skin,
-                giving the surface of the skin a rolling and uneven appearance
+                There are three common types of acne scars:
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="font-bold text-gray-800">• boxcar scars </span>{" "}
-                - round or oval depressions, or craters, in the skin
+                <span className="font-medium text-black">• Ice Pick Scars</span> – Small, deep holes in the skin that appear as if the surface has been punctured. These scars extend deep into the skin and can be more difficult to treat.
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Here at Pulse Laser Aesthetic Clinic, we are aware of the impact
-                that acne scarring can have on your self confidence. We offer
-                bespoke treatment plans to help reduce the appearance of acne
-                scarring. We offer various treatments including{" "}
-                <span className="font-bold">
-                  ClearSkin, Alma Hybrid CO2, iPixel
-                </span>{" "}
-                and <span className="font-bold">SkinPen Microneedling.</span>
+                <span className="font-medium text-black">• Rolling Scars</span> – Caused by bands of scar tissue forming beneath the skin, creating a wave-like or uneven texture across the skin’s surface.
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                <span className="font-medium text-black">• Boxcar Scars</span> – Wider, round or oval depressions in the skin that create a crater-like appearance.
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                At <span className='font-medium text-black'>Beam & Bloom</span>, we understand how acne scarring can impact both skin confidence and overall appearance. Our clinic offers advanced treatments designed to improve skin texture, stimulate collagen production, and reduce the visibility of acne scars.
               </p>
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                To find out which would be the most suitable treatment for you,
-                please book a skin consultation with one of our skin
-                specialists. During the consultation, we can assess your skin
-                and create a personalised treatment plan to help you address
-                your acne scarring.
+                Depending on your skin type and the severity of scarring, treatment options may include <span className='font-medium text-black'>advanced laser treatments, skin resurfacing, or microneedling</span> to help restore smoother, healthier-looking skin.
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                During your consultation, our specialist will carefully assess your skin and create a <span className='font-medium text-black'>personalised treatment plan</span> tailored to your individual needs and goals.
               </p>
             </div>
           </div>
@@ -68,7 +58,7 @@ export default function Procedure() {
               h-64 sm:h-80 md:h-100 lg:h-125
               overflow-hidden z-10">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/a4e99078-e507-42d2-b302-0a752462a5ec.jpg "
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773079624/vuwrnee1c83mjnf9frze.avif"
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-sm"

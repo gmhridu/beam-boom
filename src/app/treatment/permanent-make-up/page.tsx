@@ -3,9 +3,8 @@ import About from "./_components/about";
 import Procedure from "./_components/procedure";
 import Consultation from "./_components/consultation";
 import OurPrices from "./_components/our-prices";
-import AsSeenIn from "./_components/as-seen-as";
 
-export default function AntiWrinkleInjectionsPage() {
+export default function PermanentMakeUpPage() {
   return (
     <main>
       <Banner />
@@ -13,7 +12,6 @@ export default function AntiWrinkleInjectionsPage() {
       <Procedure />
       <Consultation />
       <OurPrices />
-      <AsSeenIn />
     </main>
   );
 }

@@ -10,7 +10,7 @@ export default function About() {
 
       {/* Left leaf decoration */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Round shape" />
+        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
       </div>
 
       {/* Right gray vertical panel - lg only */}
@@ -25,23 +25,49 @@ export default function About() {
               Beam & Boom
             </span>
             <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Laser Tattoo Removal at Beam and Bloom
+              ClearSkin Pro Acne
+              <br />
+              Treatment
             </h2>
             <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
-                Do you have a tattoo you regret and want safely removed? At Beam and Bloom in Dartford, we specialise in advanced laser tattoo removal for tattoos of all sizes and colours.
+                At Beam & Boom Aesthetic Clinic we pride ourselves on offering
+                the latest Harmony XL Pro ClearSkin treatment to help treat
+                active acne (vulgaris) and acne scars. Using the latest in laser
+                acne treatment, our specialist clinic based in Fitzrovia,
+                London, assist in reducing the signs and scars of acne in a pain
+                free, quick process that has no downtime.
               </p>
               <p>
-                Using high-powered laser technology, we deliver precise energy in ultra-short pulses directly into the tattoo ink. This energy breaks the ink down into tiny fragments without damaging the surrounding skin. Over time, your body’s natural healing processes gradually flush away these fragments, allowing the tattoo to fade safely and effectively.
+                ClearSkin PRO is a non-ablative fractional laser treatment with
+                a wavelength of 1540 nm. The energy from this laser penetrates
+                to the dermis (under the skin’s surface) to create microscopic
+                “columns” or zones of thermal injury, triggering the body’s
+                healing response: new collagen, elastin, and extracellular
+                matrix are produced. It specifically targets sebaceous glands to
+                reduce oil production, destroys acne-causing bacteria (e.g., P.
+                acnes), and clears deep pore congestion, while still leaving the
+                skin surface intact meaning there is little to no downtime with
+                this treatment.
+              </p>
+              <p>A course of 4-6 treatments is required at 2 week intervals.</p>
+              <p>Suitable for the treatment of:</p>
+              <p>
+                <span className="font-bold">• Active acne</span> (including
+                moderate to severe forms) such as papules, pustules and
+                nodules.{" "}
               </p>
               <p>
-                Our advanced laser system can target different ink colours using specific wavelengths of light. Darker pigments such as black and blue respond to 1064nm wavelengths, while brighter colours such as red and orange are treated using 532nm. This allows us to treat a wide range of tattoo colours across different skin types.
+                <span className="font-bold">• Excess oiliness</span> and
+                overactive sebaceous glands and enlarged pores.
               </p>
               <p>
-                Laser tattoo removal is non-invasive and designed to minimise the risk of scarring or unwanted pigmentation changes. Every treatment begins with a consultation to assess your skin and create a personalised treatment plan.
+                <span className="font-bold">• Acne scarring</span> and uneven
+                skin texture (post acne marks).
               </p>
               <p>
-                If you have any questions or would like to book a consultation at our Dartford clinic, our team at Beam and Bloom will be happy to help.
+                <span className="font-bold">• Skin rejuvenation</span> fine
+                lines, wrinkles, laxity, uneven tone and texture.
               </p>
             </div>
             <div className="pt-2">
@@ -60,7 +86,7 @@ export default function About() {
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043904/ufbp9wtt73zatigyxsos.avif"
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-lg"

@@ -10,7 +10,7 @@ export default function About() {
 
       {/* Left leaf decoration */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Round shape" />
       </div>
 
       {/* Right gray vertical panel - lg only */}
@@ -22,52 +22,31 @@ export default function About() {
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
             <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
-              Pulse Laser
+              Beam & Bloom
             </span>
             <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
-              ClearSkin Pro Acne
+              Permanent
               <br />
-              Treatment
+              Make-Up
             </h2>
-            <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
+
+            <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl mb-6 md:mb-10 space-y-3 md:space-y-4">
               <p>
-                At Pulse Laser Aesthetic Clinic we pride ourselves on offering
-                the latest Harmony XL Pro ClearSkin treatment to help treat
-                active acne (vulgaris) and acne scars. Using the latest in laser
-                acne treatment, our specialist clinic based in Fitzrovia,
-                London, assist in reducing the signs and scars of acne in a pain
-                free, quick process that has no downtime.
+                Permanent make-up is an advanced cosmetic treatment designed to enhance your natural features while saving time in your daily beauty routine. At <span className='font-medium text-black'>Beam & Bloom in Dartford</span>, we offer professional permanent make-up treatments that help define and shape areas such as the eyebrows, eyeliner, and lips for a long-lasting, natural-looking finish.
               </p>
               <p>
-                ClearSkin PRO is a non-ablative fractional laser treatment with
-                a wavelength of 1540 nm. The energy from this laser penetrates
-                to the dermis (under the skin’s surface) to create microscopic
-                “columns” or zones of thermal injury, triggering the body’s
-                healing response: new collagen, elastin, and extracellular
-                matrix are produced. It specifically targets sebaceous glands to
-                reduce oil production, destroys acne-causing bacteria (e.g., P.
-                acnes), and clears deep pore congestion, while still leaving the
-                skin surface intact meaning there is little to no downtime with
-                this treatment.
-              </p>
-              <p>A course of 4-6 treatments is required at 2 week intervals.</p>
-              <p>Suitable for the treatment of:</p>
-              <p>
-                <span className="font-bold">• Active acne</span> (including
-                moderate to severe forms) such as papules, pustules and
-                nodules.{" "}
+                Using specialised micropigmentation techniques, carefully selected pigments are gently implanted into the skin to create soft, subtle definition that enhances your natural beauty. The results are designed to complement your facial features while providing a polished look that lasts.
               </p>
               <p>
-                <span className="font-bold">• Excess oiliness</span> and
-                overactive sebaceous glands and enlarged pores.
+                Permanent make-up is ideal for anyone looking to improve symmetry, add definition, or achieve fuller-looking brows and lips without the need for daily make-up application. It can also be beneficial for individuals with sparse eyebrows, uneven lip colour, or those who simply want a more effortless beauty routine.
               </p>
+
               <p>
-                <span className="font-bold">• Acne scarring</span> and uneven
-                skin texture (post acne marks).
+                Each treatment begins with a detailed consultation where we discuss your desired results, select suitable pigment shades, and carefully design the shape to ensure the final result looks natural and flattering.
               </p>
+
               <p>
-                <span className="font-bold">• Skin rejuvenation</span> fine
-                lines, wrinkles, laxity, uneven tone and texture.
+                At <span className='font-medium text-black'>Beam & Bloom</span>, our focus is always on achieving elegant, natural enhancements that boost confidence while maintaining a soft and balanced appearance.
               </p>
             </div>
             <div className="pt-2">
@@ -86,7 +65,7 @@ export default function About() {
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/ClearSkin-Collage-min.jpg"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773074012/kt07fqypbhg11obwytx1.avif"
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-lg"

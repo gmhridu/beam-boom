@@ -19,13 +19,13 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
-    title: "Treatments",
+    subtitle: "Beam & Boom",
+    title: "Skin Boosters & Biostimulators",
     description: "",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/istockphoto-1779848264-612x612-1.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073965/uaivrlrzkufsl05d9cib.avif",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/cosmetic-aesthetic-treatment-face-caucasian-260nw-2419112687-e1727863055754.webp",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773075451/qenobuxamu3uby30kpmj.avif",
     buttonText: "Contact Us",
   },
 ];
@@ -61,6 +61,7 @@ export default function Banner() {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
                 sizes="(min-width: 1024px) 100vw, 100vw"
               />
             </div>
@@ -100,7 +101,7 @@ export default function Banner() {
 
                   <div className="absolute top-45 -right-23.75 w-20 h-20 md:w-132">
                     <img
-                      src={"/images/round-shape-img.svg"}
+                      src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993867/lefcoitigvkj21s8geax.avif"}
                       alt="Round shape"
                     />
                   </div>

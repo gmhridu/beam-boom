@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Href, ViewTransitionLink } from "@/components/view-transition-link";
 import { ArrowLeftIcon, ArrowRightIcon } from "@phosphor-icons/react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 interface RemovalPair {
   id: string;
@@ -51,13 +51,13 @@ const removalPairs: RemovalPair[] = [
 
 export default function RemovalSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(2); // default: 2 pairs visible
+  const [visibleCount, setVisibleCount] = useState(2);
 
   useEffect(() => {
     const updateVisible = () => {
       if (window.innerWidth < 640) setVisibleCount(1);
       else if (window.innerWidth < 1024) setVisibleCount(2);
-      else setVisibleCount(2); // or 4 if you want more on lg, but pairs work better with 2–4
+      else setVisibleCount(2);
     };
 
     updateVisible();
@@ -81,7 +81,7 @@ export default function RemovalSlider() {
     <section
       className="py-16 md:py-24 relative bg-gray-900 text-white overflow-hidden"
       style={{
-        backgroundImage: `url("https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/R6II4137-scaled.jpg")`,
+        backgroundImage: `url("https://res.cloudinary.com/dyq0ij1yk/image/upload/v1773073650/q4kbnu9g2hktj4opewzm.avif")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

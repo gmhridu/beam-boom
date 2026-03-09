@@ -1,5 +1,4 @@
 import About from "./_components/about";
-import AsSeenIn from "./_components/as-seen-as";
 import Banner from "./_components/banner";
 import Consultation from "./_components/consultation";
 import OurPrices from "./_components/our-prices";
@@ -15,7 +14,6 @@ export default function LaserTattooRemovalPage() {
       <RemovalSlider />
       <Consultation />
       <OurPrices />
-      <AsSeenIn />
     </main>
   );
 }

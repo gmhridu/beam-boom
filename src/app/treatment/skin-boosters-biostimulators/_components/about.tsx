@@ -10,7 +10,7 @@ export default function About() {
 
       {/* Left leaf decoration */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Round shape" />
       </div>
 
       {/* Right gray vertical panel - lg only */}
@@ -22,7 +22,7 @@ export default function About() {
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
             <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
-              Pulse Laser
+              Beam & Boom
             </span>
             <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               Skin Boosters /
@@ -31,13 +31,15 @@ export default function About() {
             </h2>
             <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
-                If you’re looking for a way to deeply hydrate and rejuvenate
-                your skin, <span className="font-bold">skin boosters</span> may
-                be the perfect solution. Skin boosters are injectable treatments
-                designed to improve skin quality by delivering intense
-                hydration, boosting radiance, and restoring a youthful glow.
-                They are one of the most popular non-surgical options for
-                achieving smooth, hydrated, and naturally radiant skin.
+                If you're looking to revitalise and deeply hydrate your skin, skin boosters and biostimulators offer an effective non-surgical solution. These advanced injectable treatments work beneath the surface of the skin to improve hydration, stimulate collagen production, and enhance overall skin quality.
+              </p>
+
+              <p>
+                By restoring moisture and supporting natural skin regeneration, these treatments help improve texture, elasticity, and radiance, leaving your skin looking smoother, firmer, and more youthful.
+              </p>
+
+              <p>
+                Skin boosters and biostimulators are ideal for clients who want a subtle, natural-looking improvement, helping the skin appear refreshed, hydrated, and healthy without altering facial expressions.
               </p>
             </div>
             <div className="pt-2">
