@@ -13,22 +13,30 @@ export default function Procedure() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center justify-between mb-12">
           <div className="flex flex-col gap-6">
             <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
-              Acne Scarring
+              Fine Lines & Wrinkles Treatment
             </h2>
             <div className="space-y-4 text-[#757575]">
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                For deeper or more established acne scarring, we often recommend
-                our Fractional CO2 Laser treatment. This advanced resurfacing
-                technology works by renewing the skin at a deeper level,
-                triggering powerful collagen regeneration to soften the
-                appearance of scars and promote smoother, more even skin.
+                For more visible lines or deeper wrinkles, we often recommend
+                our{" "}
+                <span className="text-black font-semibold">
+                  Fractional CO2 Laser treatment
+                </span>
+                .
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
+                This advanced resurfacing technology works by renewing the skin
+                at a deeper level, stimulating powerful collagen renewal and
+                helping to smooth the appearance of wrinkles while improving
+                skin tone and elasticity.
+              </p>
+
+              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4 text-black italic">
                 Each treatment plan is tailored to your individual skin concerns
-                to achieve the best possible results. Over a series of
-                treatments, the skin gradually becomes clearer, smoother and
-                more refined.
+                to achieve natural, refined results. Over a series of
+                treatments, the skin appears smoother, firmer and more
+                refreshed.
               </p>
 
               <div className="pt-6">
@@ -36,8 +44,9 @@ export default function Procedure() {
                   BEST FOR
                 </h3>
                 <p className="text-base sm:text-lg lg:text-xl mb-6">
-                  This treatment is ideal for individuals looking to improve the
-                  appearance of acne scars and uneven skin texture.
+                  This treatment is ideal for individuals looking to improve
+                  visible signs of ageing and restore smoother, more
+                  youthful-looking skin.
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl mb-4 font-medium text-black">
                   Common concerns treated include:
@@ -45,40 +54,39 @@ export default function Procedure() {
                 <ul className="space-y-2 text-base sm:text-lg lg:text-xl">
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Atrophic acne scars (indented scars)</span>
+                    <span>Fine lines around the eyes (crow’s feet)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Boxcar and rolling scars</span>
+                    <span>Forehead lines</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Uneven skin texture</span>
+                    <span>Smile lines and lip lines</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Post-acne skin damage</span>
+                    <span>Early to moderate wrinkles</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Enlarged pores associated with acne scarring</span>
+                    <span>Loss of skin firmness and elasticity</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Dull or uneven skin tone</span>
+                    <span>Dull or ageing skin texture</span>
                   </li>
                 </ul>
                 <p className="mt-8 text-base sm:text-lg lg:text-xl italic">
-                  Treatment areas typically include the face, cheeks, temples
-                  and jawline, helping to restore smoother, clearer and more
-                  balanced skin.
+                  Treatment areas can include the face, neck and décolletage,
+                  helping to restore a more refined and rejuvenated appearance.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="relative flex justify-center lg:block">
+          {/* <div className="relative flex justify-center lg:block">
             <div
               className="relative
               lg:-right-21.75
@@ -88,12 +96,12 @@ export default function Procedure() {
             >
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773079624/vuwrnee1c83mjnf9frze.avif"
-                alt="About Pulse Laser Clinic"
+                alt="Fine Lines & Wrinkles Treatment"
                 fill
                 className="object-cover rounded-sm"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

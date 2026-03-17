@@ -25,58 +25,57 @@ export default function About() {
               Beam & Bloom
             </span>
             <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
-              Enlarged Pores & Blackheads
+              Oily Skin
             </h2>
             <div className="pulse-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
-                Enlarged pores and blackheads are common skin concerns that can
-                affect the overall appearance and texture of the skin. Pores are
-                small openings in the skin that release oil and sweat, but when
-                excess oil, dead skin cells, and debris accumulate, they can
-                become clogged and more visible.
+                Oily skin occurs when the sebaceous glands produce excess sebum,
+                the natural oil that helps protect and hydrate the skin. While
+                sebum is essential for maintaining healthy skin, overproduction
+                can lead to concerns such as enlarged pores, blackheads,
+                congestion, and frequent breakouts.
               </p>
               <p>
-                Blackheads form when pores become blocked with oil (sebum) and
-                dead skin cells. When this material is exposed to air, it
-                oxidises and turns dark, creating the appearance of small black
-                spots on the skin. Enlarged pores often appear more noticeable
-                in areas where oil production is higher, such as the nose,
-                cheeks, forehead, and chin.
+                Excess oil can cause the skin to appear shiny, particularly
+                across the forehead, nose, and chin (the T-zone). When oil mixes
+                with dead skin cells and bacteria, it can block pores and
+                contribute to blackheads, blemishes, and uneven skin texture.
               </p>
 
               <p className="font-bold text-black pt-4">
-                Factors that contribute to enlarged pores and blackheads
-                include:
+                Several factors can contribute to oily skin, including:
               </p>
 
               <ul className="space-y-4">
                 <li>
-                  <span className="font-bold">• Excess Oil Production</span> –
-                  Overactive sebaceous glands can cause pores to stretch and
-                  appear larger.
+                  <span className="font-bold">
+                    • Overactive Sebaceous Glands
+                  </span>{" "}
+                  – Increased oil production can make pores appear larger and
+                  the skin more prone to congestion.
                 </li>
                 <li>
-                  <span className="font-bold">• Dead Skin Cell Build-Up</span> –
-                  When dead skin cells accumulate on the surface, they can block
-                  pores and contribute to congestion.
-                </li>
-                <li>
-                  <span className="font-bold">• Loss of Skin Elasticity</span> –
-                  As collagen levels decrease with age, pores may appear more
-                  prominent.
+                  <span className="font-bold">• Hormonal Changes</span> –
+                  Fluctuations in hormones can stimulate oil production,
+                  particularly during adolescence or periods of hormonal
+                  imbalance.
                 </li>
                 <li>
                   <span className="font-bold">• Genetics and Skin Type</span> –
-                  Some individuals are naturally more prone to enlarged pores
-                  and congestion.
+                  Some individuals naturally produce more oil than others.
+                </li>
+                <li>
+                  <span className="font-bold">• Environmental Factors</span> –
+                  Heat, humidity, and certain skincare products can also
+                  increase oil production.
                 </li>
               </ul>
 
               <p className="pt-6">
-                At Beam & Bloom, we understand how enlarged pores and blackheads
-                can impact the overall smoothness and clarity of the skin. Our
-                clinic offers advanced treatments designed to deeply resurface
-                the skin, improve texture, and refine pore size.
+                At Beam & Bloom, we understand that oily and congested skin can
+                affect both skin clarity and confidence. Our clinic offers
+                advanced treatments designed to deeply cleanse the pores,
+                regulate oil production, and restore balance to the skin.
               </p>
             </div>
             <ViewTransitionLink

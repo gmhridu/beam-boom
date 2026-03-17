@@ -16,17 +16,16 @@ interface Slide {
   buttonText: string;
 }
 
-
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
-    title: "SKIN CONDITION",
+    subtitle: "Beam & Bloom",
+    title: "SUN DAMAGE",
     description: "",
     backgroundImage:
       "https://www.pulse-clinic.co.uk/wp-content/themes/pulselaser/assets/images/banner-bg-img.jpg",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-16-6-1-1.png",
+      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/before-1.jpg",
     buttonText: "Contact Us",
   },
 ];
@@ -51,8 +50,9 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
           >
             {/* Background Image */}
             <div className="absolute inset-0 banner-img max-w-372 z-10">
@@ -72,8 +72,8 @@ export default function Banner() {
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
                   <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
-                    <span className="pulse-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
-                      {slide.subtitle}
+                    <span className="pulse-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
+                      Beam & Bloom
                     </span>
                     <h1 className="pulse-title mb-8">{slide.title}</h1>
                     <p className="pulse-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">

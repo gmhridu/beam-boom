@@ -3,7 +3,7 @@ import AsSeenIn from "./_components/as-seen-as";
 import Banner from "./_components/banner";
 import Procedure from "./_components/procedure";
 
-export default function EnlargedPoresBlackheadsPage() {
+export default function PoresAndBlackheadsPage() {
   return (
     <main>
       <Banner />

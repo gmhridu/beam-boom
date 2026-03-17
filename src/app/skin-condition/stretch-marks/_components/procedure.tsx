@@ -2,64 +2,96 @@ import Image from "next/image";
 
 export default function Procedure() {
   return (
-    <section id="procedure" className="py-16 md:py-24 bg-gray-50 banner-wrp relative overflow-hidden">
+    <section
+      id="procedure"
+      className="py-16 md:py-24 bg-gray-50 banner-wrp relative overflow-hidden"
+    >
       {/* right side */}
       <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center justify-between mb-12">
           <div className="flex flex-col gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
+              Laser Stretch Mark Removal
+            </h2>
             <div className="space-y-4 text-[#757575]">
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Stretch marks are a common type of skin scarring that occur when the skin stretches or shrinks rapidly. This sudden change can cause the collagen and elastin fibres that support the skin to break down. As the skin heals, stretch marks may form.
+                For deeper or more established stretch marks, we often recommend
+                our{" "}
+                <span className="text-black font-semibold">
+                  Fractional CO2 Laser treatment
+                </span>
+                , which resurfaces the skin and stimulates powerful collagen
+                renewal.
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Although stretch marks are very common, not everyone develops them. Hormonal changes, genetics, and rapid changes in body size can all increase the likelihood of stretch marks appearing.
+                This advanced technology can significantly soften the appearance
+                of stretch marks while improving skin firmness and texture. Each
+                treatment plan is tailored to your skin type and concerns to
+                achieve the best possible results. A course of treatments spaced
+                several weeks apart is typically recommended for optimal
+                improvement.
               </p>
 
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Stretch marks often develop during periods of rapid physical change, including:
-              </p>
+              <div className="pt-6">
+                <h3 className="text-lg md:text-xl font-bold text-black mb-4 uppercase tracking-wider">
+                  BEST FOR
+                </h3>
+                <p className="text-base sm:text-lg lg:text-xl mb-6">
+                  This treatment is ideal for individuals looking to improve the
+                  appearance of stretch marks and overall skin quality.
+                </p>
 
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="text-black font-medium mr-1">•</span> Growth spurts during puberty
-              </p>
+                <h3 className="text-lg md:text-xl font-bold text-black mb-4 uppercase tracking-wider">
+                  Common concerns treated include:
+                </h3>
+                <ul className="space-y-2 text-base sm:text-lg lg:text-xl">
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Pregnancy stretch marks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Weight fluctuation stretch marks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Growth-related stretch marks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Older or more established stretch marks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Uneven skin texture</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Loss of skin elasticity</span>
+                  </li>
+                </ul>
 
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="text-black font-medium mr-1">•</span> Pregnancy
-              </p>
-
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="text-black font-medium mr-1">•</span> Rapid weight loss or gain
-              </p>
-
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                <span className="text-black font-medium mr-1">•</span> Weight training with rapid muscle growth
-              </p>
-
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                When stretch marks first appear, they may be <span className="text-black font-medium">red, purple, pink, or dark brown</span>, depending on your skin tone. At this stage they can sometimes feel slightly raised or itchy.
-              </p>
-
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Over time, stretch marks typically fade in colour and become lighter or silvery in appearance as they settle into the skin.
-              </p>
-
-              <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                At <span className="text-black font-medium">Beam & Bloom</span>, we offer advanced treatments designed to improve the appearance of stretch marks by stimulating collagen production and encouraging the skin to repair and regenerate. Our personalised treatment plans are tailored to your skin type and concerns to help achieve smoother, healthier-looking skin.
-              </p>
-
+                <p className="mt-8 text-base sm:text-lg lg:text-xl font-medium text-black">
+                  Treatment areas can include the abdomen, hips, thighs,
+                  buttocks and arms, helping to restore smoother, more refined
+                  skin over time.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Right Image */}
           <div className="relative flex justify-center lg:block">
-            <div className="relative
+            <div
+              className="relative
               lg:-right-21.75
               w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150
               h-64 sm:h-80 md:h-100 lg:h-125
-              overflow-hidden z-10">
+              overflow-hidden z-10"
+            >
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773080339/dm3i9p9pizrudpxicfs4.avif"
                 alt="About Pulse Laser Clinic"

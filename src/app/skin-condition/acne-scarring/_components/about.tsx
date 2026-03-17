@@ -5,10 +5,18 @@ import { ExternalLink } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-8 md:py-16 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300">
+    <section
+      id="about"
+      className="py-8 md:py-16 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300"
+    >
       {/* Left leaf decoration (behind everything) */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Round shape" />
+        <img
+          src={
+            "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"
+          }
+          alt="Round shape"
+        />
       </div>
 
       {/* Right gray vertical panel */}
@@ -24,6 +32,22 @@ export default function About() {
             <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
               Acne Scarring
             </h2>
+
+            <p className="pulse-light-description text-gray-600 leading-relaxed text-lg">
+              Acne scarring can remain long after breakouts have cleared, often
+              leaving uneven skin texture, visible marks and areas of
+              indentation that affect the overall appearance of the skin. These
+              scars commonly appear on the cheeks, temples and jawline, and can
+              vary in depth and severity.
+            </p>
+            <p className="pulse-light-description text-gray-600 leading-relaxed text-lg">
+              At Beam & Bloom, we offer advanced laser treatments designed to
+              visibly improve the appearance of acne scars and restore smoother,
+              healthier-looking skin. By stimulating collagen production deep
+              within the skin, these treatments encourage natural skin
+              regeneration, helping to refine texture and improve overall skin
+              tone.
+            </p>
 
             <ViewTransitionLink
               href={"/about-us" as Href}

@@ -16,12 +16,11 @@ interface Slide {
   buttonText: string;
 }
 
-
 const slides: Slide[] = [
   {
     id: 1,
     subtitle: "Beam & Bloom",
-    title: "SKIN CONDITION",
+    title: "STRETCH MARK TREATMENT",
     description: "",
     backgroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif",
@@ -51,8 +50,9 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
           >
             {/* Background Image */}
             <div className="absolute inset-0 banner-img max-w-372 z-10">
@@ -102,7 +102,9 @@ export default function Banner() {
 
                   <div className="absolute top-45 -right-23.75 w-20 h-20 md:w-132">
                     <img
-                      src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993867/lefcoitigvkj21s8geax.avif"}
+                      src={
+                        "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993867/lefcoitigvkj21s8geax.avif"
+                      }
                       alt="Round shape"
                     />
                   </div>
