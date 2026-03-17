@@ -13,65 +13,64 @@ export default function Procedure() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center justify-between mb-12">
           <div className="flex flex-col gap-6">
             <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
-              Acne Scarring
+              Carbon Laser Facial
             </h2>
             <div className="space-y-4 text-[#757575]">
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                For deeper or more established acne scarring, we often recommend
-                our Fractional CO2 Laser treatment. This advanced resurfacing
-                technology works by renewing the skin at a deeper level,
-                triggering powerful collagen regeneration to soften the
-                appearance of scars and promote smoother, more even skin.
+                One of the most effective treatments for oily and congested skin
+                is the{" "}
+                <span className="font-bold text-black">
+                  Carbon Laser Facial
+                </span>
+                .
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl mb-2 sm:mb-4">
-                Each treatment plan is tailored to your individual skin concerns
-                to achieve the best possible results. Over a series of
-                treatments, the skin gradually becomes clearer, smoother and
-                more refined.
+                Often referred to as the “Hollywood Facial,” this advanced
+                treatment combines a medical-grade carbon mask with laser
+                technology to deeply cleanse the skin and remove impurities. The
+                carbon absorbs oil, dirt, and dead skin cells from within the
+                pores, while the laser energy gently heats and vaporises the
+                carbon particles, exfoliating the skin and clearing congestion.
               </p>
 
               <div className="pt-6">
                 <h3 className="text-lg md:text-xl font-bold text-black mb-4 uppercase tracking-wider">
-                  BEST FOR
+                  Carbon Laser Facial treatment can help:
                 </h3>
-                <p className="text-base sm:text-lg lg:text-xl mb-6">
-                  This treatment is ideal for individuals looking to improve the
-                  appearance of acne scars and uneven skin texture.
-                </p>
-                <p className="text-base sm:text-lg lg:text-xl mb-4 font-medium text-black">
-                  Common concerns treated include:
-                </p>
                 <ul className="space-y-2 text-base sm:text-lg lg:text-xl">
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Atrophic acne scars (indented scars)</span>
+                    <span>Reduce excess oil production</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Boxcar and rolling scars</span>
+                    <span>Deeply cleanse and tighten pores</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Uneven skin texture</span>
+                    <span>Improve blackheads and congestion</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Post-acne skin damage</span>
+                    <span>Smooth skin texture</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
-                    <span>Enlarged pores associated with acne scarring</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-black">•</span>
-                    <span>Dull or uneven skin tone</span>
+                    <span>Brighten and refresh the complexion</span>
                   </li>
                 </ul>
+
                 <p className="mt-8 text-base sm:text-lg lg:text-xl italic">
-                  Treatment areas typically include the face, cheeks, temples
-                  and jawline, helping to restore smoother, clearer and more
-                  balanced skin.
+                  The treatment is gentle, quick, and requires minimal downtime,
+                  making it ideal for those looking to improve oily skin while
+                  achieving a clearer, more refined complexion.
+                </p>
+
+                <p className="mt-6 text-base sm:text-lg lg:text-xl font-medium text-black">
+                  During your consultation at Beam & Bloom, our specialist will
+                  carefully assess your skin and create a personalised treatment
+                  plan tailored to your individual skin type and concerns.
                 </p>
               </div>
             </div>
@@ -87,7 +86,7 @@ export default function Procedure() {
               overflow-hidden z-10"
             >
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773079624/vuwrnee1c83mjnf9frze.avif"
+                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/9ff5196c-a445-4977-a14e-aa71b88cb715.jpg"
                 alt="About Pulse Laser Clinic"
                 fill
                 className="object-cover rounded-sm"

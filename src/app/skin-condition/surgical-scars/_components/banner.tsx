@@ -16,17 +16,16 @@ interface Slide {
   buttonText: string;
 }
 
-
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "ACNE",
-    title: "SKIN CONDITION",
+    subtitle: "Beam & Bloom",
+    title: "SURGICAL SCARS",
     description: "",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/themes/pulselaser/assets/images/banner-bg-img.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif",
     foregroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/Rectangle-15-5-1-1.png",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773079064/kgnyzrh8lc9sqxjuvlgi.avif",
     buttonText: "Contact Us",
   },
 ];
@@ -51,8 +50,9 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
           >
             {/* Background Image */}
             <div className="absolute inset-0 banner-img max-w-372 z-10">

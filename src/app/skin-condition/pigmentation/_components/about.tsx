@@ -2,115 +2,86 @@
 
 import { Href, ViewTransitionLink } from "@/components/view-transition-link";
 import { ExternalLink } from "lucide-react";
-import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-8 md:py-16 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300">
+    <section
+      id="about"
+      className="py-8 md:py-16 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300"
+    >
       {/* Left leaf decoration (behind everything) */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img
+          src={
+            "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"
+          }
+          alt="Round shape"
+        />
       </div>
 
       {/* Right gray vertical panel */}
       <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
-
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Left Content */}
-          <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Skin Boosters /
-              <br />
-              Biostimulators
+          <div className="space-y-6">
+            <span className="pulse-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
+              Beam & Bloom
+            </span>
+            <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+              Pigmentation Irregularities
             </h2>
             <div className="pulse-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
-                Hyperpigmentation, age spots or melasma are common skin
-                conditions to experience. Hyperpigmentation can occur when
-                melanin is overproduced in certain spots on the skin and results
-                in darkened patches on the skin. There are many types of
-                hyperpigmentation, but the following are the most common: 1.
-                Overproduction of melanin can lead to uneven skin pigmentation
-                (or hyperpigmentation as it is often known) across the skin.
-                Dark spots – known as age spots or sun spots – or dark patches
-                of skin frequently appear on the face, neck décolleté, hands,
-                arms and other parts of the body regularly exposed to the sun.
-                They tend to be small, dark patches of skin. 2. Melasma or
-                chloasma can occur as a result of hormonal influences such as
-                pregnancy and birth control pills, and causes dark and
-                irregularly shaped areas on the face or arms. 3.
-                Post-inflammatory hyperpigmentation can occur when a skin injury
-                or trauma heals and leaves a flat area of discolouration behind.
-                It’s commonly found among acne sufferers.
+                Pigmentation irregularities occur when the skin produces too
+                much or too little melanin, the natural pigment responsible for
+                skin colour. This can lead to uneven patches of darker or
+                lighter skin that affect the overall tone and clarity of the
+                complexion.
               </p>
 
               <p>
-                Our Treatment options include:
-                <br />
-                <span className="font-bold">• PicoWay Picosecond Laser</span>:
-                An advanced picosecond laser that targets unwanted pigmentation
-                such as sun spots, age spots, and uneven skin tone. Using
-                ultra-short pulses, it breaks pigment into tiny particles for
-                natural clearance. It is the safest laser for pigmentation in
-                darker skin types.
-                <br />
-                <span className="font-bold">• An IPL Photo-facial Laser</span>:
-                A powerful, non-laser light treatment used to treat pigment and
-                redness in the skin. It treats sun damage including brown spots
-                and freckles and improves skin tone, clarity, and overall
-                appearance.
-                <br />
-                <span className="font-bold">• ClearLift Laser</span>: A
-                non-invasive, virtually painless procedure that uses fractional
-                Q-switched laser technology to target and break down unwanted
-                pigmentation deep within the skin, without harming the surface
-                layer.
-                <br />
-                <span className="font-bold">
-                  • Cosmelan Depigmentation Peel
-                </span>
-                : Cosmelan is a powerful depigmentation treatment designed to
-                reduce melasma, pigmentation, and dark spots. It works by
-                correcting pigment production at the source, helping restore a
-                brighter, more even skin tone with long-lasting results
-                <br />
-                <span className="font-bold">
-                  • pHformula MELA Resurfacing Peel
-                </span>
-                : The Mela Peel is a professional chemical peel with no
-                downtime. It targets pigmentation (like melasma, sun spots,
-                post-acne marks) by using acids to exfoliate skin, inhibit
-                melanin, and stimulate cell turnover, resulting in a brighter,
-                smoother, more even skin tone and complexion.
-                <br />
-                <span className="font-bold">• Medical-Grade Skincare</span>:
-                Professionally prescribed skincare products forumulated with
-                active ingredients (like Retinoids, Vitamin C, Hydroquinone,
-                Kojic Acid, AHAs) in high concentrations, to actively fade dark
-                spots, even skin tone, and prevent future discolouration by
-                inhibiting melanin (pigment) production and boosting skin cell
-                turnover.
-                <br />
-                <span className="font-bold">• Medical-Grade Skincare</span>:
-                Professionally prescribed skincare products forumulated with
-                active ingredients (like Retinoids, Vitamin C, Hydroquinone,
-                Kojic Acid, AHAs) in high concentrations, to actively fade dark
-                spots, even skin tone, and prevent future discolouration by
-                inhibiting melanin (pigment) production and boosting skin cell
-                turnover.
-                <br />
-                <span className="font-bold">• Skin Supplements</span>: A daily
-                supplement formulated to support skin health from within.
+                These changes in pigmentation can develop for a number of
+                reasons, including sun exposure, hormonal changes, inflammation,
+                acne, or skin trauma. Pigmentation concerns can vary in
+                appearance and may develop gradually over time.
               </p>
 
-              <p>
-                To find out more about the above treatments and which ones will
-                be the right treatment for your pigmentation, please book a skin
-                consultation with one of our skin specialists. During the
-                consultation, we can assess your skin and create a personalised
-                treatment plan to help you with your pigmentation concerns.
+              <p className="font-bold text-black pt-4">
+                Common types of pigmentation irregularities include:
+              </p>
+
+              <ul className="space-y-4">
+                <li>
+                  <span className="font-bold">• Hyperpigmentation</span> –
+                  Darkened patches of skin caused by excess melanin production.
+                  This can occur after inflammation, acne, or skin irritation.
+                </li>
+                <li>
+                  <span className="font-bold">• Sun Spots (Age Spots)</span> –
+                  Pigmented areas that appear after prolonged sun exposure,
+                  commonly found on the face, hands, chest, and shoulders.
+                </li>
+                <li>
+                  <span className="font-bold">• Melasma</span> – A hormonal form
+                  of pigmentation that often appears as symmetrical patches on
+                  the cheeks, forehead, or upper lip.
+                </li>
+                <li>
+                  <span className="font-bold">
+                    • Post-Inflammatory Pigmentation
+                  </span>{" "}
+                  – Dark marks that remain on the skin after acne, injury, or
+                  skin inflammation.
+                </li>
+              </ul>
+
+              <p className="pt-6">
+                At Beam & Bloom, we understand how pigmentation concerns can
+                impact confidence and the overall appearance of the skin. Our
+                clinic offers advanced treatments designed to resurface the
+                skin, restore balance, and improve overall skin tone.
               </p>
             </div>
             <ViewTransitionLink
@@ -121,18 +92,6 @@ export default function About() {
               Read more
               <ExternalLink size={16} />
             </ViewTransitionLink>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
-              <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/AdobeStock_216793051-e1556147202225-1024x751-1-1-1.jpeg"
-                alt="About Pulse Laser Clinic"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
           </div>
         </div>
       </div>

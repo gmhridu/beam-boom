@@ -16,12 +16,11 @@ interface Slide {
   buttonText: string;
 }
 
-
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
-    title: "SKIN CONDITION",
+    subtitle: "Beam & Bloom",
+    title: "PORES & BLACKHEADS",
     description: "",
     backgroundImage:
       "https://www.pulse-clinic.co.uk/wp-content/themes/pulselaser/assets/images/banner-bg-img.jpg",
@@ -51,8 +50,9 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
           >
             {/* Background Image */}
             <div className="absolute inset-0 banner-img max-w-372 z-10">

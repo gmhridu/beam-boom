@@ -3,7 +3,7 @@ import AsSeenIn from "./_components/as-seen-as";
 import Banner from "./_components/banner";
 import Procedure from "./_components/procedure";
 
-export default function AgedSkinPage() {
+export default function SunDamagePage() {
   return (
     <main>
       <Banner />

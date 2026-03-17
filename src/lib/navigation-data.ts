@@ -47,33 +47,29 @@ export const navigationData = [
     children: [
       { name: "Acne Scarring", href: "/skin-condition/acne-scarring" as Href },
       {
-        name: "Acne",
-        href: "/skin-condition/acne-2" as Href,
+        name: "Surgical Scars",
+        href: "/skin-condition/surgical-scars" as Href,
       },
       {
-        name: "Eyebags & Tired Looking Eyes",
-        href: "/skin-condition/eyebags-tired-looking-eyes" as Href,
+        name: "Lines and Wrinkles",
+        href: "/skin-condition/lines-and-wrinkles" as Href,
       },
       {
-        name: "Anti Ageing Wrinkle Reduction",
-        href: "/skin-condition/anti-ageing-wrinkle-reduction" as Href,
-      },
-      {
-        name: "Enlarged Pores & Blackheads",
+        name: "Pores & Blackheads",
         href: "/skin-condition/enlarged-pores-blackheads" as Href,
       },
 
       {
-        name: "Double Chin & Saggy Neck",
-        href: "/skin-condition/double-chin-saggy-neck" as Href,
+        name: "Sun Damage",
+        href: "/skin-condition/sun-damage" as Href,
       },
       {
         name: "Stretch Marks",
         href: "/skin-condition/stretch-marks" as Href,
       },
       {
-        name: "Aged Skin",
-        href: "/skin-condition/aged-skin" as Href,
+        name: "Oily Skin",
+        href: "/skin-condition/oily-skin" as Href,
       },
       {
         name: "Pigmentation",
