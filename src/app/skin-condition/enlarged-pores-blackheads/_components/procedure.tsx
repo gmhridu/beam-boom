@@ -86,7 +86,7 @@ export default function Procedure() {
             >
               <Image
                 src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/a4e99078-e507-42d2-b302-0a752462a5ec.jpg "
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-sm"
               />

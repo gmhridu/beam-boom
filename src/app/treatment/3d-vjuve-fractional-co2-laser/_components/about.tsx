@@ -21,15 +21,15 @@ export default function About() {
 
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
+            <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               3D Vjuve Fractional
               <br />
               CO2 Laser
             </h2>
-            <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
+            <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
                 The is an advanced skin resurfacing and rejuvenation treatment designed to dramatically improve skin texture, tone and overall quality. Using precise fractional laser technology, it creates controlled micro-channels within the skin to stimulate natural collagen production and accelerate cellular renewal.
               </p>
@@ -101,7 +101,7 @@ export default function About() {
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043904/ufbp9wtt73zatigyxsos.avif"
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
               />

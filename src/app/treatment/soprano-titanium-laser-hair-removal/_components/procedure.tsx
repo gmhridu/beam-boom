@@ -92,7 +92,7 @@ export default function Procedure() {
               overflow-hidden z-10">
               <Image
                 src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/09/R6II4136-scaled.jpg"
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
               />

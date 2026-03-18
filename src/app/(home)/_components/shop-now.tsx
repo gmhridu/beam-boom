@@ -38,13 +38,13 @@ const ShopNow = () => {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 md:mb-10">
-          <p className="pulse-subtitle text-xs sm:text-sm md:text-base mb-4 sm:mb-6 md:mb-10 text-gray-600 dark:text-gray-400">
-            PULSE LASER
+          <p className="bb-subtitle text-xs sm:text-sm md:text-base mb-4 sm:mb-6 md:mb-10 text-gray-600 dark:text-gray-400">
+            BEAM & BLOOM
           </p>
-          <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 md:mb-10 text-gray-900 dark:text-white">
+          <h2 className="bb-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 md:mb-10 text-gray-900 dark:text-white">
             Shop Now
           </h2>
-          <p className="pulse-light-description text-sm sm:text-base md:text-lg mb-8 sm:mb-10 md:mb-14 text-gray-600 dark:text-gray-300">
+          <p className="bb-light-description text-sm sm:text-base md:text-lg mb-8 sm:mb-10 md:mb-14 text-gray-600 dark:text-gray-300">
             Please book a skin consultation to discuss your skin concerns
           </p>
         </div>

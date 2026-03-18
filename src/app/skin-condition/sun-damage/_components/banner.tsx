@@ -42,7 +42,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="relative banner-wrp h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -50,12 +50,11 @@ export default function Banner() {
           <div
             key={slide.id}
             aria-hidden={index !== currentSlide}
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
           >
             {/* Background Image */}
-            <div className="absolute inset-0 banner-img max-w-372 z-10">
+            <div className="absolute inset-0 banner-img z-10">
               <Image
                 src={slide.backgroundImage}
                 alt={slide.title}
@@ -72,11 +71,11 @@ export default function Banner() {
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
                   <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
-                    <span className="pulse-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
+                    <span className="bb-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
                       Beam & Bloom
                     </span>
-                    <h1 className="pulse-title mb-8">{slide.title}</h1>
-                    <p className="pulse-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
+                    <h1 className="bb-title mb-8">{slide.title}</h1>
+                    <p className="bb-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
                       {slide.description}
                     </p>
                     <ViewTransitionLink
@@ -87,113 +86,18 @@ export default function Banner() {
                     </ViewTransitionLink>
                   </div>
                 </div>
-                {/* Right Image */}
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
-                  <Image
-                    src={slide.foregroundImage}
-                    alt={slide.title}
-                    fill
-                    className="object-cover rounded-lg hidden md:block"
-                    loading={index === 0 ? "eager" : "lazy"}
-                    sizes="(min-width: 1024px) 33vw, 50vw"
-                  />
-
-                  <div className="absolute top-45 -right-23.75 w-20 h-20 md:w-132">
-                    <img
-                      src={"/images/round-shape-img.svg"}
-                      alt="Round shape"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         ))}
 
-        {/* Social Media */}
-        <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
-          <ul className="flex items-center p-0 m-0">
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
-              <a
-                href="https://www.facebook.com/PulseLaserClinic/"
-                target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
-              >
-                <svg
-                  className="svg-inline--fa fa-facebook-f h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="facebook-f"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                  ></path>
-                </svg>
-                <span className="ml-2.5">Facebook</span>
-              </a>
-            </li>
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
-              <a
-                href="https://twitter.com/PulseClinicLDN"
-                target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
-              >
-                <svg
-                  className="svg-inline--fa fa-x-twitter h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="x-twitter"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                  ></path>
-                </svg>
-                <span className="ml-2.5">Twitter</span>
-              </a>
-            </li>
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
-              <a
-                href="https://www.instagram.com/pulse_laser/"
-                target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
-              >
-                <svg
-                  className="svg-inline--fa fa-instagram h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="instagram"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  ></path>
-                </svg>
-                <span className="ml-2.5">Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
 
         {/* Scroll Down */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
           <ViewTransitionLink
             href={"/about" as Href}
-            className="pulse-light-description flex flex-col items-center"
+            className="bb-light-description flex flex-col items-center"
           >
             <span className="text-lg mb-2">Scroll Down</span>
             <CaretRightIcon size={24} className="rotate-90" />

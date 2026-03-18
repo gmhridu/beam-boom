@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Pulse Laser Clinic",
+  title: "Terms and Conditions | Beam & Bloom Clinic",
   description:
-    "Terms and conditions for Pulse Laser Aesthetic Clinic services and treatments.",
+    "Terms and conditions for Beam & Bloom Clinic services and treatments.",
 };
 
 export default function TermsAndConditions() {
@@ -19,7 +19,7 @@ export default function TermsAndConditions() {
             1. Introduction
           </h2>
           <p>
-            Welcome to Pulse Laser Aesthetic Clinic. These terms and conditions
+            Welcome to Beam & Bloom Clinic. These terms and conditions
             apply to all services, treatments, and products provided by our
             clinic. By booking an appointment or purchasing a product, you agree
             to be bound by these terms.

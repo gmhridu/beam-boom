@@ -72,7 +72,7 @@ const ContactInfo = () => {
               style={{ border: 0 }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Pulse Laser Aesthetic Clinic Location"
+              title="Beam & Bloom Clinic Location"
             ></iframe>
           </div>
 

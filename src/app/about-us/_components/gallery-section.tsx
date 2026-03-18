@@ -20,7 +20,7 @@ const images = [
   },
   {
     src: "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2587-edit-B-Edit-copy-scaled.jpg",
-    alt: "Reception desk with Pulse Laser branding",
+    alt: "Reception desk with Beam & Bloom branding",
   },
   {
     src: "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2636-edit-Edit-copy-scaled.jpg",

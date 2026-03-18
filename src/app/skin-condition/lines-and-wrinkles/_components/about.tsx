@@ -21,13 +21,13 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Left Content */}
           <div className="space-y-6">
-            <span className="pulse-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
+            <span className="bb-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Bloom
             </span>
-            <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
               Fine Lines & Wrinkles
             </h2>
-            <div className="pulse-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
                 Fine lines and wrinkles are a natural part of the ageing
                 process, often developing as the skin gradually loses collagen,

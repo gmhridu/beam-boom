@@ -26,21 +26,21 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Left Content */}
           <div className="space-y-6">
-            <span className="pulse-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
+            <span className="bb-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
               Acne Scarring
             </h2>
 
-            <p className="pulse-light-description text-gray-600 leading-relaxed text-lg">
+            <p className="bb-light-description text-gray-600 leading-relaxed text-lg">
               Acne scarring can remain long after breakouts have cleared, often
               leaving uneven skin texture, visible marks and areas of
               indentation that affect the overall appearance of the skin. These
               scars commonly appear on the cheeks, temples and jawline, and can
               vary in depth and severity.
             </p>
-            <p className="pulse-light-description text-gray-600 leading-relaxed text-lg">
+            <p className="bb-light-description text-gray-600 leading-relaxed text-lg">
               At Beam & Bloom, we offer advanced laser treatments designed to
               visibly improve the appearance of acne scars and restore smoother,
               healthier-looking skin. By stimulating collagen production deep

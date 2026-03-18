@@ -21,10 +21,10 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Left Content */}
           <div className="space-y-6">
-            <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
               Surgical Scars
             </h2>
-            <div className="pulse-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
                 Surgical scars can develop following medical procedures where
                 the skin has been incised or stitched during healing. While

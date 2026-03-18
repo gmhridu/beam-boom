@@ -148,10 +148,10 @@ export default function Procedure() {
           <div className="relative flex justify-center lg:block">
             <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/micro-300x300-1.jpg"
-                alt="3D VJUVE Fractional CO2 Laser Treatment"
+                src="/logos/B&B-01.png"
+                alt="Beam & Bloom Logo"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg p-8"
               />
             </div>
           </div>

@@ -101,13 +101,13 @@ export default function SkinConditions() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
-          <span className="pulse-subtitle text-xs sm:text-sm md:text-base tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400 font-medium">
+          <span className="bb-subtitle text-xs sm:text-sm md:text-base tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400 font-medium">
             Beam & Bloom
           </span>
-          <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
+          <h2 className="bb-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
             Skin Conditions
           </h2>
-          <p className="pulse-light-description max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-lg">
+          <p className="bb-light-description max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-lg">
             We specialize in treating a wide range of skin conditions with
             cutting-edge laser and aesthetic technology.
           </p>

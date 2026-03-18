@@ -88,17 +88,17 @@ export default function Treatments() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 md:mb-12 gap-4 sm:gap-6">
           <div className="md:max-w-2xl order-2 md:order-1">
-            <p className="pulse-light-description text-sm sm:text-base mb-3 sm:mb-4 text-gray-600 dark:text-gray-300">
+            <p className="bb-light-description text-sm sm:text-base mb-3 sm:mb-4 text-gray-600 dark:text-gray-300">
               We are committed to sourcing and offering the latest, safest and
               most effective treatments in our clinic, which is why we use only
               the most advanced laser technology and skin products.
             </p>
           </div>
           <div className="text-left md:text-right order-1 md:order-2">
-            <span className="pulse-subtitle text-xs sm:text-sm tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400">
+            <span className="bb-subtitle text-xs sm:text-sm tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400">
               Beam & Bloom
             </span>
-            <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white">
+            <h2 className="bb-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white">
               Treatments
             </h2>
           </div>

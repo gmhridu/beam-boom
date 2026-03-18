@@ -7,13 +7,13 @@ export default function BookConsultation() {
     <section className="py-12 sm:py-16 md:py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <span className="pulse-subtitle text-xs sm:text-sm md:text-base tracking-wide uppercase block mb-3 sm:mb-4 text-gray-600 dark:text-gray-400">
+          <span className="bb-subtitle text-xs sm:text-sm md:text-base tracking-wide uppercase block mb-3 sm:mb-4 text-gray-600 dark:text-gray-400">
             Beam & Bloom
           </span>
-          <h2 className="pulse-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900 dark:text-white">
+          <h2 className="bb-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900 dark:text-white">
             Book a Consultation
           </h2>
-          <p className="pulse-light-description text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-gray-600 dark:text-gray-300">
+          <p className="bb-light-description text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-gray-600 dark:text-gray-300">
             Please get in touch with us to discuss your treatment and any questions you may have. We’ll be happy to guide you through the options and help you achieve the best possible results.
           </p>
           <ViewTransitionLink

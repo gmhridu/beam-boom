@@ -18,12 +18,12 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Left Content */}
           <div className="space-y-6">
-            <h2 className="pulse-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
               Eyebags / Tired
               <br />
               looking eyes
             </h2>
-            <div className="pulse-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
                 Eye bags and tired-looking eyes can be attributed to various
                 factors such as heavy eyelids, hooded eyes, puffiness under the
@@ -43,7 +43,7 @@ export default function About() {
                 and mainly a cosmetic concern.
               </p>
               <p>
-                At Pulse Laser Clinic, we provide advanced non-surgical,
+                At Beam & Bloom Clinic, we provide advanced non-surgical,
                 minimally invasive, and safe treatment options for each of these
                 concerns. From the gentle{" "}
                 <span className="font-bold">ClearLift laser</span>, which
