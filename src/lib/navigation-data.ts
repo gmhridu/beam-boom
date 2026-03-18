@@ -58,7 +58,10 @@ export const navigationData = [
         name: "Pores & Blackheads",
         href: "/skin-condition/enlarged-pores-blackheads" as Href,
       },
-
+      {
+        name: "Double Chin / Saggy Neck",
+        href: "/skin-condition/double-chin-saggy-neck" as Href,
+      },
       {
         name: "Sun Damage",
         href: "/skin-condition/sun-damage" as Href,

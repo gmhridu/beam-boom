@@ -19,10 +19,10 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
-    title: "About Us",
+    subtitle: "Beam & Boom Clinic",
+    title: "Double Chin & Saggy Neck",
     description:
-      "",
+      "Located in Dartford, Beam and Bloom is a boutique aesthetic clinic specialising in advanced laser and skin treatments. We offer carefully curated, non-surgical solutions designed to restore, refine and rejuvenate your skin.\n\nWith a commitment to excellence and client-focused care, every treatment is tailored to achieve natural, confidence-boosting results.",
     backgroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993687/afnkbgzglz8tm4yy3uva.avif",
     foregroundImage:

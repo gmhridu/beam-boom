@@ -16,7 +16,7 @@ const ContactInfo = () => {
           <div className="space-y-7 sm:space-y-8 lg:space-y-10">
             <div>
               <span className="text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
-                PULSE LASER
+                Beam & Bloom
               </span>
               <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
                 Contact Info
@@ -28,10 +28,10 @@ const ContactInfo = () => {
                 Find Us
               </h3>
               <address className="not-italic text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed space-y-1">
-                <p>70 Mortimer Street</p>
-                <p>Fitzrovia</p>
-                <p>W1W 7RY</p>
-                <p>London</p>
+                <p>Landale Gardens</p>
+                <p>Dartford</p>
+                <p>DA1 2QB</p>
+                <p>Kent</p>
                 <p>United Kingdom</p>
               </address>
             </div>
@@ -45,7 +45,7 @@ const ContactInfo = () => {
                 href="tel:+442034058483"
                 className="text-base sm:text-lg md:text-xl text-[#0ea5e9] hover:text-[#0284c7] font-medium transition-colors"
               >
-                020 3405 8483
+                078 9490 8026
               </a>
             </div>
 
@@ -55,10 +55,10 @@ const ContactInfo = () => {
               </h3>
 
               <a
-                href="mailto:info@pulse-clinic.co.uk"
+                href="mailto:Info@beamandbloomclinic.com"
                 className="text-base sm:text-lg md:text-xl text-[#0ea5e9] hover:text-[#0284c7] font-medium transition-colors underline break-all sm:break-normal"
               >
-                info@pulse-clinic.co.uk
+                Info@beamandbloomclinic.com
               </a>
             </div>
           </div>
@@ -66,7 +66,7 @@ const ContactInfo = () => {
           {/* Right - Google Map */}
           <div className="relative h-64 sm:h-80 md:h-96 lg:h-112.5 rounded-lg overflow-hidden border border-gray-200">
             <iframe
-              src="https://www.google.com/maps?q=70%20Mortimer%20Street%20London&output=embed"
+              src="https://www.google.com/maps?q=Landale%20Gardens%20Dartford&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

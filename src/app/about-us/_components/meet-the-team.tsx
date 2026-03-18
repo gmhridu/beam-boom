@@ -10,7 +10,7 @@ export default function MeetTheTeam() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Header */}
         <div className="text-center md:text-left mb-12">
-          <h2 className="pulse-title text-3xl md:text-4xl font-bold">Meet The Team</h2>
+          <h2 className="pulse-title text-3xl md:text-4xl font-bold">Meet Baiba</h2>
           <p className="pulse-subtitle text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">
             Beam & Bloom Clinic
           </p>

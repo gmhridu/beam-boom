@@ -82,7 +82,7 @@ export default function TermsAndConditions() {
           </h2>
           <p>
             If you have any questions about these terms, please contact us at
-            info@pulse-clinic.co.uk or call us at 020 3405 8483.
+            Info@beamandbloomclinic.com or call us at 020 3405 8483.
           </p>
         </section>
 

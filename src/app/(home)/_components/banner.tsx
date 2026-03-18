@@ -76,7 +76,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="banner-wrp relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -88,7 +88,7 @@ export default function Banner() {
               }`}
           >
             {/* Background Image */}
-            <div className="absolute inset-0 banner-img max-w-392 z-10">
+            <div className="absolute inset-0 banner-img z-10">
               <Image
                 src={slide.backgroundImage}
                 alt={slide.title}
@@ -125,7 +125,7 @@ export default function Banner() {
                 </div>
                 {/* Right Image */}
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
+                {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
                   <Image
                     src={slide.foregroundImage}
                     alt={slide.title}
@@ -142,14 +142,14 @@ export default function Banner() {
                       alt="Round shape"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         ))}
 
         {/* Slider Controls */}
-        <div className="absolute right-4 sm:right-8 md:right-16 lg:right-24 xl:right-70 bottom-4 sm:bottom-6 md:bottom-8 transform -translate-y-1/2 space-x-2 z-10 hidden sm:flex cursor-pointer">
+        <div className="absolute right-4 sm:right-8 md:right-16 bottom-4 sm:bottom-6 md:bottom-8 transform -translate-y-1/2 space-x-2 z-10 hidden sm:flex cursor-pointer">
           <button
             type="button"
             onClick={prevSlide}

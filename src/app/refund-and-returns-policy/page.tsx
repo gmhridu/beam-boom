@@ -68,7 +68,7 @@ export default function RefundPolicy() {
           </h2>
           <p>
             If you have any questions regarding refunds or returns, please speak
-            to our clinic manager or contact us at info@pulse-clinic.co.uk.
+            to our clinic manager or contact us at Info@beamandbloomclinic.com.
           </p>
         </section>
 
