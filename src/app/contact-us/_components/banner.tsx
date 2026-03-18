@@ -19,8 +19,8 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
-    title: "Shop",
+    subtitle: "Beam & Bloom",
+    title: "Contact Us",
     description:
       "We stock a wide range of medical and cosmeceutical products to purchase in clinic. Please book a skin consultation so that we can assess your skin and prescribe the appropriate products.",
     backgroundImage:
@@ -54,7 +54,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="relative banner-wrp h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -66,7 +66,7 @@ export default function Banner() {
               }`}
           >
             {/* Background Image */}
-            <div className="absolute inset-0 banner-img max-w-392 z-10">
+            <div className="absolute inset-0 banner-img z-10">
               <Image
                 src={slide.backgroundImage}
                 alt={slide.title}
@@ -100,7 +100,7 @@ export default function Banner() {
                 </div>
                 {/* Right Image */}
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
+                {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-140 w-2/8 z-20">
                   <Image
                     src={slide.foregroundImage}
                     alt={slide.title}
@@ -116,7 +116,7 @@ export default function Banner() {
                       alt="Round shape"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
