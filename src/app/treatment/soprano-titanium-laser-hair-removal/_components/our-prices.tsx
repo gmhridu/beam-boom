@@ -306,7 +306,7 @@ export default function OurPrices() {
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 items-end">
           <div>
-            <p className="pulse-light-description max-w- font-sans">
+            <p className="bb-light-description max-w- font-sans">
               Please speak to a member of the reception team for more
               information. This is what helps us deliver the superior results
               our clients have come to expect of us.
@@ -328,10 +328,10 @@ export default function OurPrices() {
             </div>
           </div>
           <div className="text-right">
-            <span className="pulse-subtitle tracking-wide uppercase block mb-2 text-gray-600 font-medium">
-              Pulse Laser
+            <span className="bb-subtitle tracking-wide uppercase block mb-2 text-gray-600 font-medium">
+              Beam & Bloom
             </span>
-            <h2 className="pulse-title text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="bb-title text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Our Prices
             </h2>
           </div>

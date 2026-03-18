@@ -44,15 +44,15 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase">
+            <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase">
               BEAM & BLOOM CLINIC
             </span>
-            <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               About Us
             </h2>
-            <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl mb-6 md:mb-10 space-y-3 md:space-y-4">
+            <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl mb-6 md:mb-10 space-y-3 md:space-y-4">
               <p>
-                <span className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
+                <span className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
                   Beam and Bloom is a specialist skin and laser clinic based in Dartford, founded from Baiba’s passion for helping people feel confident in their own skin.
                 </span>
                 With advanced training in Permanent Make Up (PMU), laser hair removal, laser tattoo removal and Fractional CO2 resurfacing, Baiba combines clinical precision with a gentle, artistic approach to deliver natural, confidence-enhancing results.
@@ -79,7 +79,7 @@ export default function About() {
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif"
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
                 loading="lazy"

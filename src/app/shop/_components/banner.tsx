@@ -19,7 +19,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "PLUSE LASER",
+    subtitle: "Beam & Boom",
     title: "Shop",
     description:
       "We stock a wide range of medical and cosmeceutical products to purchase in clinic. Please book a skin consultation so that we can assess your skin and prescribe the appropriate products.",
@@ -81,11 +81,11 @@ export default function Banner() {
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
                   <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
-                    <span className="pulse-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
+                    <span className="bb-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
                       {slide.subtitle}
                     </span>
-                    <h1 className="pulse-title mb-8">{slide.title}</h1>
-                    <p className="pulse-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
+                    <h1 className="bb-title mb-8">{slide.title}</h1>
+                    <p className="bb-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
                       {slide.description}
                     </p>
                     <ViewTransitionLink
@@ -202,7 +202,7 @@ export default function Banner() {
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
           <ViewTransitionLink
             href={"/about" as Href}
-            className="pulse-light-description flex flex-col items-center"
+            className="bb-light-description flex flex-col items-center"
           >
             <span className="text-lg mb-2">Scroll Down</span>
             <CaretRightIcon size={24} className="rotate-90" />

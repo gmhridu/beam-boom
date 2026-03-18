@@ -52,7 +52,7 @@ const Offers = () => {
               overflow-hidden z-20 rounded-lg">
               <Image
                 src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/skin-treatment-image.jpg"
-                alt="Special Offers at Pulse Laser Clinic"
+                alt="Special Offers at Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
               />

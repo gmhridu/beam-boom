@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund and Returns Policy | Pulse Laser Clinic",
+  title: "Refund and Returns Policy | Beam & Bloom Clinic",
   description:
-    "Refund and returns policy for Pulse Laser Aesthetic Clinic services and products.",
+    "Refund and returns policy for Beam & Bloom Clinic services and products.",
 };
 
 export default function RefundPolicy() {

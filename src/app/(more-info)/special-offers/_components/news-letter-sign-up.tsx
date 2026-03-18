@@ -41,8 +41,8 @@ export default function NewsletterSignup() {
       <div className="max-w-4xl mx-auto px-5 sm:px-8">
         {/* Small subtitle */}
         <div className="text-center mb-3">
-          <span className="pulse-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
-            PULSE LASER
+          <span className="bb-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
+            BEAM & BLOOM
           </span>
         </div>
 

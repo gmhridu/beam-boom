@@ -39,7 +39,7 @@ export default function AsSeenIn() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Centered heading with "As Seen In" subtitle */}
         <div className="text-center mb-10 md:mb-12">
-          <span className="pulse-subtitle text-lg font-medium text-gray-600 tracking-wide uppercase">
+          <span className="bb-subtitle text-lg font-medium text-gray-600 tracking-wide uppercase">
             As Seen In
           </span>
         </div>

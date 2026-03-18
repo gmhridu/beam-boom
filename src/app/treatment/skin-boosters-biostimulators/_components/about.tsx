@@ -21,15 +21,15 @@ export default function About() {
 
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <span className="pulse-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
+            <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               Skin Boosters /
               <br />
               Biostimulators
             </h2>
-            <div className="pulse-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
+            <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
                 If you're looking to revitalise and deeply hydrate your skin, skin boosters and biostimulators offer an effective non-surgical solution. These advanced injectable treatments work beneath the surface of the skin to improve hydration, stimulate collagen production, and enhance overall skin quality.
               </p>
@@ -59,7 +59,7 @@ export default function About() {
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
                 src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/10/cosmetic-aesthetic-treatment-face-caucasian-260nw-2419112687-e1727863055754.webp"
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
               />

@@ -76,7 +76,7 @@ export default function Procedure() {
               overflow-hidden z-10">
               <Image
                 src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/micro-300x300-1.jpg"
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
               />

@@ -21,10 +21,10 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <h2 className="pulse-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
               Laser Hair Removal
             </h2>
-            <div className="pulse-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
                 Treat 2 or more areas & receive 20% ‘multiple area’ discount off
                 the standard pricing.
@@ -49,7 +49,7 @@ export default function About() {
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
                 src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/09/Heart.jpg"
-                alt="About Pulse Laser Clinic"
+                alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
               />

@@ -106,13 +106,13 @@ export default function Banner() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 w-full items-center">
                   {/* Left Content */}
                   <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
-                    <span className="pulse-subtitle text-xs sm:text-sm md:text-base font-medium tracking-wide uppercase">
+                    <span className="bb-subtitle text-xs sm:text-sm md:text-base font-medium tracking-wide uppercase">
                       {slide.subtitle}
                     </span>
-                    <h1 className="pulse-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+                    <h1 className="bb-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                       {slide.title}
                     </h1>
-                    <p className="pulse-light-description text-gray-700 dark:text-gray-300 text-sm sm:text-base md:text-lg max-w-xl md:max-w-2xl mb-6 md:mb-10">
+                    <p className="bb-light-description text-gray-700 dark:text-gray-300 text-sm sm:text-base md:text-lg max-w-xl md:max-w-2xl mb-6 md:mb-10">
                       {slide.description}
                     </p>
                     <ViewTransitionLink
@@ -206,7 +206,7 @@ export default function Banner() {
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
           <ViewTransitionLink
             href={"/about" as Href}
-            className="pulse-light-description flex flex-col items-center text-gray-700 dark:text-gray-300"
+            className="bb-light-description flex flex-col items-center text-gray-700 dark:text-gray-300"
           >
             <span className="text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
               Scroll Down

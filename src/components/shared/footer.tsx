@@ -10,12 +10,6 @@ export default function Footer() {
   return (
     <footer
       className="relative bg-gray-950 text-gray-200 pt-16 pb-10 overflow-hidden"
-      style={{
-        backgroundImage: `url('https://www.pulse-clinic.co.uk/wp-content/themes/pulselaser/assets/images/footer-back.webp')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
     >
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/75"></div>
@@ -27,8 +21,8 @@ export default function Footer() {
           <div className="footer-logo-block">
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/07/PulseLogo-1.png"
-                alt="Pulse Laser Logo"
+                src="/logos/B&B-01.png"
+                alt="Beam & Bloom Logo"
                 width={180}
                 height={60}
                 className="h-12 w-auto brightness-110"
@@ -40,30 +34,30 @@ export default function Footer() {
               <ul className="flex space-x-6">
                 <li>
                   <a
-                    href="https://www.facebook.com/PulseLaserClinic/"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors text-xl"
+                    className="text-gray-300 hover:text-white transition-colors text-xl font-bold"
                   >
                     f
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/PulseClinicLDN"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors text-xl"
+                    className="text-gray-300 hover:text-white transition-colors text-xl font-bold"
                   >
                     X
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/pulse_laser/"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors text-xl"
+                    className="text-gray-300 hover:text-white transition-colors text-xl font-bold"
                   >
                     insta
                   </a>
@@ -112,13 +106,9 @@ export default function Footer() {
                 className="p-3.5 text-white bg-white rounded hover:bg-white/80 transition backdrop-blur-sm"
                 aria-label="Subscribe"
               >
-                <Image
-                  src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/email.svg"
-                  alt="Send"
-                  width={22}
-                  height={22}
-                  className="invert brightness-150"
-                />
+                <div className="w-[22px] h-[22px] flex items-center justify-center bg-black rounded-full text-white text-[10px] font-bold">
+                  GO
+                </div>
               </button>
             </form>
           </div>
@@ -134,10 +124,10 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Phone Number</p>
                   <a
-                    href="tel:02034058483"
+                    href="tel:07894908026"
                     className="text-white hover:text-blue-300 transition"
                   >
-                    020 3405 8483
+                    078 9490 8026
                   </a>
                 </div>
               </div>
@@ -157,12 +147,12 @@ export default function Footer() {
               <div className="flex items-start gap-4">
                 <div>
                   <p className="text-gray-400 text-sm">Address Info</p>
-                  <p className="text-white leading-relaxed">
-                    70 Mortimer Street
+                  <p className="text-white leading-relaxed text-sm">
+                    Landale Gardens
                     <br />
-                    London, W1W 7RY
+                    Dartford, DA1 2QB
                     <br />
-                    United Kingdom
+                    Kent, United Kingdom
                   </p>
                 </div>
               </div>
@@ -173,7 +163,7 @@ export default function Footer() {
         {/* Bottom copyright bar */}
         <div className="relative z-10 mt-16 pt-8 border-t border-gray-700/50 text-center text-sm text-gray-500">
           <p>
-            © 2026 Pulse Laser. All Rights Reserved.
+            © 2026 Beam & Bloom. All Rights Reserved.
             <span className="mx-3">|</span>
             <ViewTransitionLink
               href={"/terms-and-conditions" as Href}

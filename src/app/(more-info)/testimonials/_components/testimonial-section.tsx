@@ -35,7 +35,7 @@ const reviews: Review[] = [
     platform: "on Google",
     rating: 5,
     date: "26 days ago",
-    text: "I had a fantastic experience visiting Pulse Laser Clinic! Most of my capillaries faded and my sunspots are nearly invisible. Maria is incredibly professional...",
+    text: "I had a fantastic experience visiting Beam & Bloom Clinic! Most of my capillaries faded and my sunspots are nearly invisible. Maria is incredibly professional...",
     avatarColor: "bg-blue-500",
   },
   {
@@ -51,7 +51,7 @@ const reviews: Review[] = [
     platform: "on Google",
     rating: 5,
     date: "a month ago",
-    text: "Sooo happy that I found Pulse Laser Clinic and Yasmina! I have been twice so far to have ACP removal of a large mole next to my eye and also...",
+    text: "Sooo happy that I found Beam & Bloom Clinic and Yasmina! I have been twice so far to have ACP removal of a large mole next to my eye and also...",
     avatarColor: "bg-amber-500",
   },
   {

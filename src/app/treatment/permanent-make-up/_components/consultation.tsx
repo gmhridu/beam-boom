@@ -18,7 +18,7 @@ export default function Consultation() {
 
           {/* Brand */}
           <span className="text-xs tracking-[0.25em] uppercase text-gray-500 font-medium">
-            Pulse Laser
+            Beam & Bloom
           </span>
 
           {/* Heading */}

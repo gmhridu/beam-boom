@@ -71,16 +71,26 @@ export const Header = () => {
             isScrolled ? "py-2.5 md:py-3" : "py-3 md:py-4"
           }`}
         >
-          {/* Logo */}
-          <ViewTransitionLink href="/" className="shrink-0">
-            <Image
-              src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/PulseLogo.png"
-              alt="Pulse Laser Clinic Logo"
-              width={180}
-              height={36}
-              priority
-              className="h-7 md:h-9 w-auto object-contain dark:brightness-0 dark:invert"
-            />
+          {/* Logo + Brand Name */}
+          <ViewTransitionLink href="/" className="shrink-0 flex items-center gap-3 md:gap-4 group">
+            <div className="relative">
+              <Image
+                src="/logos/B&B-01.png"
+                alt="Beam & Bloom Logo"
+                width={120}
+                height={36}
+                priority
+                className="h-9 md:h-11 w-auto object-contain dark:brightness-0 dark:invert transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-lg md:text-xl font-bold tracking-[0.1em] text-gray-900 dark:text-gray-100 uppercase leading-none whitespace-nowrap">
+                Beam & Bloom
+              </h1>
+              <span className="text-[10px] md:text-[11px] font-medium tracking-[0.2em] text-gray-500 dark:text-gray-400 uppercase leading-tight mt-0.5">
+                Laser & Skin Clinic
+              </span>
+            </div>
           </ViewTransitionLink>
 
           {/* Desktop Navigation */}
