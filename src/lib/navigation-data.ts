@@ -29,6 +29,10 @@ export const navigationData = [
         href: "/treatment/soprano-titanium-laser-hair-removal" as Href,
       },
       {
+        name: "3D Vjuve Fractional CO2 Laser",
+        href: "/treatment/3d-vjuve-fractional-co2-laser" as Href,
+      },
+      {
         name: "Skin Boosters / Biostimulators",
         href: "/treatment/skin-boosters-biostimulators" as Href,
       },
