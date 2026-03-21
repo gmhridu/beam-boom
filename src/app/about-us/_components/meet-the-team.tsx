@@ -1,7 +1,5 @@
 "use client";
 
-import { Href, ViewTransitionLink } from "@/components/view-transition-link";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 export default function MeetTheTeam() {
@@ -42,14 +40,6 @@ export default function MeetTheTeam() {
             <p>
               Beam and Bloom isn’t just about aesthetics, it’s about helping you beam with confidence and bloom into your best self.
             </p>
-            <ViewTransitionLink
-              href={"/about-us" as Href}
-              target="_blank"
-              className="inline-flex items-center gap-2 bg-black dark:bg-white dark:text-black text-white px-6 py-3 font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors text-sm sm:text-base"
-            >
-              Read more
-              <ExternalLink size={14} className="sm:w-4 sm:h-4" />
-            </ViewTransitionLink>
           </div>
         </div>
       </div>
