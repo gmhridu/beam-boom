@@ -20,7 +20,7 @@ const slides: Slide[] = [
   {
     id: 1,
     subtitle: "Beam & Boom",
-    title: "Skin Boosters & Biostimulators",
+    title: "Advanced Skin Boosters & Biostimulators",
     description: "",
     backgroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073965/uaivrlrzkufsl05d9cib.avif",
@@ -95,6 +95,8 @@ export default function Banner() {
         {/* Social Media */}
         <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
           <ul className="flex items-center p-0 m-0">
+
+            {/* Facebook */}
             <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
               <a
                 href="https://www.facebook.com/PulseLaserClinic/"
@@ -102,71 +104,56 @@ export default function Banner() {
                 className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
               >
                 <svg
-                  className="svg-inline--fa fa-facebook-f h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="facebook-f"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-auto"
                   viewBox="0 0 320 512"
                 >
                   <path
                     fill="currentColor"
                     d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                  ></path>
+                  />
                 </svg>
                 <span className="ml-2.5">Facebook</span>
               </a>
             </li>
+
+            {/* TikTok */}
             <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
               <a
-                href="https://twitter.com/PulseClinicLDN"
+                href="https://www.tiktok.com/" // replace with your real TikTok link
                 target="_blank"
                 className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
               >
                 <svg
-                  className="svg-inline--fa fa-x-twitter h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="x-twitter"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
+                  className="h-5 w-auto"
+                  viewBox="0 0 448 512"
                 >
                   <path
                     fill="currentColor"
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                  ></path>
+                    d="M448,209.9a210.1,210.1,0,0,1-122.8-39.5V349.7A162.6,162.6,0,1,1,185,188.3v89.2a74.6,74.6,0,1,0,52.2,71.3V0h88a121.2,121.2,0,0,0,122.8,121.2Z"
+                  />
                 </svg>
-                <span className="ml-2.5">Twitter</span>
+                <span className="ml-2.5">TikTok</span>
               </a>
             </li>
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
+
+            {/* Instagram */}
+            <li className="list-none text-[20px] leading-5 text-black px-5">
               <a
                 href="https://www.instagram.com/pulse_laser/"
                 target="_blank"
                 className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
               >
                 <svg
-                  className="svg-inline--fa fa-instagram h-5 w-auto"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="instagram"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
+                  className="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
                 >
-                  <path
-                    fill="currentColor"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  ></path>
+                  <path d="M7.75 2C4.68 2 2 4.68 2 7.75v8.5C2 19.32 4.68 22 7.75 22h8.5C19.32 22 22 19.32 22 16.25v-8.5C22 4.68 19.32 2 16.25 2h-8.5zm0 2h8.5C18.43 4 20 5.57 20 7.75v8.5c0 2.18-1.57 3.75-3.75 3.75h-8.5C5.57 20 4 18.43 4 16.25v-8.5C4 5.57 5.57 4 7.75 4zm4.25 2.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm0 2a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm5.25-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" />
                 </svg>
                 <span className="ml-2.5">Instagram</span>
               </a>
             </li>
+
           </ul>
         </div>
 

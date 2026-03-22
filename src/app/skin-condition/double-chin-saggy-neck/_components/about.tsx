@@ -29,79 +29,32 @@ export default function About() {
             </h2>
             <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
               <p>
-                A double chin and sagging neck can develop as a result of ageing, genetics, weight changes, or a gradual loss of collagen and skin elasticity. Over time, the skin beneath the chin and around the neck may begin to loosen, creating a softer jawline and the appearance of excess fullness under the chin.
+                One of the most effective treatments we offer for this concern is
+                <span className="font-semibold">Fractional CO₂ Laser Skin Resurfacing.</span>
               </p>
               <p>
-                As collagen and elastin production naturally decline with age, the skin can lose its firmness and structure. This can lead to loose skin, fine lines, and reduced definition around the lower face and neck area.
-              </p>
-
-              <p className="font-bold text-black pt-4">
-                Common concerns associated with this area include:
-              </p>
-
-              <ul className="space-y-4">
-                <li>
-                  <span className="font-bold">
-                    • Loose or Sagging Skin
-                  </span>{" "}
-                  – Reduced collagen can cause the skin around the neck and jawline to appear less firm.
-                </li>
-                <li>
-                  <span className="font-bold">• Loss of Jawline Definition</span> –
-                  Skin laxity may soften the natural contour of the jawline.
-                </li>
-                <li>
-                  <span className="font-bold">• Double Chin Appearance</span> –
-                  A combination of loose skin and excess tissue can create fullness beneath the chin.
-                </li>
-                <li>
-                  <span className="font-bold">• Fine Lines and Wrinkles</span> –
-                  The neck area is particularly prone to visible signs of ageing.
-                </li>
-              </ul>
-
-              <p className="pt-6">
-                At <span className='font-bold'>Beam & Bloom</span>, we understand how changes to the jawline and neck area can affect overall facial balance and confidence. Our clinic offers advanced treatments designed to tighten the skin and restore a more defined, youthful appearance.
-              </p>
-              <p className="pt-6">
-                One of the most effective treatments we offer for this concern is Fractional CO₂ Laser Skin Resurfacing.
-              </p>
-
-              <p className="pt-6">
                 This advanced laser technology works by creating microscopic channels within the skin, stimulating the body’s natural healing response and encouraging the production of new collagen and elastin. As the skin regenerates, it becomes firmer, smoother, and more tightened.
               </p>
 
-              <p className="pt-6">
+              <p className="font-bold text-black pt-4">
                 Fractional CO₂ laser treatment can help:
               </p>
 
               <ul className="space-y-4">
+                <li>• Tighten loose skin around the neck and jawline</li>
                 <li>
-                  • Tighten loose skin around the neck and jawline
+                  <span className="font-semibold">• Loss of Jawline Definition</span> – Skin laxity may soften the natural contour of the jawline.
                 </li>
-                <li>
-                  <span className="font-bold">• Loss of Jawline Definition</span> –
-                  Skin laxity may soften the natural contour of the jawline.
-                </li>
-                <li>
-                  • Improve skin firmness and elasticity
-                </li>
-                <li>
-                  • Stimulate collagen production
-                </li>
-                <li>
-                  • Smooth fine lines and wrinkles
-                </li>
-                <li>
-                  • Improve overall contour and definition
-                </li>
+                <li>• Improve skin firmness and elasticity</li>
+                <li>• Stimulate collagen production</li>
+                <li>• Smooth fine lines and wrinkles</li>
+                <li>• Improve overall contour and definition</li>
               </ul>
-
-              <p className="pt-6">
+              <p>
                 Over time, the skin becomes noticeably firmer and more lifted as collagen rebuilds and the skin’s structure improves.
               </p>
 
-              <p className="pt-6">
+              <p>
                 During your consultation at Beam & Bloom, our specialist will carefully assess the skin and discuss your concerns before creating a personalised treatment plan designed to achieve natural-looking, long-lasting results.
               </p>
             </div>

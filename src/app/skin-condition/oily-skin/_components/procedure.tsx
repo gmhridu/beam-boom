@@ -86,7 +86,7 @@ export default function Procedure() {
               overflow-hidden z-10"
             >
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2024/06/9ff5196c-a445-4977-a14e-aa71b88cb715.jpg"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774167977/kyfivp5igxasc3viufqx.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-sm"

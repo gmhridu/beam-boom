@@ -4,12 +4,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Href, ViewTransitionLink } from "../view-transition-link";
+import { FacebookLogoIcon, InstagramLogoIcon, TiktokLogoIcon } from '@phosphor-icons/react';
 
 export default function Footer() {
+
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer
       className="relative bg-gray-950 text-gray-200 pt-16 pb-10 overflow-hidden"
+      style={{
+        backgroundImage: `url('https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/75"></div>
@@ -19,7 +28,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Column 1 - Logo + Social */}
           <div className="footer-logo-block">
-            <Link href="/" className="inline-block mb-6">
+            <Link
+              href="/"
+              className="inline-flex flex-col items-center justify-center mb-6 text-center"
+            >
               <Image
                 src="/logos/B&B-01.png"
                 alt="Beam & Bloom Logo"
@@ -28,40 +40,51 @@ export default function Footer() {
                 className="h-12 w-auto brightness-110"
                 priority
               />
+
+              <p className="mt-2 text-gray-400 text-base font-bold tracking-wide">
+                Beam & Bloom
+              </p>
             </Link>
 
             <div className="footer-social-icon mt-4">
-              <ul className="flex space-x-6">
+              <ul className="flex space-x-5">
+
+                {/* Facebook */}
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/PulseLaserClinic/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors text-xl font-bold"
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition backdrop-blur-sm"
                   >
-                    f
+                    <FacebookLogoIcon className="text-white text-sm" />
                   </a>
                 </li>
+
+                {/* TikTok */}
                 <li>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors text-xl font-bold"
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition backdrop-blur-sm"
                   >
-                    X
+                    <TiktokLogoIcon className="text-white text-sm" />
                   </a>
                 </li>
+
+                {/* Instagram */}
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/pulse_laser/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors text-xl font-bold"
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition backdrop-blur-sm"
                   >
-                    insta
+                    <InstagramLogoIcon className="text-white text-sm" />
                   </a>
                 </li>
+
               </ul>
             </div>
           </div>
@@ -106,9 +129,13 @@ export default function Footer() {
                 className="p-3.5 text-white bg-white rounded hover:bg-white/80 transition backdrop-blur-sm"
                 aria-label="Subscribe"
               >
-                <div className="w-[22px] h-[22px] flex items-center justify-center bg-black rounded-full text-white text-[10px] font-bold">
-                  GO
-                </div>
+                <Image
+                  src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/email.svg"
+                  alt="Send"
+                  width={22}
+                  height={22}
+                  className="invert brightness-150"
+                />
               </button>
             </form>
           </div>
@@ -136,7 +163,7 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Email Address</p>
                   <a
-                    href="mailto:Info@beamandbloomclinic.com"
+                    href="mailto:info@pulse-clinic.co.uk"
                     className="text-white hover:text-blue-300 transition"
                   >
                     Info@beamandbloomclinic.com
@@ -147,7 +174,7 @@ export default function Footer() {
               <div className="flex items-start gap-4">
                 <div>
                   <p className="text-gray-400 text-sm">Address Info</p>
-                  <p className="text-white leading-relaxed text-sm">
+                  <p className="text-white leading-relaxed">
                     Landale Gardens
                     <br />
                     Dartford, DA1 2QB
@@ -163,7 +190,7 @@ export default function Footer() {
         {/* Bottom copyright bar */}
         <div className="relative z-10 mt-16 pt-8 border-t border-gray-700/50 text-center text-sm text-gray-500">
           <p>
-            © 2026 Beam & Bloom. All Rights Reserved.
+            © {currentYear} Beam & Bloom. All Rights Reserved.
             <span className="mx-3">|</span>
             <ViewTransitionLink
               href={"/terms-and-conditions" as Href}

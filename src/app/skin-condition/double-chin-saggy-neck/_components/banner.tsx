@@ -22,7 +22,7 @@ const slides: Slide[] = [
     subtitle: "Beam & Boom Clinic",
     title: "Double Chin & Saggy Neck",
     description:
-      "Located in Dartford, Beam and Bloom is a boutique aesthetic clinic specialising in advanced laser and skin treatments. We offer carefully curated, non-surgical solutions designed to restore, refine and rejuvenate your skin.\n\nWith a commitment to excellence and client-focused care, every treatment is tailored to achieve natural, confidence-boosting results.",
+      "",
     backgroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993687/afnkbgzglz8tm4yy3uva.avif",
     foregroundImage:
@@ -88,12 +88,12 @@ export default function Banner() {
                     <p className="bb-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
                       {slide.description}
                     </p>
-                    <ViewTransitionLink
+                    {/* <ViewTransitionLink
                       href={"/contact-us" as Href}
                       className="btn btn-black"
                     >
                       {slide.buttonText}
-                    </ViewTransitionLink>
+                    </ViewTransitionLink> */}
                   </div>
                 </div>
                 {/* Right Image */}
@@ -120,6 +120,70 @@ export default function Banner() {
           </div>
         ))}
 
+        {/* Social Media */}
+        <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
+          <ul className="flex items-center p-0 m-0">
+
+            {/* Facebook */}
+            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
+              <a
+                href="https://www.facebook.com/PulseLaserClinic/"
+                target="_blank"
+                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+              >
+                <svg
+                  className="h-5 w-auto"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  />
+                </svg>
+                <span className="ml-2.5">Facebook</span>
+              </a>
+            </li>
+
+            {/* TikTok */}
+            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
+              <a
+                href="https://www.tiktok.com/" // replace with your real TikTok link
+                target="_blank"
+                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+              >
+                <svg
+                  className="h-5 w-auto"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M448,209.9a210.1,210.1,0,0,1-122.8-39.5V349.7A162.6,162.6,0,1,1,185,188.3v89.2a74.6,74.6,0,1,0,52.2,71.3V0h88a121.2,121.2,0,0,0,122.8,121.2Z"
+                  />
+                </svg>
+                <span className="ml-2.5">TikTok</span>
+              </a>
+            </li>
+
+            {/* Instagram */}
+            <li className="list-none text-[20px] leading-5 text-black px-5">
+              <a
+                href="https://www.instagram.com/pulse_laser/"
+                target="_blank"
+                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+              >
+                <svg
+                  className="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M7.75 2C4.68 2 2 4.68 2 7.75v8.5C2 19.32 4.68 22 7.75 22h8.5C19.32 22 22 19.32 22 16.25v-8.5C22 4.68 19.32 2 16.25 2h-8.5zm0 2h8.5C18.43 4 20 5.57 20 7.75v8.5c0 2.18-1.57 3.75-3.75 3.75h-8.5C5.57 20 4 18.43 4 16.25v-8.5C4 5.57 5.57 4 7.75 4zm4.25 2.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm0 2a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm5.25-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" />
+                </svg>
+                <span className="ml-2.5">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
         {/* Scroll Down */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
           <ViewTransitionLink

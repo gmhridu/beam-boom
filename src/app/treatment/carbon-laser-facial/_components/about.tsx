@@ -25,50 +25,16 @@ export default function About() {
               Beam & Boom
             </span>
             <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
-              ClearSkin Pro Acne
-              <br />
-              Treatment
+              Advanced Carbon Laser Facial
             </h2>
             <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
-                At Beam & Boom Aesthetic Clinic we pride ourselves on offering
-                the latest Harmony XL Pro ClearSkin treatment to help treat
-                active acne (vulgaris) and acne scars. Using the latest in laser
-                acne treatment, our specialist clinic based in Fitzrovia,
-                London, assist in reducing the signs and scars of acne in a pain
-                free, quick process that has no downtime.
+                At Beam and Bloom in Dartford, we offer the Advanced Carbon Laser Facial — a highly effective, non-invasive treatment designed to deeply cleanse, refine and revitalise the skin.
               </p>
               <p>
-                ClearSkin PRO is a non-ablative fractional laser treatment with
-                a wavelength of 1540 nm. The energy from this laser penetrates
-                to the dermis (under the skin’s surface) to create microscopic
-                “columns” or zones of thermal injury, triggering the body’s
-                healing response: new collagen, elastin, and extracellular
-                matrix are produced. It specifically targets sebaceous glands to
-                reduce oil production, destroys acne-causing bacteria (e.g., P.
-                acnes), and clears deep pore congestion, while still leaving the
-                skin surface intact meaning there is little to no downtime with
-                this treatment.
+                Often referred to as the “Hollywood Facial,” this treatment uses a layer of medical-grade carbon applied to the skin, which is then targeted with laser energy. The laser works to gently heat and remove the carbon particles along with impurities, oil and dead skin cells, leaving the skin clearer, smoother and more radiant.
               </p>
-              <p>A course of 4-6 treatments is required at 2 week intervals.</p>
-              <p>Suitable for the treatment of:</p>
-              <p>
-                <span className="font-bold">• Active acne</span> (including
-                moderate to severe forms) such as papules, pustules and
-                nodules.{" "}
-              </p>
-              <p>
-                <span className="font-bold">• Excess oiliness</span> and
-                overactive sebaceous glands and enlarged pores.
-              </p>
-              <p>
-                <span className="font-bold">• Acne scarring</span> and uneven
-                skin texture (post acne marks).
-              </p>
-              <p>
-                <span className="font-bold">• Skin rejuvenation</span> fine
-                lines, wrinkles, laxity, uneven tone and texture.
-              </p>
+              <p>This advanced treatment helps to exfoliate the skin, reduce excess oil, minimise the appearance of pores, and improve overall skin tone, all with little to no downtime.</p>
             </div>
             <div className="pt-2">
               <ViewTransitionLink
@@ -86,7 +52,7 @@ export default function About() {
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043904/ufbp9wtt73zatigyxsos.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774162490/s8aixrpquvwgdjve50hx.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"

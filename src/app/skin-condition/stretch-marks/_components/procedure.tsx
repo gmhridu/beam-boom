@@ -93,7 +93,7 @@ export default function Procedure() {
               overflow-hidden z-10"
             >
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773080339/dm3i9p9pizrudpxicfs4.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772993005/lssgwszxv71txe1nthao.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-sm"
