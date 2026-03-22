@@ -39,9 +39,9 @@ export default function Procedure() {
   return (
     <section
       id="procedure"
-      className="py-16 md:py-24 bg-gray-50 banner-wrp relative overflow-hidden"
+      className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950 banner-wrp relative overflow-hidden transition-colors duration-300"
     >
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white dark:bg-gray-900 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center mb-12">
@@ -55,8 +55,8 @@ export default function Procedure() {
                 size="lg"
                 onClick={() => setActiveTab("how")}
                 className={`h-12 sm:h-14 px-6 ${activeTab !== "how"
-                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
-                  : ""
+                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
+                  : "dark:bg-white dark:text-black"
                   }`}
               >
                 How it works
@@ -66,8 +66,8 @@ export default function Procedure() {
                 size="lg"
                 onClick={() => setActiveTab("procedure")}
                 className={`h-12 sm:h-14 px-6 ${activeTab !== "procedure"
-                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
-                  : ""
+                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
+                  : "dark:bg-white dark:text-black"
                   }`}
               >
                 The Procedure
@@ -77,8 +77,8 @@ export default function Procedure() {
                 size="lg"
                 onClick={() => setActiveTab("faq")}
                 className={`h-12 sm:h-14 px-6 ${activeTab !== "faq"
-                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
-                  : ""
+                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
+                  : "dark:bg-white dark:text-black"
                   }`}
               >
                 FAQ
@@ -88,8 +88,8 @@ export default function Procedure() {
                 size="lg"
                 onClick={() => setActiveTab("after-care")}
                 className={`h-12 sm:h-14 px-6 ${activeTab !== "after-care"
-                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
-                  : ""
+                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
+                  : "dark:bg-white dark:text-black"
                   }`}
               >
                 After Care Instructions
@@ -99,7 +99,7 @@ export default function Procedure() {
             {/* TAB CONTENT */}
 
             {activeTab === "how" && (
-              <div className="space-y-4 text-[#757575]">
+              <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 <p className="text-lg">
                   Permanent make-up is a cosmetic treatment that enhances your
                   natural features using specialised micropigmentation
@@ -108,14 +108,14 @@ export default function Procedure() {
 
                 <p className="text-lg">
                   This treatment can enhance areas such as{" "}
-                  <span className="font-medium text-black">
+                  <span className="font-medium text-black dark:text-white transition-colors duration-300">
                     eyebrows, eyeliner and lips
                   </span>
                   , helping create a more balanced appearance.
                 </p>
 
                 <p className="text-lg">
-                  At <span className="font-medium text-black">Beam & Bloom</span>
+                  At <span className="font-medium text-black dark:text-white transition-colors duration-300">Beam & Bloom</span>
                   , every treatment is customised to suit your skin tone and
                   facial structure.
                 </p>
@@ -129,7 +129,7 @@ export default function Procedure() {
             )}
 
             {activeTab === "procedure" && (
-              <div className="space-y-4 text-[#757575]">
+              <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 <p className="text-lg">
                   Your permanent make-up treatment begins with a detailed
                   consultation where we design the shape and colour that best
@@ -159,10 +159,10 @@ export default function Procedure() {
             )}
 
             {activeTab === "faq" && (
-              <div className="space-y-6 text-[#757575]">
+              <div className="space-y-6 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 {faqs.map((faq, i) => (
                   <div key={i}>
-                    <h3 className="text-lg font-semibold text-black mb-2">
+                    <h3 className="text-lg font-semibold text-black dark:text-white mb-2 transition-colors duration-300">
                       {faq.q}
                     </h3>
                     <p>{faq.a}</p>
@@ -173,7 +173,7 @@ export default function Procedure() {
 
 
             {activeTab === "after-care" && (
-              <div className="space-y-4 text-[#757575]">
+              <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 <p className="text-lg">
                   For the first 7–10 days keep the treated area clean and dry.
                   Avoid excessive sweating, saunas, swimming pools and direct
@@ -193,11 +193,11 @@ export default function Procedure() {
           <div className="relative flex justify-center lg:block">
             <div
               className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150
-              h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10"
+              h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10 dark:bg-white dark:p-4 dark:rounded-lg transition-all duration-300"
             >
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774119467/xs4z9qumsnvn9uvsdqt2.avif"
-                alt="Permanent make-up treatment"
+                alt="Permanent make-up treatment at Beam & Bloom"
                 fill
                 className="object-cover rounded-lg"
               />

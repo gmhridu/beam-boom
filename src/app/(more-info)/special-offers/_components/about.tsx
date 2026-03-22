@@ -15,16 +15,16 @@ export default function About() {
       </div>
 
       {/* Right gray vertical panel */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
               Laser Hair Removal
             </h2>
-            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-10 space-y-4 transition-colors duration-300">
               <p>
                 Treat 2 or more areas & receive 20% ‘multiple area’ discount off
                 the standard pricing.
@@ -37,7 +37,7 @@ export default function About() {
             <ViewTransitionLink
               href={"/about-us" as Href}
               target="_blank"
-              className="inline-flex items-center gap-2 bg-black text-white px-8 py-3 font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-8 py-3 font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300"
             >
               Read more
               <ExternalLink size={16} />

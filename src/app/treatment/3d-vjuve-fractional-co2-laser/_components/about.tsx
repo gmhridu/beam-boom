@@ -10,11 +10,11 @@ export default function About() {
 
       {/* Left leaf decoration */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"/images/about-us-leaves.png"} alt="Round shape" />
+        <img src={"/images/about-us-leaves.png"} alt="Decorative leaves" />
       </div>
 
       {/* Right gray vertical panel - lg only */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800/50 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
@@ -24,55 +24,55 @@ export default function About() {
             <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
               3D Vjuve Fractional
               <br />
               CO2 Laser
             </h2>
             <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
-                The is an advanced skin resurfacing and rejuvenation treatment designed to dramatically improve skin texture, tone and overall quality. Using precise fractional laser technology, it creates controlled micro-channels within the skin to stimulate natural collagen production and accelerate cellular renewal.
+                <span className="font-bold">3D VJUVE™ Fractional CO2 Laser</span> is an advanced skin resurfacing and rejuvenation treatment designed to dramatically improve skin texture, tone and overall quality. Using precise fractional laser technology, it creates controlled micro-channels within the skin to stimulate natural collagen production and accelerate cellular renewal.
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 This powerful yet controlled approach allows for customised treatments that target fine lines, wrinkles, acne scars, pigmentation and uneven skin texture. By resurfacing the outer layers while stimulating deeper dermal repair, 3D VJUVE™ delivers both immediate skin refinement and long-term rejuvenation.
               </p>
 
-              <p>Suitable for the treatment of:</p>
-              <p className='font-bold text-black'>
+              <p className="dark:text-gray-300 transition-colors duration-300">Suitable for the treatment of:</p>
+              <p className='font-bold text-black dark:text-white transition-colors duration-300'>
                 What is 3D VJUVE™ Fractional CO2 Laser good for?
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Skin resurfacing:</span> Improves overall texture, smoothness and radiance.
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Wrinkles and fine lines:</span> Reduces the appearance of lines around the eyes, mouth and forehead.
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Acne scars:</span> Visibly softens and smooths acne scarring.
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Surgical & trauma scars:</span> Improves the appearance of raised or indented scars.
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Pigmentation & sun damage:</span> Targets uneven skin tone, sun spots and discolouration.
               </p>
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Stretch marks:</span> Helps improve skin texture and appearance.
               </p>
 
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Pore size:</span> Minimises enlarged pores for a more refined complexion.
               </p>
 
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Skin laxity:</span> Stimulates collagen to tighten and firm ageing skin.
               </p>
 
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Uneven skin tone:</span> Restores clarity and brightness.
               </p>
 
-              <p>
+              <p className="dark:text-gray-300 transition-colors duration-300">
                 <span className="font-bold">• Dermal regeneration:</span> Encourages new collagen and elastin production for long-term skin health.
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function About() {
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
-                className="inline-flex items-center gap-2 bg-black text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
               >
                 Read more
                 <ExternalLink size={16} />

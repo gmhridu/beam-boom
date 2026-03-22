@@ -23,6 +23,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import ThemeToggle from '../theme-toggle';
 
 function getHrefPathname(href: Href): string {
   if (typeof href === "string") return href;
@@ -84,7 +85,7 @@ export const Header = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-lg md:text-xl font-bold tracking-[0.1em] text-gray-900 dark:text-gray-100 uppercase leading-none whitespace-nowrap">
+              <h1 className="text-lg md:text-xl font-bold tracking-widest text-gray-900 dark:text-gray-100 uppercase leading-none whitespace-nowrap">
                 Beam & Bloom
               </h1>
               <span className="text-[10px] md:text-[11px] font-medium tracking-[0.2em] text-gray-500 dark:text-gray-400 uppercase leading-tight mt-0.5">
@@ -192,7 +193,7 @@ export const Header = () => {
           {/* Right Icons */}
           <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-5">
             {/* Theme Toggle */}
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
               aria-label="Toggle theme"
@@ -202,7 +203,9 @@ export const Header = () => {
               ) : (
                 <MoonIcon size={22} weight="bold" />
               )}
-            </button>
+            </button> */}
+
+            <ThemeToggle />
 
             <button className="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300">
               <UserIcon size={22} />

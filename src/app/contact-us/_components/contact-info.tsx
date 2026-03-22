@@ -4,10 +4,10 @@ const ContactInfo = () => {
   return (
     <section
       id="contact"
-      className="py-12 sm:py-14 md:py-16 lg:py-18 bg-white relative overflow-hidden"
+      className="py-12 sm:py-14 md:py-16 lg:py-18 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300"
     >
       {/* Right gray vertical panel — lg only */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-5 md:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
@@ -15,19 +15,19 @@ const ContactInfo = () => {
           {/* Left - Contact Details */}
           <div className="space-y-7 sm:space-y-8 lg:space-y-10">
             <div>
-              <span className="text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
+              <span className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase transition-colors duration-300">
                 Beam & Bloom
               </span>
-              <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+              <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
                 Contact Info
               </h2>
             </div>
 
             <div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 transition-colors duration-300">
                 Find Us
               </h3>
-              <address className="not-italic text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed space-y-1">
+              <address className="not-italic text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-1 transition-colors duration-300">
                 <p>Landale Gardens</p>
                 <p>Dartford</p>
                 <p>DA1 2QB</p>
@@ -37,7 +37,7 @@ const ContactInfo = () => {
             </div>
 
             <div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 transition-colors duration-300">
                 Call Us
               </h3>
 
@@ -50,7 +50,7 @@ const ContactInfo = () => {
             </div>
 
             <div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 transition-colors duration-300">
                 Email Us
               </h3>
 
@@ -64,7 +64,7 @@ const ContactInfo = () => {
           </div>
 
           {/* Right - Google Map */}
-          <div className="relative h-64 sm:h-80 md:h-96 lg:h-112.5 rounded-lg overflow-hidden border border-gray-200">
+          <div className="relative h-64 sm:h-80 md:h-96 lg:h-112.5 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 transition-colors duration-300">
             <iframe
               src="https://www.google.com/maps?q=Landale%20Gardens%20Dartford&output=embed"
               width="100%"

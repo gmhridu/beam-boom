@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Offers = () => {
   return (
-    <section className="p-4 sm:p-6 md:p-8 bg-gray-50 relative overflow-visible">
+    <section className="p-4 sm:p-6 md:p-8 bg-gray-50 dark:bg-gray-950 relative overflow-visible transition-colors duration-300">
       {/* Right white vertical panel — lg only */}
       <div
         className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] z-10 pointer-events-none"
@@ -22,10 +22,10 @@ const Offers = () => {
           {/* Left Content */}
           <div className="flex flex-col items-start justify-start">
             <div className="space-y-4 sm:space-y-6 pt-6 sm:pt-8 w-full">
-              <h2 className="text-2xl sm:text-3xl font-bold text-left text-gray-900">
+              <h2 className="text-2xl sm:text-3xl font-bold text-left text-gray-900 dark:text-white transition-colors duration-300">
                 New clients receive 10% off your first treatment
               </h2>
-              <p className="text-sm sm:text-base md:text-lg font-light text-gray-600 max-w-2xl text-left mb-8 sm:mb-12 md:mb-20">
+              <p className="text-sm sm:text-base md:text-lg font-light text-gray-600 dark:text-gray-400 max-w-2xl text-left mb-8 sm:mb-12 md:mb-20 transition-colors duration-300">
                 We offer all new clients 10% off their first treatment or first
                 course of treatments. You can book an initial laser or skin
                 consultation online or via phone, and the discount will be
@@ -34,10 +34,10 @@ const Offers = () => {
             </div>
 
             <div className="px-0 sm:px-5 space-y-4 sm:space-y-6 w-full">
-              <h2 className="text-2xl sm:text-3xl font-bold text-left text-gray-900">
+              <h2 className="text-2xl sm:text-3xl font-bold text-left text-gray-900 dark:text-white transition-colors duration-300">
                 Refer a friend & receive 10% off your next treatment
               </h2>
-              <p className="text-sm sm:text-base md:text-lg font-light text-gray-600 max-w-2xl text-left">
+              <p className="text-sm sm:text-base md:text-lg font-light text-gray-600 dark:text-gray-400 max-w-2xl text-left transition-colors duration-300">
                 *Terms and conditions apply
               </p>
             </div>

@@ -19,9 +19,9 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "Beam & Bloom",
+    subtitle: "BEAM & BLOOM CLINIC",
     title: "SURGICAL SCARS",
-    description: "",
+    description: "Expert laser treatments to significantly reduce the appearance of surgical scars. Restore your skin's natural texture and confidence with our non-surgical resurfacing solutions.",
     backgroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif",
     foregroundImage:
@@ -42,7 +42,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50 dark:bg-gray-950 transition-colors duration-300"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -71,16 +71,16 @@ export default function Banner() {
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
                   <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
-                    <span className="bb-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
+                    <span className="bb-subtitle text-xs sm:text-sm md:text-base font-medium tracking-wide uppercase transition-colors duration-300">
                       {slide.subtitle}
                     </span>
-                    <h1 className="bb-title mb-8">{slide.title}</h1>
-                    <p className="bb-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
+                    <h1 className="bb-title mb-8 text-black dark:text-white transition-colors duration-300">{slide.title}</h1>
+                    <p className="bb-light-description text-gray-700 dark:text-gray-300 text-base md:text-lg max-w-2xl mb-10 transition-colors duration-300">
                       {slide.description}
                     </p>
                     <ViewTransitionLink
                       href={"/contact-us" as Href}
-                      className="btn btn-black"
+                      className="btn btn-black dark:bg-white dark:text-black dark:hover:bg-gray-200 transition-colors duration-300"
                     >
                       {slide.buttonText}
                     </ViewTransitionLink>
@@ -157,10 +157,10 @@ export default function Banner() {
         </div>
 
         {/* Scroll Down */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block transition-colors duration-300">
           <ViewTransitionLink
             href={"/about" as Href}
-            className="bb-light-description flex flex-col items-center"
+            className="bb-light-description flex flex-col items-center text-gray-700 dark:text-gray-300 transition-colors duration-300"
           >
             <span className="text-lg mb-2">Scroll Down</span>
             <CaretRightIcon size={24} className="rotate-90" />

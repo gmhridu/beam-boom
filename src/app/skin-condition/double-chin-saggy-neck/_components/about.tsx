@@ -15,32 +15,32 @@ export default function About() {
       </div>
 
       {/* Right gray vertical panel */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Left Content */}
           <div className="space-y-6">
-            <span className="bb-subtitle text-sm font-medium text-gray-600 tracking-wide uppercase">
+            <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase transition-colors duration-300">
               Beam & Bloom
             </span>
-            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
-              Double Chin & Sagging Neck
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900 dark:text-white transition-colors duration-300">
+              Double Chin & Saggy Neck
             </h2>
-            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-10 space-y-4 transition-colors duration-300">
               <p>
                 One of the most effective treatments we offer for this concern is
-                <span className="font-semibold">Fractional CO₂ Laser Skin Resurfacing.</span>
+                <span className="font-semibold text-black dark:text-white transition-colors duration-300"> Fractional CO₂ Laser Skin Resurfacing.</span>
               </p>
               <p>
                 This advanced laser technology works by creating microscopic channels within the skin, stimulating the body’s natural healing response and encouraging the production of new collagen and elastin. As the skin regenerates, it becomes firmer, smoother, and more tightened.
               </p>
 
-              <p className="font-bold text-black pt-4">
+              <p className="font-bold text-black dark:text-white pt-4 transition-colors duration-300">
                 Fractional CO₂ laser treatment can help:
               </p>
 
-              <ul className="space-y-4">
+              <ul className="space-y-4 transition-colors duration-300">
                 <li>• Tighten loose skin around the neck and jawline</li>
                 <li>
                   <span className="font-semibold">• Loss of Jawline Definition</span> – Skin laxity may soften the natural contour of the jawline.
@@ -61,7 +61,7 @@ export default function About() {
             <ViewTransitionLink
               href={"/about-us" as Href}
               target="_blank"
-              className="inline-flex items-center gap-2 bg-black text-white px-8 py-3 font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-8 py-3 font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300"
             >
               Read more
               <ExternalLink size={16} />

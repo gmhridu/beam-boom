@@ -35,17 +35,17 @@ const logos = [
 
 export default function AsSeenIn() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-900 overflow-hidden transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Centered heading with "As Seen In" subtitle */}
         <div className="text-center mb-10 md:mb-12">
-          <span className="bb-subtitle text-lg font-medium text-gray-600 tracking-wide uppercase">
+          <span className="bb-subtitle text-lg font-medium text-gray-600 dark:text-gray-400 tracking-wide uppercase transition-colors duration-300">
             As Seen In
           </span>
         </div>
 
         {/* Marquee container with top/bottom borders */}
-        <div className="relative border-t border-b border-gray-200 py-8 md:py-10 lg:py-12">
+        <div className="relative border-t border-b border-gray-200 dark:border-gray-800 py-8 md:py-10 lg:py-12 transition-colors duration-300">
           <div className="overflow-hidden">
             <div
               className="flex animate-marquee whitespace-nowrap will-change-transform hover:paused"

@@ -14,7 +14,7 @@ export default function About() {
       </div>
 
       {/* Right gray vertical panel - lg only */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
@@ -24,10 +24,10 @@ export default function About() {
             <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900 dark:text-white transition-colors duration-300">
               Sun Damage
             </h2>
-            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-10 space-y-4 transition-colors duration-300">
               <p>
                 Sun damage is one of the most common causes of premature skin
                 ageing. Prolonged exposure to ultraviolet (UV) rays can break
@@ -37,12 +37,12 @@ export default function About() {
               </p>
 
               <div className="pt-4">
-                <p className="font-bold text-black mb-2 uppercase tracking-wider">
+                <p className="font-bold text-black dark:text-white mb-2 uppercase tracking-wider transition-colors duration-300">
                   Common signs of sun-damaged skin include:
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 transition-colors duration-300">
                   <li className="flex items-start gap-2">
-                    <span className="text-black">•</span>
+                    <span className="text-black dark:text-white">•</span>
                     <span>
                       <span className="font-semibold">
                         Sun Spots (Age Spots)
@@ -52,7 +52,7 @@ export default function About() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black">•</span>
+                    <span className="text-black dark:text-white">•</span>
                     <span>
                       <span className="font-semibold">Uneven Skin Tone</span> –
                       Areas of pigmentation that make the skin appear blotchy or
@@ -60,7 +60,7 @@ export default function About() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black">•</span>
+                    <span className="text-black dark:text-white">•</span>
                     <span>
                       <span className="font-semibold">
                         Fine Lines & Wrinkles
@@ -70,7 +70,7 @@ export default function About() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black">•</span>
+                    <span className="text-black dark:text-white">•</span>
                     <span>
                       <span className="font-semibold">
                         Rough or Uneven Texture
@@ -86,7 +86,7 @@ export default function About() {
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
-                className="inline-flex items-center gap-2 bg-black text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300"
               >
                 Read more
                 <ExternalLink size={16} />

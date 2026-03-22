@@ -76,7 +76,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50 dark:bg-gray-950 transition-colors duration-300"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -206,11 +206,11 @@ export default function Banner() {
           <ul className="flex items-center p-0 m-0">
 
             {/* Facebook */}
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
+            <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 border-r border-dashed border-[#4995D1] first:pl-0">
               <a
                 href="https://www.facebook.com/PulseLaserClinic/"
                 target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+                className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >
                 <svg
                   className="h-5 w-auto"
@@ -226,11 +226,11 @@ export default function Banner() {
             </li>
 
             {/* TikTok */}
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
+            <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 border-r border-dashed border-[#4995D1]">
               <a
                 href="https://www.tiktok.com/" // replace with your real TikTok link
                 target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+                className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >
                 <svg
                   className="h-5 w-auto"
@@ -246,11 +246,11 @@ export default function Banner() {
             </li>
 
             {/* Instagram */}
-            <li className="list-none text-[20px] leading-5 text-black px-5">
+            <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5">
               <a
                 href="https://www.instagram.com/pulse_laser/"
                 target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+                className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >
                 <svg
                   className="h-5 w-5"

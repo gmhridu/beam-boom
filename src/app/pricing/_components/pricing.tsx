@@ -164,7 +164,7 @@ function PriceCard({
   const lowestPrice = card.items.map((i) => i.price).filter(Boolean)[0];
 
   return (
-    <div className="bg-white shadow-md flex flex-col transition-shadow duration-300 hover:shadow-xl">
+    <div className="bg-white dark:bg-gray-800 shadow-md flex flex-col transition-all duration-300 hover:shadow-xl border border-transparent dark:border-gray-700">
 
       {/* ── Header — always visible ── */}
       <button
@@ -174,53 +174,53 @@ function PriceCard({
       >
         <div className="flex-1 min-w-0">
           {card.subtitle && (
-            <span className="detail inline-block border-b-2 border-blue-400 pb-0.5 uppercase tracking-wider text-xs text-gray-500 font-medium mb-2 sm:mb-3">
+            <span className="detail Laser inline-block border-b-2 border-blue-400 pb-0.5 uppercase tracking-wider text-xs text-gray-500 dark:text-gray-400 font-medium mb-2 sm:mb-3 transition-colors duration-300">
               {card.subtitle}
             </span>
           )}
-          <h3 className="review-title text-gray-900 text-sm sm:text-base font-semibold leading-snug">
+          <h3 className="review-title text-gray-900 dark:text-white text-sm sm:text-base font-semibold leading-snug transition-colors duration-300">
             {card.title}
           </h3>
           {!isOpen && lowestPrice && (
-            <p className="text-xs text-gray-400 font-light mt-1.5">
+            <p className="text-xs text-gray-400 dark:text-gray-500 font-light mt-1.5 transition-colors duration-300">
               From{" "}
-              <span className="text-gray-700 font-medium">{lowestPrice}</span>
+              <span className="text-gray-700 dark:text-gray-300 font-medium">{lowestPrice}</span>
             </p>
           )}
         </div>
         <CaretDownIcon
           size={18}
-          className={`text-gray-400 shrink-0 mt-0.5 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"
+          className={`text-gray-400 dark:text-gray-500 shrink-0 mt-0.5 transition-all duration-300 ${isOpen ? "rotate-180" : "rotate-0"
             }`}
         />
       </button>
 
       {/* ── Animated accordion body ── */}
       <AccordionBody isOpen={isOpen}>
-        <div className="mx-5 sm:mx-6 md:mx-8 border-t border-gray-100" />
+        <div className="mx-5 sm:mx-6 md:mx-8 border-t border-gray-100 dark:border-gray-700 transition-colors duration-300" />
 
         <div className="px-5 sm:px-6 md:px-8 pt-4 pb-2">
           {card.items.map((item, j) => (
             <div
               key={j}
-              className="flex items-start justify-between gap-3 py-2.5 border-b border-gray-50 last:border-0"
+              className="flex items-start justify-between gap-3 py-2.5 border-b border-gray-50 dark:border-gray-700 last:border-0 transition-colors duration-300"
             >
               <div className="flex-1 min-w-0">
-                <span className="block text-xs sm:text-sm text-gray-600 font-light leading-snug">
-                  {item.name}
+                <span className="block text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-light leading-snug transition-colors duration-300">
+                   {item.name}
                 </span>
                 {item.session && (
-                  <span className="block text-xs text-gray-400 font-light mt-0.5 uppercase tracking-wide">
+                  <span className="block text-xs text-gray-400 dark:text-gray-500 font-light mt-0.5 uppercase tracking-wide transition-colors duration-300">
                     {item.session}
                   </span>
                 )}
               </div>
               {item.price ? (
-                <span className="text-xs sm:text-sm font-medium text-gray-900 whitespace-nowrap text-right shrink-0">
+                <span className="text-xs sm:text-sm font-medium text-gray-900 dark:text-white whitespace-nowrap text-right shrink-0 transition-colors duration-300">
                   {item.price}
                 </span>
               ) : (
-                <span className="text-xs text-gray-400 whitespace-nowrap text-right shrink-0 italic">
+                <span className="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap text-right shrink-0 italic transition-colors duration-300">
                   —
                 </span>
               )}
@@ -229,7 +229,7 @@ function PriceCard({
         </div>
 
         <div className="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 pt-3">
-          <button className="w-full bg-black text-white py-2.5 sm:py-3 px-4 sm:px-6 flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors uppercase text-xs sm:text-sm tracking-wide font-medium">
+          <button className="w-full bg-black dark:bg-white text-white dark:text-black py-2.5 sm:py-3 px-4 sm:px-6 flex items-center justify-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300 uppercase text-xs sm:text-sm tracking-wide font-medium">
             <ArrowRightIcon size={14} />
             Book Now
           </button>
@@ -242,7 +242,7 @@ function PriceCard({
           <button
             type="button"
             onClick={onToggle}
-            className="w-full border border-gray-200 text-gray-700 py-2.5 px-4 flex items-center justify-center gap-2 hover:border-gray-900 hover:text-gray-900 transition-colors uppercase text-xs tracking-wide font-medium"
+            className="w-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 py-2.5 px-4 flex items-center justify-center gap-2 hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white transition-colors duration-300 uppercase text-xs tracking-wide font-medium"
           >
             View Prices
             <ArrowRightIcon size={12} />
@@ -262,16 +262,16 @@ const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="py-16 md:py-24 bg-white relative overflow-hidden"
+      className="py-16 md:py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300"
     >
       {/* Right gray vertical panel – full height, fixed to right edge */}
-      <div className="absolute top-0 right-0 bottom-0 w-[17.7%]  bg-gray-50 z-0 pointer-events-none" />
+      <div className="absolute top-0 right-0 bottom-0 w-[17.7%] bg-gray-50 dark:bg-gray-800 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-5 md:px-8 lg:px-12 relative z-10">
-        <h2 className="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <h2 className="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
           Treatment Prices
         </h2>
-        <p className="text-center md:text-left text-lg text-gray-600 mb-12 max-w-3xl">
+        <p className="text-center md:text-left text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl transition-colors duration-300">
           Transparent pricing for our most popular laser and aesthetic
           treatments
         </p>

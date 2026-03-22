@@ -22,8 +22,8 @@ const removalPairs: RemovalPair[] = [
     afterImage:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/ClearSkin1-1024x589-1-1.jpg",
     title: "Neck Script with Stars",
-    beforeSlug: "neck-script-stars-tattoo-removal-before",
-    afterSlug: "neck-script-stars-tattoo-removal-after",
+    beforeSlug: "congested-skin-carbon-facial-before",
+    afterSlug: "clear-skin-carbon-facial-after",
   },
   {
     id: "2",
@@ -32,8 +32,8 @@ const removalPairs: RemovalPair[] = [
     afterImage:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/ClearSkin2-1.jpg",
     title: "Finger Initials / Lettering",
-    beforeSlug: "finger-initials-lettering-tattoo-removal-before",
-    afterSlug: "finger-initials-lettering-tattoo-removal-after",
+    beforeSlug: "enlarged-pores-carbon-facial-before",
+    afterSlug: "refined-pores-carbon-facial-after",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function RemovalSlider() {
 
   return (
     <section
-      className="py-16 md:py-24 relative bg-gray-900 text-white overflow-hidden"
+      className="py-16 md:py-24 relative bg-gray-900 text-white overflow-hidden transition-colors duration-300"
       style={{
         backgroundImage: `url("https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/skin-conditions-bg-3.jpg")`,
         backgroundSize: "cover",
@@ -85,9 +85,8 @@ export default function RemovalSlider() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
             Real Patient Results
           </h2>
-          <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Advanced picosecond laser technology delivers safe, effective tattoo
-            fading and complete removal with minimal risk of scarring.
+          <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
+            Advanced carbon laser technology delivers deep cleansing, pore reduction, and immediate skin radiance for a clearer complexion.
           </p>
         </div>
 
@@ -111,7 +110,7 @@ export default function RemovalSlider() {
                     <div className="relative aspect-4/5 md:aspect-3/4 lg:aspect-square">
                       <Image
                         src={pair.beforeImage}
-                        alt="Before tattoo removal"
+                        alt="Before Carbon Laser Facial treatment"
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -133,7 +132,7 @@ export default function RemovalSlider() {
                     <div className="relative aspect-4/5 md:aspect-3/4 lg:aspect-square">
                       <Image
                         src={pair.afterImage}
-                        alt="After tattoo removal"
+                        alt="After Carbon Laser Facial treatment"
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

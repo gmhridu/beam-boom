@@ -91,7 +91,7 @@ export default function ImageSlider() {
 
                   <Image
                     src={item.image}
-                    alt="Gallery image"
+                    alt="Permanent Make-up result at Beam & Bloom"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />

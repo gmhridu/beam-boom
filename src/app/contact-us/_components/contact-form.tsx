@@ -36,15 +36,15 @@ const ContactFormSection = () => {
     touched[field] && !formData[field];
 
   return (
-    <section className="py-20 md:py-28 bg-linear-to-b from-white to-gray-50/50 relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-linear-to-b from-white to-gray-50/50 dark:from-gray-900 dark:to-gray-950/50 relative overflow-hidden transition-colors duration-300">
       {/* Subtle right-side accent panel – very light for modern depth */}
-      <div className="absolute top-0 right-0 bottom-0 w-1/4 lg:w-1/3 xl:w-[35%] bg-linear-to-l from-gray-50/80 to-transparent z-0 pointer-events-none" />
+      <div className="absolute top-0 right-0 bottom-0 w-1/4 lg:w-1/3 xl:w-[35%] bg-linear-to-l from-gray-50/80 to-transparent dark:from-gray-800/20 dark:to-transparent z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-5 sm:px-8 lg:px-12 relative z-10 max-w-7xl">
         <div className="grid lg:grid-cols-12 gap-10 xl:gap-16 items-start">
           {/* Form – takes ~7/12 columns on lg+ */}
-          <div className="lg:col-span-7 bg-white rounded-2xl shadow border border-gray-100/80 p-8 md:p-10 lg:p-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center lg:text-left">
+          <div className="lg:col-span-7 bg-white dark:bg-gray-800 rounded-2xl shadow border border-gray-100/80 dark:border-gray-700 p-8 md:p-10 lg:p-12 transition-colors duration-300">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-10 text-center lg:text-left transition-colors duration-300">
               Get in Touch
             </h2>
 
@@ -60,13 +60,13 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("firstName") ? "border-red-400" : ""
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("firstName") ? "border-red-400" : ""
                       }`}
                     placeholder=" "
                   />
                   <label
                     htmlFor="firstName"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
                   >
                     First Name *
                   </label>
@@ -81,13 +81,13 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("lastName") ? "border-red-400" : ""
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("lastName") ? "border-red-400" : ""
                       }`}
                     placeholder=" "
                   />
                   <label
                     htmlFor="lastName"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
                   >
                     Last Name *
                   </label>
@@ -105,13 +105,13 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("phone") ? "border-red-400" : ""
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("phone") ? "border-red-400" : ""
                       }`}
                     placeholder=" "
                   />
                   <label
                     htmlFor="phone"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
                   >
                     Phone Number *
                   </label>
@@ -126,13 +126,13 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 ${isFieldInvalid("email") ? "border-red-400" : ""
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("email") ? "border-red-400" : ""
                       }`}
                     placeholder=" "
                   />
                   <label
                     htmlFor="email"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
                   >
                     Email *
                   </label>
@@ -149,13 +149,13 @@ const ContactFormSection = () => {
                   onBlur={handleBlur}
                   required
                   rows={5}
-                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 resize-none ${isFieldInvalid("message") ? "border-red-400" : ""
+                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white resize-none ${isFieldInvalid("message") ? "border-red-400" : ""
                     }`}
                   placeholder=" "
                 />
                 <label
                   htmlFor="message"
-                  className="absolute left-4 top-2 text-xs font-medium text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                  className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
                 >
                   Message *
                 </label>
@@ -166,9 +166,9 @@ const ContactFormSection = () => {
                 <div className="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center bg-white">
                   <div className="w-4 h-4 bg-sky-500 rounded-sm hidden peer-checked:block" />
                 </div>
-                <label className="text-sm text-gray-600 flex items-center gap-2">
+                <label className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-2 transition-colors duration-300">
                   I'm not a robot
-                  <span className="text-xs text-gray-500">(reCAPTCHA)</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-500">(reCAPTCHA)</span>
                 </label>
               </div>
 
@@ -192,33 +192,36 @@ const ContactFormSection = () => {
             className="
   lg:col-span-5
   bg-white
+  dark:bg-gray-800
   rounded-2xl
   shadow
   border border-gray-100
+  dark:border-gray-700
   p-8 md:p-10
   max-w-2xl
   mx-auto lg:mx-0
   lg:h-full
+  transition-colors duration-300
 "
           >
-            <h3 className="text-3xl md:text-3.5xl font-bold text-gray-900 mb-8 text-center lg:text-left tracking-tight">
+            <h3 className="text-3xl md:text-3.5xl font-bold text-gray-900 dark:text-white mb-8 text-center lg:text-left tracking-tight transition-colors duration-300">
               Opening Hours
             </h3>
 
-            <div className="space-y-7 text-gray-800 text-base md:text-lg">
-              <div className="pb-5 border-b border-gray-200/70">
-                <p className="font-semibold text-gray-900">Monday – Friday</p>
+            <div className="space-y-7 text-gray-800 dark:text-gray-200 text-base md:text-lg transition-colors duration-300">
+              <div className="pb-5 border-b border-gray-200/70 dark:border-gray-700">
+                <p className="font-semibold text-gray-900 dark:text-white">Monday – Friday</p>
                 <p className="mt-1.5 font-medium">09:00 – 19:00</p>
               </div>
 
-              <div className="pb-5 border-b border-gray-200/70">
-                <p className="font-semibold text-gray-900">Saturday</p>
+              <div className="pb-5 border-b border-gray-200/70 dark:border-gray-700">
+                <p className="font-semibold text-gray-900 dark:text-white">Saturday</p>
                 <p className="mt-1.5 font-medium">09:00 – 18:00</p>
               </div>
 
               <div className="pt-2">
-                <p className="font-semibold text-gray-900">Sunday</p>
-                <p className="mt-1.5 font-medium text-gray-600">Closed</p>
+                <p className="font-semibold text-gray-900 dark:text-white">Sunday</p>
+                <p className="mt-1.5 font-medium text-gray-600 dark:text-gray-400">Closed</p>
               </div>
             </div>
 
