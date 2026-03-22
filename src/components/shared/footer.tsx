@@ -10,6 +10,8 @@ export default function Footer() {
 
   const [currentYear, setCurrentYear] = useState(2026);
 
+  
+
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
   }, []);
@@ -37,17 +39,22 @@ export default function Footer() {
               className="inline-flex flex-col items-center justify-center mb-6 text-center"
             >
               <Image
-                src="/logos/B&B-01.png"
+                src="/logos/B&B-05.png"
                 alt="Beam & Bloom Logo"
                 width={180}
-                height={60}
-                className="h-12 w-auto brightness-110"
+                height={70}
+                className="h-16 w-auto brightness-110 dark:hidden"
                 priority
               />
 
-              <p className="mt-2 text-gray-400 text-base font-bold tracking-wide">
-                Beam & Bloom
-              </p>
+              <Image
+                src="/logos/B&B-06.png"
+                alt="Beam & Bloom Logo Light"
+                width={180}
+                height={70}
+                className="h-16 w-auto brightness-110 hidden dark:block"
+                priority
+              />
             </Link>
 
             <div className="footer-social-icon mt-4">

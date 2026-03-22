@@ -60,38 +60,45 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 transition-all duration-300 ${isScrolled
           ? "bg-white/70 dark:bg-gray-900/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.3)] border-b border-gray-200/60 dark:border-gray-700/60"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="p-6 px-4 sm:px-6 lg:px-8 w-full mx-auto">
         <nav
-          className={`flex items-center justify-between transition-all duration-300 ${
-            isScrolled ? "py-2.5 md:py-3" : "py-3 md:py-4"
-          }`}
+          className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? "py-2.5 md:py-3" : "py-3 md:py-4"
+            }`}
         >
           {/* Logo + Brand Name */}
           <ViewTransitionLink href="/" className="shrink-0 flex items-center gap-3 md:gap-4 group">
             <div className="relative">
               <Image
-                src="/logos/B&B-01.png"
+                src="/logos/B&B-06.png"
                 alt="Beam & Bloom Logo"
-                width={120}
-                height={36}
+                width={180}
+                height={70}
+                className="h-16 w-auto brightness-110 dark:hidden"
                 priority
-                className="h-9 md:h-11 w-auto object-contain dark:brightness-0 dark:invert transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <Image
+                src="/logos/B&B-05.png"
+                alt="Beam & Bloom Logo Light"
+                width={180}
+                height={70}
+                className="h-16 w-auto brightness-110 hidden dark:block"
+                priority
               />
             </div>
-            <div className="flex flex-col">
+            {/* <div className="flex flex-col">
               <h1 className="text-lg md:text-xl font-bold tracking-widest text-gray-900 dark:text-gray-100 uppercase leading-none whitespace-nowrap">
                 Beam & Bloom
               </h1>
               <span className="text-[10px] md:text-[11px] font-medium tracking-[0.2em] text-gray-500 dark:text-gray-400 uppercase leading-tight mt-0.5">
                 Laser & Skin Clinic
               </span>
-            </div>
+            </div> */}
           </ViewTransitionLink>
 
           {/* Desktop Navigation */}
@@ -138,11 +145,10 @@ export const Header = () => {
                           </svg>
 
                           <span
-                            className={`absolute left-1/2 -bottom-1 h-0.5 w-full -translate-x-1/2 bg-black dark:bg-white transition-transform duration-300 origin-center ${
-                              active || openItem === item.name
+                            className={`absolute left-1/2 -bottom-1 h-0.5 w-full -translate-x-1/2 bg-black dark:bg-white transition-transform duration-300 origin-center ${active || openItem === item.name
                                 ? "scale-x-100"
                                 : "scale-x-0 group-hover:scale-x-100"
-                            }`}
+                              }`}
                           />
                         </button>
                       </DropdownMenuTrigger>
@@ -158,11 +164,10 @@ export const Header = () => {
                           <DropdownMenuItem key={child.name} asChild>
                             <ViewTransitionLink
                               href={child.href}
-                              className={`w-full px-4 py-2 text-sm ${
-                                isActive(child.href)
+                              className={`w-full px-4 py-2 text-sm ${isActive(child.href)
                                   ? "bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 font-medium"
                                   : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
-                              }`}
+                                }`}
                             >
                               {child.name}
                             </ViewTransitionLink>
@@ -177,11 +182,10 @@ export const Header = () => {
                     >
                       {item.name}
                       <span
-                        className={`absolute left-1/2 -bottom-1 h-0.5 w-full -translate-x-1/2 bg-black dark:bg-white transition-transform duration-300 origin-center ${
-                          active
+                        className={`absolute left-1/2 -bottom-1 h-0.5 w-full -translate-x-1/2 bg-black dark:bg-white transition-transform duration-300 origin-center ${active
                             ? "scale-x-100"
                             : "scale-x-0 group-hover:scale-x-100"
-                        }`}
+                          }`}
                       />
                     </ViewTransitionLink>
                   )}
@@ -254,11 +258,10 @@ export const Header = () => {
                           key={child.name}
                           href={child.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className={`block text-sm ${
-                            isActive(child.href)
+                          className={`block text-sm ${isActive(child.href)
                               ? "text-gray-900 dark:text-gray-100 font-medium"
                               : "text-gray-600 dark:text-gray-400"
-                          }`}
+                            }`}
                         >
                           {child.name}
                         </ViewTransitionLink>
@@ -269,11 +272,10 @@ export const Header = () => {
                   <ViewTransitionLink
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`block uppercase text-sm font-semibold tracking-wide ${
-                      active
+                    className={`block uppercase text-sm font-semibold tracking-wide ${active
                         ? "text-gray-900 dark:text-gray-100"
                         : "text-gray-600 dark:text-gray-400"
-                    }`}
+                      }`}
                   >
                     {item.name}
                   </ViewTransitionLink>
