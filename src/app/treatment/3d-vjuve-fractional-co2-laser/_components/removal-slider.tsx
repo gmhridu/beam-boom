@@ -93,8 +93,7 @@ export default function RemovalSlider() {
             Real Patient Results
           </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Advanced picosecond laser technology delivers safe, effective tattoo
-            fading and complete removal with minimal risk of scarring.
+            Advanced fractional CO2 laser technology delivers safe, effective skin resurfacing, scar reduction, and rejuvenation with exceptional results.
           </p>
         </div>
 
@@ -118,7 +117,7 @@ export default function RemovalSlider() {
                     {/* Image */}
                     <Image
                       src={item.image}
-                      alt="Before and After tattoo removal"
+                      alt="Before and After skin resurfacing"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-sm"
                     />

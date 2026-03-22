@@ -22,7 +22,7 @@ const slides: Slide[] = [
     id: 1,
     subtitle: "Beam & Bloom",
     title: "Carbon Laser Facial",
-    description: "",
+    description: "Deeply cleanse, refine, and revitalise your skin with our advanced Carbon Laser Facial — the ultimate treatment for a radiant, smoother complexion with no downtime.",
     backgroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043613/jnekvc9nrlndm3t7xlnq.avif",
     foregroundImage:
@@ -43,7 +43,7 @@ export default function Banner() {
   return (
     <section
       aria-label="Promotional banner"
-      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50"
+      className="relative h-160 md:h-190 lg:h-220 overflow-hidden bg-gray-50 dark:bg-gray-950 transition-colors duration-300"
     >
       {/* Slides */}
       <div className="relative h-full">
@@ -72,16 +72,16 @@ export default function Banner() {
                 <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
                   {/* Left Content */}
                   <div className="lg:col-span-7 xl:col-span-8 space-y-4 sm:space-y-6 pt-16 pl-4 sm:pt-20 sm:pl-0 md:pt-24 lg:pt-0">
-                    <span className="bb-subtitle text-sm md:text-base font-medium tracking-wide uppercase">
+                    <span className="bb-subtitle text-sm md:text-base font-medium tracking-wide uppercase text-gray-600 dark:text-gray-400 transition-colors duration-300">
                       {slide.subtitle}
                     </span>
-                    <h1 className="bb-title mb-8">{slide.title}</h1>
-                    <p className="bb-light-description text-black! text-base md:text-lg  max-w-2xl mb-10">
+                    <h1 className="bb-title mb-8 text-black dark:text-white transition-colors duration-300">{slide.title}</h1>
+                    <p className="bb-light-description text-black! dark:text-gray-300! text-base md:text-lg max-w-2xl mb-10 transition-colors duration-300">
                       {slide.description}
                     </p>
                     <ViewTransitionLink
                       href={"/contact-us" as Href}
-                      className="btn btn-black"
+                      className="btn btn-black dark:bg-white dark:text-black dark:hover:bg-gray-200 transition-colors duration-300"
                     >
                       {slide.buttonText}
                     </ViewTransitionLink>
@@ -97,11 +97,11 @@ export default function Banner() {
           <ul className="flex items-center p-0 m-0">
 
             {/* Facebook */}
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
+            <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 border-r border-dashed border-[#4995D1] first:pl-0 transition-colors duration-300">
               <a
-                href="https://www.facebook.com/PulseLaserClinic/"
+                href="https://www.facebook.com/beamandbloomclinic/"
                 target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+                className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >
                 <svg
                   className="h-5 w-auto"
@@ -117,11 +117,11 @@ export default function Banner() {
             </li>
 
             {/* TikTok */}
-            <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
+            <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 border-r border-dashed border-[#4995D1] transition-colors duration-300">
               <a
-                href="https://www.tiktok.com/" // replace with your real TikTok link
+                href="https://www.tiktok.com/@beamandbloom" 
                 target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+                className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >
                 <svg
                   className="h-5 w-auto"
@@ -137,11 +137,11 @@ export default function Banner() {
             </li>
 
             {/* Instagram */}
-            <li className="list-none text-[20px] leading-5 text-black px-5">
+            <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 transition-colors duration-300">
               <a
-                href="https://www.instagram.com/pulse_laser/"
+                href="https://www.instagram.com/beamandbloomclinic/"
                 target="_blank"
-                className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
+                className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >
                 <svg
                   className="h-5 w-5"
@@ -160,7 +160,7 @@ export default function Banner() {
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
           <ViewTransitionLink
             href={"/about" as Href}
-            className="bb-light-description flex flex-col items-center"
+            className="bb-light-description flex flex-col items-center text-black dark:text-white transition-colors duration-300"
           >
             <span className="text-lg mb-2">Scroll Down</span>
             <CaretRightIcon size={24} className="rotate-90" />

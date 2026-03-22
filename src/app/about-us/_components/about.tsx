@@ -34,7 +34,7 @@ export default function About() {
       </div>
 
       {/* Right gray vertical panel */}
-      <div className="hidden sm:block absolute top-0 right-0 bottom-0 w-[17.7%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden sm:block absolute top-0 right-0 bottom-0 w-[17.7%] bg-gray-50 dark:bg-gray-800/50 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">

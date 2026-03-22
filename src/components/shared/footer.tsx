@@ -1,14 +1,18 @@
 "use client";
 
-// components/Footer.tsx
+import { FacebookLogoIcon, InstagramLogoIcon, TiktokLogoIcon } from '@phosphor-icons/react';
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Href, ViewTransitionLink } from "../view-transition-link";
-import { FacebookLogoIcon, InstagramLogoIcon, TiktokLogoIcon } from '@phosphor-icons/react';
 
 export default function Footer() {
 
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(2026);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer

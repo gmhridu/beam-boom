@@ -281,9 +281,9 @@ export default function OurPrices() {
   ];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 bg-gray-50 dark:bg-gray-950 relative overflow-hidden transition-colors duration-300">
       {/* Left vertical panel — lg only */}
-      <div className="hidden lg:block absolute top-0 left-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none">
+      <div className="hidden lg:block absolute top-0 left-0 bottom-0 w-[22%] bg-white dark:bg-gray-900 z-0 pointer-events-none transition-colors duration-300">
         <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
           <img
             src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"
@@ -299,7 +299,7 @@ export default function OurPrices() {
         {/* Section Header */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10 lg:mb-14 items-end">
           <div>
-            <p className="bb-light-description font-sans text-sm sm:text-base">
+            <p className="bb-light-description font-sans text-sm sm:text-base dark:text-gray-300 transition-colors duration-300">
               If you would like more information about any of our treatments, please get in touch with us. We’ll be happy to guide you through the options and help you achieve the best possible results.
             </p>
             {/* Navigation arrows */}
@@ -308,22 +308,22 @@ export default function OurPrices() {
                 onClick={() => scroll("left")}
                 className="w-9 h-9 sm:w-10 sm:h-10 border border-border flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer"
               >
-                <ArrowLeftIcon size={16} className="text-foreground" />
+                <ArrowLeftIcon size={16} className="text-foreground dark:text-white" />
               </button>
               <button
                 onClick={() => scroll("right")}
                 className="w-9 h-9 sm:w-10 sm:h-10 border border-border flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer"
               >
-                <ArrowRightIcon size={16} className="text-foreground" />
+                <ArrowRightIcon size={16} className="text-foreground dark:text-white" />
               </button>
             </div>
           </div>
 
           <div className="text-left sm:text-right">
-            <span className="bb-subtitle tracking-wide uppercase block mb-2 text-gray-600 font-medium text-xs sm:text-sm">
+            <span className="bb-subtitle tracking-wide uppercase block mb-2 text-gray-600 dark:text-gray-400 font-medium text-xs sm:text-sm transition-colors duration-300">
               Beam & Bloom
             </span>
-            <h2 className="bb-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2 sm:mb-4">
+            <h2 className="bb-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-4 transition-colors duration-300">
               Our Prices
             </h2>
           </div>
@@ -337,10 +337,10 @@ export default function OurPrices() {
           {pricingCategories.map((card, i) => (
             <div
               key={i}
-              className="min-w-[280px] sm:min-w-[300px] md:min-w-[320px] flex-none snap-start bg-white shadow-lg p-5 sm:p-6 md:p-8 flex flex-col items-center text-center group transition-all duration-300 hover:shadow-xl"
+              className="our-price-item min-w-[280px] sm:min-w-[300px] md:min-w-[320px] flex-none snap-start bg-white dark:bg-gray-800 shadow-lg p-5 sm:p-6 md:p-8 flex flex-col items-center text-center group transition-all duration-300 hover:shadow-xl"
             >
-              <div className="our-price-item flex-1 w-full flex flex-col items-center">
-                <h3 className="review-title mb-3 sm:mb-4 text-gray-900 text-sm sm:text-base">
+              <div className="flex-1 w-full flex flex-col items-center">
+                <h3 className="review-title mb-3 sm:mb-4 text-gray-900 dark:text-white text-sm sm:text-base transition-colors duration-300">
                   {card.title}
                 </h3>
 
@@ -353,7 +353,7 @@ export default function OurPrices() {
                 )}
 
                 {card.note && (
-                  <p className="text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4 italic">
+                  <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-3 sm:mb-4 italic transition-colors duration-300">
                     {card.note}
                   </p>
                 )}
@@ -362,14 +362,14 @@ export default function OurPrices() {
                   {card.items.map((item, j) => (
                     <div
                       key={j}
-                      className="grid grid-cols-[1fr_auto_auto] items-center text-gray-600 font-light text-sm md:text-base lg:text-lg gap-1 sm:gap-2"
+                      className="grid grid-cols-[1fr_auto_auto] items-center text-gray-600 dark:text-gray-300 font-light text-sm md:text-base lg:text-lg gap-1 sm:gap-2 transition-colors duration-300"
                     >
                       <span className="text-left text-xs sm:text-sm md:text-base">{item.name}</span>
                       <span className="text-center whitespace-nowrap text-xs sm:text-sm md:text-base">
                         {item.session}
                       </span>
                       {item.price && (
-                        <span className="font-medium text-gray-900 text-right whitespace-nowrap text-xs sm:text-sm md:text-base">
+                        <span className="font-medium text-gray-900 dark:text-white text-right whitespace-nowrap text-xs sm:text-sm md:text-base transition-colors duration-300">
                           {item.price}
                         </span>
                       )}
@@ -378,7 +378,7 @@ export default function OurPrices() {
                 </div>
               </div>
 
-              <button className="w-full bg-black text-white py-2.5 sm:py-3 px-4 sm:px-6 flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors uppercase text-xs sm:text-sm tracking-wide font-medium mt-auto">
+              <button className="w-full bg-black dark:bg-white text-white dark:text-black py-2.5 sm:py-3 px-4 sm:px-6 flex items-center justify-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors uppercase text-xs sm:text-sm tracking-wide font-medium mt-auto">
                 <ArrowRightIcon size={14} />
                 Book Now
               </button>

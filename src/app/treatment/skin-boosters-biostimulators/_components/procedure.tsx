@@ -14,8 +14,8 @@ export default function Procedure() {
       size="lg"
       onClick={() => setActiveTab(tab)}
       className={`h-12 sm:h-14 px-6 ${activeTab !== tab
-                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
-                  : ""
+                  ? "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
+                  : "dark:bg-white dark:text-black"
                   }`}
     >
       {label}
@@ -25,9 +25,9 @@ export default function Procedure() {
   return (
     <section
       id="procedure"
-      className="py-16 md:py-24 bg-gray-50 banner-wrp relative overflow-hidden"
+      className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950 banner-wrp relative overflow-hidden transition-colors duration-300"
     >
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white dark:bg-gray-900 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center mb-12">
@@ -44,7 +44,7 @@ export default function Procedure() {
             </div>
 
             {/* CONTENT */}
-            <div className="space-y-4 text-[#757575]">
+            <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
 
               {activeTab === "how" && (
                 <>
@@ -125,7 +125,7 @@ export default function Procedure() {
                   </ul>
 
                   <p className="text-lg">
-                    Mild redness or swelling is normal and should settle quickly. Contact the Beam & Bloom team if you have any concerns.
+                    Mild redness or swelling is normal and should settle quickly. Contact the <span className='font-bold text-black dark:text-white transition-colors duration-300'>Beam & Bloom</span> team if you have any concerns.
                   </p>
                 </>
               )}
@@ -134,10 +134,10 @@ export default function Procedure() {
 
           {/* RIGHT IMAGE */}
           <div className="relative flex justify-center lg:block">
-            <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10">
+            <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10 dark:bg-white dark:rounded-lg dark:p-4 transition-all duration-300">
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774119232/em3sfurn6kwb6y5mpdjs.avif"
-                alt="Skin booster treatment"
+                alt="Skin booster treatment at Beam & Bloom"
                 fill
                 className="object-cover rounded-lg"
               />

@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function MeetTheTeam() {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Header */}
         <div className="text-center md:text-left mb-12">
-          <h2 className="bb-title text-3xl md:text-4xl font-bold">Meet Baiba</h2>
+          <h2 className="bb-title text-3xl md:text-4xl font-bold text-gray-900 dark:text-white transition-colors duration-300">Meet Baiba</h2>
           <p className="bb-subtitle text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">
             Beam & Bloom Clinic
           </p>

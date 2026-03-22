@@ -14,7 +14,7 @@ export default function About() {
       </div>
 
       {/* Right gray vertical panel - lg only */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
@@ -24,10 +24,10 @@ export default function About() {
             <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900">
+            <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900 dark:text-white transition-colors duration-300">
               Pigmentation Irregularities
             </h2>
-            <div className="bb-light-description text-base md:text-lg  max-w-2xl mb-10 space-y-4">
+            <div className="bb-light-description text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-10 space-y-4 transition-colors duration-300">
               <p>
                 Pigmentation irregularities occur when the skin produces too
                 much or too little melanin, the natural pigment responsible for
@@ -43,28 +43,28 @@ export default function About() {
                 appearance and may develop gradually over time.
               </p>
 
-              <p className="font-bold text-black pt-4">
+              <p className="font-bold text-black dark:text-white pt-4 transition-colors duration-300">
                 Common types of pigmentation irregularities include:
               </p>
 
-              <ul className="space-y-4">
+              <ul className="space-y-4 transition-colors duration-300">
                 <li>
-                  <span className="font-bold">• Hyperpigmentation</span> –
+                  <span className="font-bold dark:text-white">• Hyperpigmentation</span> –
                   Darkened patches of skin caused by excess melanin production.
                   This can occur after inflammation, acne, or skin irritation.
                 </li>
                 <li>
-                  <span className="font-bold">• Sun Spots (Age Spots)</span> –
+                  <span className="font-bold dark:text-white">• Sun Spots (Age Spots)</span> –
                   Pigmented areas that appear after prolonged sun exposure,
                   commonly found on the face, hands, chest, and shoulders.
                 </li>
                 <li>
-                  <span className="font-bold">• Melasma</span> – A hormonal form
+                  <span className="font-bold dark:text-white">• Melasma</span> – A hormonal form
                   of pigmentation that often appears as symmetrical patches on
                   the cheeks, forehead, or upper lip.
                 </li>
                 <li>
-                  <span className="font-bold">
+                  <span className="font-bold dark:text-white">
                     • Post-Inflammatory Pigmentation
                   </span>{" "}
                   – Dark marks that remain on the skin after acne, injury, or
@@ -83,7 +83,7 @@ export default function About() {
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
-                className="inline-flex items-center gap-2 bg-black text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300"
               >
                 Read more
                 <ExternalLink size={16} />

@@ -15,8 +15,8 @@ export default function Procedure() {
       onClick={() => setActiveTab(tab)}
       className={`h-12 sm:h-14 px-6 ${
         activeTab !== tab
-          ? "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
-          : ""
+          ? "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
+          : "dark:bg-white dark:text-black"
       }`}
     >
       {label}
@@ -49,9 +49,9 @@ export default function Procedure() {
   return (
     <section
       id="procedure"
-      className="py-16 md:py-24 bg-gray-50 banner-wrp relative overflow-hidden"
+      className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950 banner-wrp relative overflow-hidden transition-colors duration-300"
     >
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white dark:bg-gray-900 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center mb-12">
@@ -66,7 +66,7 @@ export default function Procedure() {
             </div>
 
             {/* CONTENT */}
-            <div className="space-y-4 text-[#757575]">
+            <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
               {activeTab === "how" && (
                 <div className="space-y-4">
                   <p className="text-base sm:text-lg lg:text-xl">
@@ -82,13 +82,13 @@ export default function Procedure() {
                     skin from within.
                   </p>
 
-                  <h3 className="text-lg font-semibold text-black mt-6">
+                  <h3 className="text-lg font-semibold text-black dark:text-white transition-colors duration-300 mt-6">
                     How the Treatment Works
                   </h3>
 
                   <div className="space-y-3">
                     <p className="text-base sm:text-lg">
-                      <span className="font-bold text-gray-800">
+                      <span className="font-bold text-gray-800 dark:text-gray-200 transition-colors duration-300">
                         Fractional CO2 Technology:
                       </span>{" "}
                       The laser creates microscopic channels in the skin,
@@ -97,7 +97,7 @@ export default function Procedure() {
                       reduce scarring and soften fine lines.
                     </p>
                     <p className="text-base sm:text-lg">
-                      <span className="font-bold text-gray-800">
+                      <span className="font-bold text-gray-800 dark:text-gray-200 transition-colors duration-300">
                         Collagen Stimulation:
                       </span>{" "}
                       By heating the deeper layers of the skin, the treatment
@@ -105,7 +105,7 @@ export default function Procedure() {
                       firmer, smoother and more youthful-looking skin over time.
                     </p>
                     <p className="text-base sm:text-lg">
-                      <span className="font-bold text-gray-800">
+                      <span className="font-bold text-gray-800 dark:text-gray-200 transition-colors duration-300">
                         Skin Renewal:
                       </span>{" "}
                       As the skin heals, old, damaged cells are replaced with
@@ -114,7 +114,7 @@ export default function Procedure() {
                     </p>
                   </div>
 
-                  <h3 className="text-lg font-semibold text-black mt-6">
+                  <h3 className="text-lg font-semibold text-black dark:text-white transition-colors duration-300 mt-6">
                     Treatment Customisation
                   </h3>
                   <p className="text-base sm:text-lg">
@@ -126,7 +126,7 @@ export default function Procedure() {
                     with reduced downtime.
                   </p>
 
-                  <h3 className="text-lg font-semibold text-black mt-6">
+                   <h3 className="text-lg font-semibold text-black dark:text-white transition-colors duration-300 mt-6">
                     What This Means for You
                   </h3>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-base sm:text-lg list-disc list-inside">
@@ -178,7 +178,7 @@ export default function Procedure() {
                 <div className="space-y-6 text-[#757575]">
                   {faqs.map((faq, i) => (
                     <div key={i}>
-                      <h3 className="text-lg font-semibold text-black mb-2">
+                      <h3 className="text-lg font-semibold text-black dark:text-white transition-colors duration-300 mb-2">
                         {faq.q}
                       </h3>
                       <p className="text-base sm:text-lg">{faq.a}</p>
@@ -237,7 +237,7 @@ export default function Procedure() {
 
           {/* RIGHT IMAGE */}
           <div className="relative flex justify-center lg:block">
-            <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10">
+            <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10 dark:bg-white dark:rounded-lg dark:p-4 transition-all duration-300">
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774117892/wi2rcgq2fpjmnypq4cmg.avif"
                 alt="Beam & Bloom Logo"

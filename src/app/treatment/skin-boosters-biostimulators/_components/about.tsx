@@ -10,11 +10,11 @@ export default function About() {
 
       {/* Left leaf decoration */}
       <div className="absolute top-0 left-0 w-20 h-20 md:w-132 opacity-5">
-        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Round shape" />
+        <img src={"https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772995282/pdfqaiq7knldhi9y3prm.avif"} alt="Decorative leaves" />
       </div>
 
       {/* Right gray vertical panel - lg only */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800/50 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
@@ -24,14 +24,14 @@ export default function About() {
             <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
               Beam & Boom
             </span>
-            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
               Skin Boosters /
               <br />
               Biostimulators
             </h2>
-            <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
+            <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4 dark:text-gray-300 transition-colors duration-300">
               <p>
-                If you're looking to revitalise and deeply hydrate your skin, skin boosters and biostimulators offer an effective non-surgical solution. These advanced injectable treatments work beneath the surface of the skin to improve hydration, stimulate collagen production, and enhance overall skin quality.
+                If you&apos;re looking to revitalise and deeply hydrate your skin, skin boosters and biostimulators offer an effective non-surgical solution. These advanced injectable treatments work beneath the surface of the skin to improve hydration, stimulate collagen production, and enhance overall skin quality.
               </p>
 
               <p>
@@ -46,7 +46,7 @@ export default function About() {
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
-                className="inline-flex items-center gap-2 bg-black text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
               >
                 Read more
                 <ExternalLink size={16} />
@@ -59,7 +59,7 @@ export default function About() {
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
                 src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774118978/rkpimdqejkvmdqgc1jh2.avif"
-                alt="About Beam & Bloom Clinic"
+                alt="Skin Boosters treatment at Beam & Bloom"
                 fill
                 className="object-cover rounded-lg"
               />

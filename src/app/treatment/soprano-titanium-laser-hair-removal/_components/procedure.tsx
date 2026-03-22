@@ -39,10 +39,10 @@ export default function Procedure() {
   return (
     <section
       id="procedure"
-      className="py-16 md:py-24 bg-gray-50 banner-wrp relative overflow-hidden"
+      className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950 banner-wrp relative overflow-hidden transition-colors duration-300"
     >
       {/* right side */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white z-0 pointer-events-none" />
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[22%] bg-white dark:bg-gray-900 z-0 pointer-events-none transition-colors duration-300" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center justify-between mb-12">
@@ -52,8 +52,8 @@ export default function Procedure() {
                 size={"lg"}
                 onClick={() => setActiveTab("how-it-works")}
                 className={`h-12 sm:h-14 w-auto sm:w-60 px-5 sm:px-6 text-base sm:text-lg ${activeTab === "how-it-works"
-                    ? ""
-                    : "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
+                    ? "dark:bg-white dark:text-black"
+                    : "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
                   }`}
               >
                 How it works
@@ -63,8 +63,8 @@ export default function Procedure() {
                 size={"lg"}
                 onClick={() => setActiveTab("procedure")}
                 className={`h-12 sm:h-14 w-auto sm:w-40 px-5 sm:px-6 text-base sm:text-lg ${activeTab === "procedure"
-                    ? ""
-                    : "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
+                    ? "dark:bg-white dark:text-black"
+                    : "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
                   }`}
               >
                 The Procedure
@@ -73,8 +73,8 @@ export default function Procedure() {
                 size={"lg"}
                 onClick={() => setActiveTab("faq")}
                 className={`h-12 sm:h-14 w-auto sm:w-40 px-5 sm:px-6 text-base sm:text-lg ${activeTab === "faq"
-                    ? ""
-                    : "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
+                    ? "dark:bg-white dark:text-black"
+                    : "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
                   }`}
               >
                 FAQ
@@ -84,8 +84,8 @@ export default function Procedure() {
                 size={"lg"}
                 onClick={() => setActiveTab("aftercare")}
                 className={`h-12 sm:h-14 w-auto sm:w-50 px-5 sm:px-6 text-base sm:text-lg ${activeTab === "aftercare"
-                    ? ""
-                    : "bg-white text-black border-gray-300 hover:bg-gray-100 shadow"
+                    ? "dark:bg-white dark:text-black"
+                    : "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
                   }`}
               >
                 Aftercare instructions
@@ -93,7 +93,7 @@ export default function Procedure() {
             </div>
 
             {activeTab === "how-it-works" && (
-              <div className="space-y-4 text-[#757575]">
+              <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 <p className="text-base sm:text-lg lg:text-xl">
                   Laser hair removal works by using concentrated light energy to
                   target the pigment in the hair follicle. The laser safely
@@ -115,7 +115,7 @@ export default function Procedure() {
                   treatment more comfortable compared to traditional hair
                   removal methods.
                 </p>
-                <p className="text-base sm:text-lg lg:text-xl font-medium text-black">
+                <p className="text-base sm:text-lg lg:text-xl font-medium text-black dark:text-white transition-colors duration-300">
                   Diode laser hair removal is suitable for many areas of the
                   body including:
                 </p>
@@ -137,7 +137,7 @@ export default function Procedure() {
             )}
 
             {activeTab === "procedure" && (
-              <div className="space-y-4 text-[#757575]">
+              <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 <p className="text-base sm:text-lg lg:text-xl">
                   Before your first treatment, you will attend a consultation
                   where we assess your skin type, hair growth, and medical
@@ -173,10 +173,10 @@ export default function Procedure() {
             )}
 
             {activeTab === "faq" && (
-              <div className="space-y-6 text-[#757575]">
+              <div className="space-y-6 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 {faqs.map((faq, i) => (
                   <div key={i}>
-                    <h3 className="text-lg font-semibold text-black mb-2">
+                    <h3 className="text-lg font-semibold text-black dark:text-white mb-2 transition-colors duration-300">
                       {faq.q}
                     </h3>
                     <p className="text-base sm:text-lg">{faq.a}</p>
@@ -186,7 +186,7 @@ export default function Procedure() {
             )}
 
             {activeTab === "aftercare" && (
-              <div className="space-y-4 text-[#757575]">
+              <div className="space-y-4 text-[#757575] dark:text-gray-300 transition-colors duration-300">
                 <p className="text-base sm:text-lg lg:text-xl">
                   After your laser hair removal treatment, it is important to
                   follow the recommended aftercare to protect your skin and

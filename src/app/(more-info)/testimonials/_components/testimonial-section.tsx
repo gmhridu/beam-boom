@@ -84,24 +84,24 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white relative">
+    <section className="py-16 md:py-24 bg-white dark:bg-gray-900 relative transition-colors duration-300">
       {/* Right side gray panel – wider version like many of your other sections */}
-      <div className="absolute right-0 top-0 bottom-0 w-[22%] bg-gray-50 z-0" />
+      <div className="absolute right-0 top-0 bottom-0 w-[22%] bg-gray-50 dark:bg-gray-800 z-0 transition-colors duration-300" />
 
       <div className="container mx-auto px-5 md:px-8 lg:px-12 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 transition-colors duration-300">
             What our customers say
           </h2>
         </div>
 
         {/* Main review container – white card look */}
-        <div className="bg-gray-50 rounded-2xl  p-6 md:p-10 lg:p-12 mx-auto max-w-6xl">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 md:p-10 lg:p-12 mx-auto max-w-6xl transition-colors duration-300">
           {/* Rating summary row */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10 md:mb-12 gap-6">
             <div className="flex items-center gap-4">
-              <span className="text-5xl font-extrabold text-gray-900 tracking-tight">
+              <span className="text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight transition-colors duration-300">
                 5.0
               </span>
               <div className="flex">
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-              <p className="text-gray-600 text-base md:text-lg font-medium">
+              <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg font-medium transition-colors duration-300">
                 Showing 351 featured reviews, rating based on these only
               </p>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg active:scale-98 whitespace-nowrap">
@@ -131,10 +131,10 @@ export default function TestimonialsSection() {
               <div
                 key={idx}
                 className="
-          bg-gray-50/70
+          bg-gray-50/70 dark:bg-gray-900/40
           rounded-xl
           p-6
-          border border-gray-200/70
+          border border-gray-200/70 dark:border-gray-700
           shadow-sm
           hover:shadow-xl
           hover:-translate-y-1
@@ -151,10 +151,10 @@ export default function TestimonialsSection() {
                     {review.name[0]}
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900 text-lg leading-tight">
+                    <p className="font-semibold text-gray-900 dark:text-white text-lg leading-tight transition-colors duration-300">
                       {review.name}
                     </p>
-                    <p className="text-sm text-gray-500">{review.platform}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300">{review.platform}</p>
                   </div>
                 </div>
 
@@ -169,13 +169,13 @@ export default function TestimonialsSection() {
                       />
                     ))}
                   </div>
-                  <span className="text-sm text-gray-500 font-medium">
+                  <span className="text-sm text-gray-500 dark:text-gray-400 font-medium transition-colors duration-300">
                     • {review.date}
                   </span>
                 </div>
 
                 {/* Review text – grows to fill remaining space */}
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-base flex-grow line-clamp-6 md:line-clamp-none">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-[15px] md:text-base flex-grow line-clamp-6 md:line-clamp-none transition-colors duration-300">
                   {review.text}
                 </p>
               </div>
@@ -186,7 +186,7 @@ export default function TestimonialsSection() {
           <div className="flex justify-center items-center gap-8 mt-12">
             <button
               onClick={goToPrev}
-              className="p-4 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 transition-all duration-200 shadow hover:shadow-md active:scale-95"
+              className="p-4 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 transition-all duration-200 shadow hover:shadow-md active:scale-95"
               aria-label="Previous reviews"
             >
               <ChevronLeft size={28} />
@@ -194,7 +194,7 @@ export default function TestimonialsSection() {
 
             <button
               onClick={goToNext}
-              className="p-4 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 transition-all duration-200 shadow hover:shadow-md active:scale-95"
+              className="p-4 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 transition-all duration-200 shadow hover:shadow-md active:scale-95"
               aria-label="Next reviews"
             >
               <ChevronRight size={28} />
@@ -202,7 +202,7 @@ export default function TestimonialsSection() {
           </div>
 
           {/* Powered by */}
-          <div className="text-center mt-10 text-sm text-gray-500 font-medium">
+          <div className="text-center mt-10 text-sm text-gray-500 dark:text-gray-400 font-medium transition-colors duration-300">
             Powered by BirdEye
           </div>
         </div>
