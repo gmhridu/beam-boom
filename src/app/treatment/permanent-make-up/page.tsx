@@ -3,6 +3,7 @@ import About from "./_components/about";
 import Procedure from "./_components/procedure";
 import Consultation from "./_components/consultation";
 import OurPrices from "./_components/our-prices";
+import RemovalSlider from './_components/removal-slider';
 
 export default function PermanentMakeUpPage() {
   return (
@@ -10,6 +11,7 @@ export default function PermanentMakeUpPage() {
       <Banner />
       <About />
       <Procedure />
+      <RemovalSlider />
       <Consultation />
       <OurPrices />
     </main>

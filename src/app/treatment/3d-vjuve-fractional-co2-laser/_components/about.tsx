@@ -36,7 +36,7 @@ export default function About() {
               <p>
                 This powerful yet controlled approach allows for customised treatments that target fine lines, wrinkles, acne scars, pigmentation and uneven skin texture. By resurfacing the outer layers while stimulating deeper dermal repair, 3D VJUVE™ delivers both immediate skin refinement and long-term rejuvenation.
               </p>
-              <p>The treatment works by delivering focused CO2 laser energy into the skin in a fractional pattern, meaning only a portion of the skin is treated at a time. This promotes faster healing while encouraging new collagen formation, resulting in firmer, smoother and more youthful-looking skin.</p>
+
               <p>Suitable for the treatment of:</p>
               <p className='font-bold text-black'>
                 What is 3D VJUVE™ Fractional CO2 Laser good for?
@@ -75,14 +75,6 @@ export default function About() {
               <p>
                 <span className="font-bold">• Dermal regeneration:</span> Encourages new collagen and elastin production for long-term skin health.
               </p>
-
-              <p>
-                3D VJUVE™ Fractional CO2 Laser is ideal for those seeking noticeable skin transformation with clinically proven technology. Following treatment, the skin appears smoother, firmer and more youthful as collagen continues to rebuild over time.
-              </p>
-
-              <p>
-                If you’re looking for a powerful resurfacing treatment that delivers real, visible results, 3D VJUVE™ offers a safe and effective solution tailored to your skin’s needs.
-              </p>
             </div>
             <div className="pt-2">
               <ViewTransitionLink
@@ -100,7 +92,7 @@ export default function About() {
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043904/ufbp9wtt73zatigyxsos.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774117805/csbaxx90nfrqb02bj6gn.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"

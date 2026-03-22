@@ -76,7 +76,7 @@ export default function Procedure() {
           </div>
 
           {/* Right Image */}
-          <div className="relative flex justify-center lg:block">
+          {/* <div className="relative flex justify-center lg:block">
             <div
               className="relative
               lg:-right-21.75
@@ -85,13 +85,13 @@ export default function Procedure() {
               overflow-hidden z-10"
             >
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/a4e99078-e507-42d2-b302-0a752462a5ec.jpg "
+                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/a4e99078-e507-42d2-b302-0a752462a5ec.jpg"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-sm"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

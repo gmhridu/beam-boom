@@ -196,7 +196,7 @@ export default function Procedure() {
               h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10"
             >
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773075451/qenobuxamu3uby30kpmj.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774119467/xs4z9qumsnvn9uvsdqt2.avif"
                 alt="Permanent make-up treatment"
                 fill
                 className="object-cover rounded-lg"

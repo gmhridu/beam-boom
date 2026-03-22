@@ -25,32 +25,23 @@ export default function About() {
               Beam & Bloom
             </span>
             <h2 className="bb-title text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Soprano Titanium
-              <br />
               Laser Hair Removal
+              <br />
+              at Beam & Bloom
             </h2>
 
             <div className="bb-light-description text-sm sm:text-base md:text-lg max-w-2xl space-y-3 md:space-y-4">
               <p>
-                We are proud to be one of the first clinics in London to use the
-                brand new Soprano Titanium Laser Hair Removal technology. If you
-                are one of the many millions of people who suffer from unwanted
-                hair and want a long-lasting solution, we can offer you a safe,
-                effective and painless way to remove unwanted hair through the
-                state of the art Soprano Titanium laser. With faster than ever
-                treatment times, you can now treat half of your body during your
-                lunch hour, painlessly and effortlessly at our London clinic.
+                At <span className='font-bold'>Beam & Bloom</span> in Dartford, we offer advanced laser hair removal treatments designed to safely and effectively reduce unwanted hair while leaving your skin smooth and irritation-free.
               </p>
               <p>
-                Soprano Titanium is the next-generation of laser hair removal.
-                It’s an effective and permanent hair reduction solution that is
-                simple and easy. It takes cutting-edge medical laser technology
-                and combines it with the comfort and convenience of a trip to
-                the spa. In fact, Soprano Titanium uses new breakthrough
-                technology that has been described as one of the most
-                comfortable laser hair removal options available. If you’ve had
-                laser hair removal elsewhere and thought it was too
-                uncomfortable, come and experience the difference.
+                Our modern laser technology targets the hair follicle with precise pulses of light energy, helping to slow and reduce future hair growth. The treatment is suitable for a wide range of skin tones and areas of the body, providing a long-lasting alternative to shaving, waxing, and other temporary hair removal methods.
+              </p>
+              <p>
+                Laser hair removal is one of the most popular treatments for achieving smoother skin and long-term hair reduction. Sessions are quick, comfortable, and performed by trained professionals using high-quality equipment designed for safe and effective results.
+              </p>
+              <p>
+                With multiple sessions, hair becomes progressively finer and less noticeable, helping you achieve smoother skin and greater confidence.
               </p>
             </div>
             <div className="pt-2">

@@ -140,7 +140,7 @@ export default function Procedure() {
               overflow-hidden z-10"
             >
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif"
                 alt="Laser tattoo removal procedure"
                 fill
                 className="object-cover rounded-lg"
@@ -152,3 +152,5 @@ export default function Procedure() {
     </section>
   );
 }
+
+

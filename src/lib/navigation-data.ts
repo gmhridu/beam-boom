@@ -41,8 +41,8 @@ export const navigationData = [
         href: "/treatment/permanent-make-up" as Href,
       },
       {
-        name: "CO2 Fractional Leaser",
-        href: "/treatment/co2-fractional-leaser" as Href,
+        name: "Carbon Laser Facial",
+        href: "/treatment/carbon-laser-facial" as Href,
       },
     ],
   },
