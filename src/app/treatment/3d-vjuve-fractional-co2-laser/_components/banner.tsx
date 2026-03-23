@@ -24,7 +24,7 @@ const slides: Slide[] = [
     title: "3D Vjuve Fractional CO2 Laser",
     description: "",
     backgroundImage:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043613/jnekvc9nrlndm3t7xlnq.avif",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282676/j955dewwn7s81adykisg.avif",
     foregroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043682/jppopoliib13hwgytj8v.avif",
     buttonText: "Contact Us",

@@ -23,7 +23,7 @@ const slides: Slide[] = [
     title: "FINE LINES & WRINKLES",
     description: "Advanced laser treatments for a smoother, more youthful complexion. Restore your skin's natural radiance with our non-surgical rejuvenation solutions.",
     backgroundImage:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282676/j955dewwn7s81adykisg.avif",
     foregroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773079064/kgnyzrh8lc9sqxjuvlgi.avif",
     buttonText: "Contact Us",
