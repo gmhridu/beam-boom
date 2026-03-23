@@ -61,11 +61,10 @@ export default function Procedure() {
               <Button
                 size="lg"
                 onClick={() => setActiveTab("procedure")}
-                className={`h-12 sm:h-14 w-auto sm:w-60 px-5 sm:px-6 text-base sm:text-lg ${
-                  activeTab === "procedure"
+                className={`h-12 sm:h-14 w-auto sm:w-60 px-5 sm:px-6 text-base sm:text-lg ${activeTab === "procedure"
                     ? "dark:bg-white dark:text-black"
                     : "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
-                }`}
+                  }`}
               >
                 The Procedure
               </Button>
@@ -73,11 +72,10 @@ export default function Procedure() {
               <Button
                 size="lg"
                 onClick={() => setActiveTab("faq")}
-                className={`h-12 sm:h-14 w-auto sm:w-40 px-5 sm:px-6 text-base sm:text-lg ${
-                  activeTab === "faq"
+                className={`h-12 sm:h-14 w-auto sm:w-40 px-5 sm:px-6 text-base sm:text-lg ${activeTab === "faq"
                     ? "dark:bg-white dark:text-black"
                     : "bg-white text-black border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 shadow"
-                }`}
+                  }`}
               >
                 FAQ
               </Button>
@@ -140,7 +138,7 @@ export default function Procedure() {
               overflow-hidden z-10"
             >
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774281577/re9kxxaqbtnckqcmlk4x.avif"
                 alt="Laser tattoo removal procedure"
                 fill
                 className="object-cover rounded-lg"
