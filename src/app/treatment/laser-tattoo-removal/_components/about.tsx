@@ -1,7 +1,5 @@
 "use client";
 
-import { Href, ViewTransitionLink } from "@/components/view-transition-link";
-import { ExternalLink } from 'lucide-react';
 import Image from "next/image";
 
 export default function About() {
@@ -44,7 +42,7 @@ export default function About() {
                 If you have any questions or would like to book a consultation at our Dartford clinic, our team at Beam and Bloom will be happy to help.
               </p>
             </div>
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
@@ -53,14 +51,14 @@ export default function About() {
                 Read more
                 <ExternalLink size={16} />
               </ViewTransitionLink>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774281474/k05cupxofwcqy0w3gbaf.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"
