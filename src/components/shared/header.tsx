@@ -215,12 +215,12 @@ export const Header = () => {
               <UserIcon size={22} />
             </button>
 
-            <button className="relative text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300">
+            {/* <button className="relative text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300">
               <ShoppingCartIcon size={22} />
               <span className="absolute -top-1.75 -right-1.5 bg-black dark:bg-white dark:text-black text-white text-xs font-semibold rounded-full w-4 h-4 flex items-center justify-center">
                 0
               </span>
-            </button>
+            </button> */}
 
             <button className="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 hidden sm:block">
               <MagnifyingGlassIcon size={22} />
