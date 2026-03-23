@@ -187,7 +187,6 @@ export default function Footer() {
                   <p className="text-gray-400 text-sm">Address Info</p>
                   <p className="text-white leading-relaxed">
                     Dartford Kent,
-                    <br />
                     United Kingdom
                   </p>
                 </div>
