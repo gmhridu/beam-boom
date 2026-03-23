@@ -28,9 +28,6 @@ const ContactInfo = () => {
                 Find Us
               </h3>
               <address className="not-italic text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-1 transition-colors duration-300">
-                <p>Landale Gardens</p>
-                <p>Dartford</p>
-                <p>DA1 2QB</p>
                 <p>Kent</p>
                 <p>United Kingdom</p>
               </address>
@@ -66,7 +63,7 @@ const ContactInfo = () => {
           {/* Right - Google Map */}
           <div className="relative h-64 sm:h-80 md:h-96 lg:h-112.5 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 transition-colors duration-300">
             <iframe
-              src="https://www.google.com/maps?q=Landale%20Gardens%20Dartford&output=embed"
+              src="https://www.google.com/maps?q=51.4440528,0.2181804&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

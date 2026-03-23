@@ -22,7 +22,7 @@ export default function About() {
           {/* Left Content */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
             <span className="bb-subtitle text-xs sm:text-sm font-medium text-gray-600 tracking-wide uppercase">
-              Beam & Boom
+              Beam & Bloom
             </span>
             <h2 className="bb-title text-2xl md:text-5xl font-bold text-nowrap text-gray-900 dark:text-white transition-colors duration-300">
               Enlarged Pores & Blackheads
@@ -79,25 +79,17 @@ export default function About() {
                 the skin, improve texture, and refine pore size.
               </p>
             </div>
-            <div className="pt-2">
-              <ViewTransitionLink
-                href={"/about-us" as Href}
-                target="_blank"
-                className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300"
-              >
-                Read more
-                <ExternalLink size={16} />
-              </ViewTransitionLink>
-            </div>
+
           </div>
 
           {/* Right Image */}
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773079624/vuwrnee1c83mjnf9frze.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774283368/n4isozcnkyx863ioyqgx.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
+                loading='lazy'
                 className="object-cover rounded-lg"
               />
             </div>

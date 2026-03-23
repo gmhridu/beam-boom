@@ -11,11 +11,8 @@ interface SliderItem {
 
 const items: SliderItem[] = [
   { id: "1", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774120303/cn193vg8vc2hy6j1nal5.avif" },
-  { id: "2", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774120303/cn193vg8vc2hy6j1nal5.avif" },
   { id: "3", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774120486/lm97ghxfbpxocpteeeta.avif" },
-  { id: "4", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774120531/pzpmq7eiy10vfdtrrdps.avif" },
   { id: "5", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774120583/tysmxvxawgzkg6ntfctj.avif" },
-  { id: "6", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774120583/tysmxvxawgzkg6ntfctj.avif" },
   { id: "7", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774160905/snxj2hsqdconof6vq6bl.avif" },
   { id: "8", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774160989/dnjh1qd9krytj3krzifg.avif" },
   { id: "9", image: "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1774161053/ups1glkofv1iksqcesgn.avif" },

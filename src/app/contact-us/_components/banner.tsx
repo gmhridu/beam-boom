@@ -22,9 +22,9 @@ const slides: Slide[] = [
     subtitle: "Beam & Bloom",
     title: "Contact Us",
     description:
-      "We stock a wide range of medical and cosmeceutical products to purchase in clinic. Please book a skin consultation so that we can assess your skin and prescribe the appropriate products.",
+      "At Beam and Bloom, we specialise in advanced skin and aesthetic treatments designed to enhance your natural beauty. Every journey begins with a personalised consultation, allowing us to create a treatment plan tailored specifically to you",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2024/01/0O9A2759-edit-Edit-copy-scaled.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282676/j955dewwn7s81adykisg.avif",
     foregroundImage:
       "https://www.pulse-clinic.co.uk/wp-content/themes/pulselaser/assets/images/banner-right-img.jpg",
     buttonText: "Contact Us",

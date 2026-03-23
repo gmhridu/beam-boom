@@ -10,7 +10,7 @@ export default function Footer() {
 
   const [currentYear, setCurrentYear] = useState(2026);
 
-  
+
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -186,9 +186,7 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Address Info</p>
                   <p className="text-white leading-relaxed">
-                    Landale Gardens
-                    <br />
-                    Dartford, DA1 2QB
+                    Dartford,
                     <br />
                     Kent, United Kingdom
                   </p>

@@ -26,7 +26,7 @@ export default function Procedure() {
   const faqs = [
     {
       q: "How much downtime is there?",
-      a: "Downtime typically ranges from 2–7 days depending on the intensity of the treatment. You may experience redness, dryness, and light peeling as the skin heals.",
+      a: "Downtime typically ranges from 7-10 days depending on the intensity of the treatment. You may experience redness, dryness, and light peeling as the skin heals.",
     },
     {
       q: "Is the treatment suitable for all skin types?",

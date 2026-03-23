@@ -8,6 +8,7 @@ export interface PriceItem {
   price?: string;
   session?: string;
   note?: string;
+  link?: string;
 }
 
 export interface PricingCategory {
@@ -20,6 +21,19 @@ export interface PricingCategory {
 
 
 const pricingCategories: PricingCategory[] = [
+  {
+    id: "full-treatment-menu",
+    title: "Full Treatment Menu",
+    subtitle: "",
+    items: [
+      {
+        name: "Full Treatment Menu and Price List",
+        price: "",
+        note: "View complete pricing",
+        link: "/Beam and Bloom Treatment Menu.pdf",
+      },
+    ],
+  },
   {
     id: "diode-laser-hair-removal-for-women",
     title: "Diode Laser Hair Removal for Women",
@@ -108,8 +122,8 @@ const pricingCategories: PricingCategory[] = [
     title: "Injectable Treatments",
     subtitle: "Lip Fillers · Per session",
     items: [
-      { name: "0.5 ml — Subtle volume & definition", price: "£350" },
-      { name: "1 ml — Fuller volume & contour", price: "£450" },
+      { name: "0.5 ml — Subtle volume & definition", price: "£130" },
+      { name: "1 ml — Fuller volume & contour", price: "£180" },
     ],
   },
   {
@@ -206,9 +220,20 @@ function PriceCard({
               className="flex items-start justify-between gap-3 py-2.5 border-b border-gray-50 dark:border-gray-700 last:border-0 transition-colors duration-300"
             >
               <div className="flex-1 min-w-0">
-                <span className="block text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-light leading-snug transition-colors duration-300">
-                   {item.name}
-                </span>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-xs sm:text-sm text-blue-600 dark:text-blue-400 font-medium leading-snug hover:underline transition-colors duration-300"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <span className="block text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-light leading-snug transition-colors duration-300">
+                    {item.name}
+                  </span>
+                )}
                 {item.session && (
                   <span className="block text-xs text-gray-400 dark:text-gray-500 font-light mt-0.5 uppercase tracking-wide transition-colors duration-300">
                     {item.session}

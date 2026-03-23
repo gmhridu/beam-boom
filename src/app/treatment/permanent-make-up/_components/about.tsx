@@ -49,7 +49,7 @@ export default function About() {
                 At <span className='font-medium text-black dark:text-white'>Beam & Bloom</span>, our focus is always on achieving elegant, natural enhancements that boost confidence while maintaining a soft and balanced appearance.
               </p>
             </div>
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
@@ -58,7 +58,7 @@ export default function About() {
                 Read more
                 <ExternalLink size={16} />
               </ViewTransitionLink>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}

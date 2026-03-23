@@ -23,7 +23,7 @@ const slides: Slide[] = [
     title: "Treatment Prices",
     description: "At Beam & Bloom, we offer a range of premium non-surgical treatments to help you achieve your desired results. Our prices are transparent and competitive, ensuring exceptional value for expert care.",
     backgroundImage:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773076620/yxxpzv0ynyvwvejgh4go.avif",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282676/j955dewwn7s81adykisg.avif",
     foregroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772384750/rtzfjtzanlhnrvza0zbx.avif",
     buttonText: "Contact Us",

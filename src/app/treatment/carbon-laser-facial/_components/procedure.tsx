@@ -175,9 +175,9 @@ export default function Procedure() {
 
           {/* RIGHT IMAGE */}
           <div className="relative flex justify-center lg:block">
-            <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10">
+            <div className="relative lg:-right-21.75 w-full max-w-sm sm:max-w-md md:max-w-xl lg:w-150 h-64 sm:h-80 md:h-100 lg:h-125 overflow-hidden z-10">
               <Image
-                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774117892/wi2rcgq2fpjmnypq4cmg.avif"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282884/bzp8gtnqank2i7mzxw5y.avif"
                 alt="Carbon Laser Facial treatment steps at Beam & Bloom"
                 fill
                 className="object-contain rounded-lg p-8"

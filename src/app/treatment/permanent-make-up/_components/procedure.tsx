@@ -20,11 +20,11 @@ export default function Procedure() {
     },
     {
       q: "How long does the treatment take?",
-      a: "Most permanent make-up treatments take 1–2 hours depending on the area being treated.",
+      a: "Most permanent make-up treatments take 2-3 hours depending on the area being treated.",
     },
     {
       q: "What areas can be treated?",
-      a: "Eyebrows (Microblading or Powder Brows), Eyeliner, Lip Blush.",
+      a: "Eyebrows (Ombre or Powder Brows), Eyeliner, Lip Blush.",
     },
     {
       q: "Is there any downtime?",

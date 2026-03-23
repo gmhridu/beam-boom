@@ -5,7 +5,6 @@ import Procedure from "./_components/procedure";
 import Consultation from "./_components/consultation";
 import OurPrices from "./_components/our-prices";
 import RemovalSlider from "./_components/removal-slider";
-import AsSeenIn from "./_components/as-seen-as";
 
 export const metadata: Metadata = {
   title: "Permanent Make-up Dartford | Beam & Bloom",
@@ -55,7 +54,6 @@ export default function PermanentMakeUpPage() {
       <Banner />
       <About />
       <Procedure />
-      <AsSeenIn />
       <RemovalSlider />
       <Consultation />
       <OurPrices />

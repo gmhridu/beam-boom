@@ -77,7 +77,7 @@ export default function Procedure() {
           </div>
 
           {/* Right Image */}
-          <div className="relative flex justify-center lg:block">
+          {/* <div className="relative flex justify-center lg:block">
             <div
               className="relative
               lg:-right-21.75
@@ -92,7 +92,7 @@ export default function Procedure() {
                 className="object-cover rounded-sm"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

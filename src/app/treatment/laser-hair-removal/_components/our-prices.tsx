@@ -8,6 +8,7 @@ export interface PriceItem {
   price?: string;
   session?: string;
   note?: string;
+  link?: string;
 }
 
 export interface PricingCategory {
@@ -56,6 +57,7 @@ export default function OurPrices() {
           name: "Full Treatment Menu and Price List",
           price: "",
           note: "View complete pricing",
+          link: "/Beam and Bloom Treatment Menu.pdf",
         },
       ],
     },
@@ -267,8 +269,8 @@ export default function OurPrices() {
       title: "INJECTABLE TREATMENTS (LIP FILLERS)",
       subtitle: "Prices from, per session",
       items: [
-        { name: "0.5ml (Subtle Volume & Definition)", price: "£350", note: "" },
-        { name: "1ml (Fuller Volume & Contour)", price: "£450", note: "" },
+        { name: "0.5ml (Subtle Volume & Definition)", price: "£130", note: "" },
+        { name: "1ml (Fuller Volume & Contour)", price: "£180", note: "" },
       ],
     },
     {
@@ -372,7 +374,18 @@ export default function OurPrices() {
                       key={j}
                       className="grid grid-cols-[1fr_auto_auto] items-center text-gray-600 font-light text-base md:text-lg gap-2"
                     >
-                      <span className="text-left">{item.name}</span>
+                      {item.link ? (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-left text-xs sm:text-sm md:text-base text-blue-600 dark:text-blue-400 font-medium hover:underline transition-colors duration-300"
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <span className="text-left text-xs sm:text-sm md:text-base">{item.name}</span>
+                      )}
 
                       <span className="text-center whitespace-nowrap">
                         {item.session}
