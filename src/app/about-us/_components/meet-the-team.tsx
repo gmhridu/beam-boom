@@ -8,7 +8,7 @@ export default function MeetTheTeam() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Header */}
         <div className="text-center md:text-left mb-12">
-          <h2 className="bb-title text-3xl md:text-4xl font-bold text-gray-900 dark:text-white transition-colors duration-300">Meet Baiba</h2>
+          <h2 className="bb-title text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Meet Baiba</h2>
           <p className="bb-subtitle text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">
             Beam & Bloom Clinic
           </p>
@@ -27,8 +27,8 @@ export default function MeetTheTeam() {
           </div>
 
           {/* Right: Biography */}
-          <div className="space-y-6 text-gray-700 dark:text-gray-300">
-            <p>
+          <div className="space-y-6 bb-pluse-description">
+            <p className='pulse-description'>
               Baiba’s passion for helping people feel confident in their own skin. Based in Dartford, Baiba has built her business around the belief that beauty treatments should feel personal, empowering, and completely tailored to each individual.
             </p>
             <p>

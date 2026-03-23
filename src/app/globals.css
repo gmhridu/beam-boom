@@ -286,7 +286,6 @@ a:hover {
 
 .bb-light-description {
   font-family: var(--font-poppins-light);
-  font-size: clamp(0.875rem, 1.5vw + 0.5rem, 1.25rem);
   font-weight: 400;
   line-height: 1.6;
   color: rgb(117, 117, 117);
@@ -294,6 +293,18 @@ a:hover {
 }
 
 .dark .bb-light-description {
+  color: rgb(180, 180, 180);
+}
+
+.bb-pluse-description {
+  font-family: var(--font-poppins-light);
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgb(117, 117, 117);
+  transition: color 0.3s ease;
+}
+
+.dark .bb-pluse-description {
   color: rgb(180, 180, 180);
 }
 
