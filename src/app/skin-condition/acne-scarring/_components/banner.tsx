@@ -19,7 +19,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "Beam & Boom",
+    subtitle: "Beam & Bloom",
     title: "ACNE SCARRING",
     description: "Advanced laser surfacing to visibly reduce the appearance of acne scars, pitting, and uneven texture. Restore your skin's natural smoothness with professional care.",
     backgroundImage:

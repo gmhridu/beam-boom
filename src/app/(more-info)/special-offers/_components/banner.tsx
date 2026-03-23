@@ -19,12 +19,12 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "Beam & Boom",
+    subtitle: "Beam & Bloom",
     title: "Special Offers",
     description:
       "To get the latest information on our seasonal special offers and packages, please sign up to our mailing list and follow us on social media.",
     backgroundImage:
-      "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/banner-bg-img-6.jpg",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282676/j955dewwn7s81adykisg.avif",
     foregroundImage:
       "https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/banner-right-img-2.jpg",
     buttonText: "Contact Us",

@@ -19,7 +19,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "Beam & Boom",
+    subtitle: "Beam & Bloom",
     title: "Advanced Skin Boosters & Biostimulators",
     description:
       "Deeply hydrate and revitalise your skin with advanced injectable treatments designed to restore radiance and natural elasticity.",

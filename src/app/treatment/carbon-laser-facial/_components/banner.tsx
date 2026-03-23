@@ -24,7 +24,7 @@ const slides: Slide[] = [
     title: "Carbon Laser Facial",
     description: "Deeply cleanse, refine, and revitalise your skin with our advanced Carbon Laser Facial — the ultimate treatment for a radiant, smoother complexion with no downtime.",
     backgroundImage:
-      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043613/jnekvc9nrlndm3t7xlnq.avif",
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282676/j955dewwn7s81adykisg.avif",
     foregroundImage:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773043682/jppopoliib13hwgytj8v.avif",
     buttonText: "Contact Us",
@@ -119,7 +119,7 @@ export default function Banner() {
             {/* TikTok */}
             <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 border-r border-dashed border-[#4995D1] transition-colors duration-300">
               <a
-                href="https://www.tiktok.com/@beamandbloom" 
+                href="https://www.tiktok.com/@beamandbloom"
                 target="_blank"
                 className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >

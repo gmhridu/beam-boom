@@ -25,8 +25,8 @@ export const navigationData = [
         href: "/treatment/laser-tattoo-removal" as Href,
       },
       {
-        name: "Soprano Titanium Laser Hair Removal",
-        href: "/treatment/soprano-titanium-laser-hair-removal" as Href,
+        name: "Laser Hair Removal",
+        href: "/treatment/laser-hair-removal" as Href,
       },
       {
         name: "3D Vjuve Fractional CO2 Laser",

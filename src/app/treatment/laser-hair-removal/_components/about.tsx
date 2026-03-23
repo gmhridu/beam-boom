@@ -44,7 +44,7 @@ export default function About() {
                 With multiple sessions, hair becomes progressively finer and less noticeable, helping you achieve smoother skin and greater confidence.
               </p>
             </div>
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <ViewTransitionLink
                 href={"/about-us" as Href}
                 target="_blank"
@@ -53,14 +53,14 @@ export default function About() {
                 Read more
                 <ExternalLink size={16} />
               </ViewTransitionLink>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative h-70 sm:h-87.5 md:h-100 lg:h-125 w-full sm:w-87.5 md:w-112.5 lg:w-150 overflow-hidden z-10">
               <Image
-                src="https://www.pulse-clinic.co.uk/wp-content/uploads/2023/05/AdobeStock_276177323-1-scaled.jpeg"
+                src="https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282068/e1v1j79yakgkjtwlfilr.avif"
                 alt="About Beam & Bloom Clinic"
                 fill
                 className="object-cover rounded-lg"

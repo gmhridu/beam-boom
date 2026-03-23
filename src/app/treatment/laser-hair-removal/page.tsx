@@ -3,7 +3,6 @@ import About from "./_components/about";
 import Banner from "./_components/banner";
 import Consultation from "./_components/consultation";
 import Procedure from "./_components/procedure";
-import RemovalSlider from "./_components/removal-slider";
 
 export const metadata: Metadata = {
   title: "Soprano Titanium Laser Hair Removal Dartford | Beam & Bloom",
@@ -51,7 +50,6 @@ export default function SopranoTitaniumLaserHairRemovalPage() {
       <Banner />
       <About />
       <Procedure />
-      <RemovalSlider />
       <Consultation />
     </main>
   );

@@ -19,7 +19,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    subtitle: "Beam & Boom",
+    subtitle: "Beam & Bloom",
     title: "Shop",
     description:
       "We stock a wide range of medical and cosmeceutical products to purchase in clinic. Please book a skin consultation so that we can assess your skin and prescribe the appropriate products.",

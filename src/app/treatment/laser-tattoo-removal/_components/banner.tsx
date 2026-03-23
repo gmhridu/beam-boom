@@ -16,7 +16,7 @@ interface Slide {
   buttonText: string;
 }
 
-const slides: Slide[] = [{ id: 1, subtitle: "Beam & Boom", title: "Laser Tattoo Removal", description: "", backgroundImage: "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif", foregroundImage: "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif", buttonText: "Contact Us", },];
+const slides: Slide[] = [{ id: 1, subtitle: "Beam & Bloom", title: "Laser Tattoo Removal", description: "", backgroundImage: "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif", foregroundImage: "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1773073036/jfhp4hqkwemzubyd0h1e.avif", buttonText: "Contact Us", },];
 
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);

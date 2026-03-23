@@ -78,7 +78,7 @@ export default function RemovalSlider() {
     <section
       className="py-16 md:py-24 relative bg-gray-900 text-white overflow-hidden"
       style={{
-        backgroundImage: `url("https://res.cloudinary.com/dyq0ij1yk/image/upload/v1773073650/q4kbnu9g2hktj4opewzm.avif")`,
+        backgroundImage: `url("https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774282197/clfmjdkvodlwhcutz6jx.avif")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
