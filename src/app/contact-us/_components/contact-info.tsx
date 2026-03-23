@@ -28,7 +28,7 @@ const ContactInfo = () => {
                 Find Us
               </h3>
               <address className="not-italic text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-1 transition-colors duration-300">
-                <p>Kent</p>
+                <p>Dartford, Kent</p>
                 <p>United Kingdom</p>
               </address>
             </div>

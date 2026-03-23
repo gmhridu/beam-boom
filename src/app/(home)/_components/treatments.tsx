@@ -34,16 +34,22 @@ const treatments: Treatment[] = [
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994511/rw4xxhodkhwk6kvlng9q.avif",
     slug: "tattoo-removal",
   },
-
   {
     id: "4",
+    name: "Skin Boosters & Biostimulators",
+    image:
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774119232/em3sfurn6kwb6y5mpdjs.avif",
+    slug: "skin-boosters-biostimulators",
+  },
+  {
+    id: "5",
     name: "Fractional Co2 Laser",
     image:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994743/vsigx1j85gkxrqzv3awk.avif",
     slug: "fractional-co2-laser",
   },
   {
-    id: "5",
+    id: "6",
     name: "Permanent Make Up",
     image:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1772994826/mrndkv0n5vidqhzi7dmg.avif",
