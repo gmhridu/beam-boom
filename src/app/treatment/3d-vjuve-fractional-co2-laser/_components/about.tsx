@@ -41,38 +41,38 @@ export default function About() {
               <p className='font-bold text-black dark:text-white transition-colors duration-300'>
                 What is 3D VJUVE™ Fractional CO2 Laser good for?
               </p>
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Skin resurfacing:</span> Improves overall texture, smoothness and radiance.
               </p>
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Wrinkles and fine lines:</span> Reduces the appearance of lines around the eyes, mouth and forehead.
               </p>
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Acne scars:</span> Visibly softens and smooths acne scarring.
               </p>
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Surgical & trauma scars:</span> Improves the appearance of raised or indented scars.
               </p>
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Pigmentation & sun damage:</span> Targets uneven skin tone, sun spots and discolouration.
               </p>
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Stretch marks:</span> Helps improve skin texture and appearance.
               </p>
 
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Pore size:</span> Minimises enlarged pores for a more refined complexion.
               </p>
 
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Skin laxity:</span> Stimulates collagen to tighten and firm ageing skin.
               </p>
 
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Uneven skin tone:</span> Restores clarity and brightness.
               </p>
 
-              <p className="dark:text-gray-300 transition-colors duration-300">
+              <p className="dark:text-gray-300 transition-colors duration-300 text-base">
                 <span className="font-bold">• Dermal regeneration:</span> Encourages new collagen and elastin production for long-term skin health.
               </p>
             </div>
