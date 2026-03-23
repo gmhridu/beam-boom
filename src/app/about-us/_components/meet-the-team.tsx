@@ -26,6 +26,9 @@ export default function MeetTheTeam() {
             />
           </div>
 
+          {/* <div className="relative w-full h-96 md:h-112 lg:h-128 rounded-lg overflow-hidden shadow-lg"> */}
+
+
           {/* Right: Biography */}
           <div className="space-y-6 bb-pluse-description">
             <p className='pulse-description'>
