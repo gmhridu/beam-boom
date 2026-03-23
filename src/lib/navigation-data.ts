@@ -85,12 +85,13 @@ export const navigationData = [
     ],
   },
   { name: "PRICING", href: "/pricing" as Href },
-  {
-    name: "MORE INFO",
-    children: [
-      { name: "Special Offers", href: "/special-offers" as Href },
-      // { name: "Testimonials", href: "/testimonials" as Href },
-    ],
-  },
+  { name: "Special Offers", href: "/special-offers" as Href },
+  // {
+  //   name: "MORE INFO",
+  //   children: [
+  //     { name: "Special Offers", href: "/special-offers" as Href },
+  //     // { name: "Testimonials", href: "/testimonials" as Href },
+  //   ],
+  // },
   { name: "CONTACT US", href: "/contact-us" as Href },
 ] as const satisfies readonly NavigationItem[];
