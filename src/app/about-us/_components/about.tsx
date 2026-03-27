@@ -11,7 +11,7 @@ const reviews = [
   {
     rating: "5/5",
     platform: "Facebook Reviews",
-    link: "https://en-gb.facebook.com/PulseLaserClinic/about/",
+    link: "https://www.facebook.com/share/17CxaNUTbm/?mibextid=wwXIfr",
   },
   {
     rating: "5/5",

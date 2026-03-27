@@ -214,7 +214,7 @@ const ContactFormSection = () => {
                 <p className="mt-1.5 font-medium">09:00 – 19:00</p>
               </div>
 
-              <div className="pb-5 border-b border-gray-200/70 dark:border-gray-700">
+              {/* <div className="pb-5 border-b border-gray-200/70 dark:border-gray-700">
                 <p className="font-semibold text-gray-900 dark:text-white">Saturday</p>
                 <p className="mt-1.5 font-medium">09:00 – 18:00</p>
               </div>
@@ -222,7 +222,7 @@ const ContactFormSection = () => {
               <div className="pt-2">
                 <p className="font-semibold text-gray-900 dark:text-white">Sunday</p>
                 <p className="mt-1.5 font-medium text-gray-600 dark:text-gray-400">Closed</p>
-              </div>
+              </div> */}
             </div>
 
             {/* Optional small note or icon at bottom */}

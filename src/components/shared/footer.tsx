@@ -63,7 +63,7 @@ export default function Footer() {
                 {/* Facebook */}
                 <li>
                   <a
-                    href="https://www.facebook.com/PulseLaserClinic/"
+                    href="https://www.facebook.com/share/17CxaNUTbm/?mibextid=wwXIfr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition backdrop-blur-sm"
@@ -75,7 +75,7 @@ export default function Footer() {
                 {/* TikTok */}
                 <li>
                   <a
-                    href="https://www.tiktok.com/"
+                    href="https://www.tiktok.com/@beamandbloomclinic?_r=1&_t=ZN-952YImbFqC7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition backdrop-blur-sm"
@@ -87,7 +87,7 @@ export default function Footer() {
                 {/* Instagram */}
                 <li>
                   <a
-                    href="https://www.instagram.com/pulse_laser/"
+                    href="https://www.instagram.com/beamandbloomclinic?igsh=MWZhNm0xN3BlOWw4Zw%3D%3D&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition backdrop-blur-sm"
@@ -110,12 +110,12 @@ export default function Footer() {
                 <span className="font-medium">Monday–Friday:</span> 09:00 –
                 19:00
               </p>
-              <p>
+              {/* <p>
                 <span className="font-medium">Saturday:</span> 09:00 – 18:00
               </p>
               <p>
                 <span className="font-medium">Sunday:</span> 09:00 – 18:00
-              </p>
+              </p> */}
             </div>
           </div>
 

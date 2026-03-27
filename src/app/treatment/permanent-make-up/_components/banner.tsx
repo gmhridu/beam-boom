@@ -94,7 +94,7 @@ export default function Banner() {
           </div>
         ))}
   {/* Social Media */}
-        <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
+        <div className="absolute left-17.5 bottom-12.5 z-30 hidden md:block">
           <ul className="flex items-center p-0 m-0">
 
             {/* Facebook */}
@@ -120,7 +120,7 @@ export default function Banner() {
             {/* TikTok */}
             <li className="list-none text-[20px] leading-5 text-black dark:text-white px-5 border-r border-dashed border-[#4995D1] transition-colors duration-300">
               <a
-                href="https://www.tiktok.com/" // replace with your real TikTok link
+                href="https://www.tiktok.com/@beamandbloomclinic?_r=1&_t=ZN-952YImbFqC7" // replace with your real TikTok link
                 target="_blank"
                 className="flex items-center transition-all duration-500 hover:text-[#4995D1] dark:hover:text-[#6cb5e8] no-underline text-inherit outline-none"
               >

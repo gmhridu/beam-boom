@@ -123,13 +123,13 @@ export default function Banner() {
         ))}
 
         {/* Social Media */}
-        <div className="absolute left-17.5 bottom-12.5 z-10 hidden md:block">
+        <div className="absolute left-17.5 bottom-12.5 z-30 hidden md:block">
           <ul className="flex items-center p-0 m-0">
 
             {/* Facebook */}
             <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1] first:pl-0">
               <a
-                href="https://www.facebook.com/PulseLaserClinic/"
+                href="https://www.facebook.com/share/17CxaNUTbm/?mibextid=wwXIfr"
                 target="_blank"
                 className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
               >
@@ -149,7 +149,7 @@ export default function Banner() {
             {/* TikTok */}
             <li className="list-none text-[20px] leading-5 text-black px-5 border-r border-dashed border-[#4995D1]">
               <a
-                href="https://www.tiktok.com/" // replace with your real TikTok link
+                href="https://www.tiktok.com/@beamandbloomclinic?_r=1&_t=ZN-952YImbFqC7" // replace with your real TikTok link
                 target="_blank"
                 className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
               >
@@ -169,7 +169,7 @@ export default function Banner() {
             {/* Instagram */}
             <li className="list-none text-[20px] leading-5 text-black px-5">
               <a
-                href="https://www.instagram.com/pulse_laser/"
+                href="https://www.instagram.com/beamandbloomclinic?igsh=MWZhNm0xN3BlOWw4Zw%3D%3D&utm_source=qr"
                 target="_blank"
                 className="flex items-center transition-all duration-500 no-underline text-inherit outline-none"
               >

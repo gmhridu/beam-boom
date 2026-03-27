@@ -154,9 +154,9 @@ export const bannerContent = {
 
 // Social links
 export const socialLinks = [
-  { name: 'Facebook', href: 'https://www.pulse-clinic.co.uk/', icon: 'facebook-f' },
-  { name: 'Twitter', href: 'https://www.pulse-clinic.co.uk/', icon: 'twitter' },
-  { name: 'Instagram', href: 'https://www.pulse-clinic.co.uk/', icon: 'instagram' },
+  { name: 'Facebook', href: 'https://www.facebook.com/share/17CxaNUTbm/?mibextid=wwXIfr', icon: 'facebook-f' },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@beamandbloomclinic?_r=1&_t=ZN-952YImbFqC7@beamandbloomclinic?_r=1&_t=ZN-952YImbFqC7', icon: 'tiktok' },
+  { name: 'Instagram', href: 'https://www.instagram.com/beamandbloomclinic?igsh=MWZhNm0xN3BlOWw4Zw%3D%3D&utm_source=qr', icon: 'instagram' },
 ];
 
 // As Seen In logos
