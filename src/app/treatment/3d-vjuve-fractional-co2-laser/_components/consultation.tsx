@@ -11,11 +11,10 @@ export default function Consultation() {
       <div className="hidden lg:block absolute inset-y-0 left-0 w-[22%] bg-gray-50 dark:bg-gray-900 transition-colors duration-300" />
 
       {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-linear-to-br from-white/40 via-transparent to-black/5 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-black/5 pointer-events-none" />
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-
           {/* Brand */}
           <span className="text-xs tracking-[0.25em] uppercase text-gray-500 dark:text-gray-400 font-medium transition-colors duration-300">
             Beam & Bloom
@@ -35,7 +34,6 @@ export default function Consultation() {
           {/* Form Card */}
           <div className="mt-8 sm:mt-10 lg:mt-14 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10">
             <form className="space-y-4 sm:space-y-6">
-
               {/* Name */}
               <div className="relative">
                 <input
@@ -72,7 +70,6 @@ export default function Consultation() {
                 Book Consultation
                 <span className="text-lg sm:text-xl">→</span>
               </button>
-
             </form>
           </div>
         </div>

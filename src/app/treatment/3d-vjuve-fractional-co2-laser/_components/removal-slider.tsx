@@ -18,28 +18,28 @@ const removalItems: RemovalItem[] = [
     image:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774117892/wi2rcgq2fpjmnypq4cmg.avif", // replace with combined image
     slug: "advanced-laser-tattoo-removal",
-    title: "Neck Ornamental Design",
+    title: "",
   },
   {
     id: "2",
     image:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774118671/tqipuag83qsaqdlmmodi.avif",
     slug: "complete-tattoo-removal",
-    title: "Detailed Finger Tattoo",
+    title: "",
   },
   {
     id: "3",
     image:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774118771/sn5xujbj4lcawys492ls.avif",
     slug: "safe-laser-tattoo-removal",
-    title: "Script Tattoo Removal",
+    title: "",
   },
   {
     id: "4",
     image:
       "https://res.cloudinary.com/dyq0ij1yk/image/upload/f_auto,q_auto:eco,w_auto,dpr_auto,c_limit/v1774118818/usksvyte7endkxop4t0s.avif",
     slug: "custom-design-fade",
-    title: "Custom Design Fade",
+    title: "",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function RemovalSlider() {
 
   const visibleItems = removalItems.slice(
     currentIndex,
-    currentIndex + visibleCount
+    currentIndex + visibleCount,
   );
 
   return (
@@ -84,7 +84,7 @@ export default function RemovalSlider() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/50 to-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
 
       <div className="container mx-auto px-6 relative z-10 max-w-4xl">
         {/* Header */}
@@ -93,7 +93,9 @@ export default function RemovalSlider() {
             Real Patient Results
           </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Advanced fractional CO2 laser technology delivers safe, effective skin resurfacing, scar reduction, and rejuvenation with exceptional results.
+            Advanced fractional CO2 laser technology delivers safe, effective
+            skin resurfacing, scar reduction, and rejuvenation with exceptional
+            results.
           </p>
         </div>
 
@@ -113,7 +115,6 @@ export default function RemovalSlider() {
                   className="group relative overflow-hidden rounded-xl shadow-xl bg-gray-800"
                 >
                   <div className="relative aspect-4/5 md:aspect-3/4 lg:aspect-square">
-
                     {/* Image */}
                     <Image
                       src={item.image}
@@ -123,10 +124,10 @@ export default function RemovalSlider() {
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
 
                     {/* Divider */}
-                    <div className="absolute top-0 bottom-0 left-1/2 w-[2px] bg-white/70"></div>
+                    <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-white/70"></div>
 
                     {/* Before label */}
                     <div className="absolute bottom-4 left-4">
@@ -141,7 +142,6 @@ export default function RemovalSlider() {
                         After
                       </span>
                     </div>
-
                   </div>
                 </ViewTransitionLink>
               </div>

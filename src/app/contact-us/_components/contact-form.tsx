@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+type Status = "idle" | "loading" | "success" | "error";
+
 const ContactFormSection = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -12,6 +14,8 @@ const ContactFormSection = () => {
   });
 
   const [touched, setTouched] = useState<Record<string, boolean>>({});
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -25,11 +29,31 @@ const ContactFormSection = () => {
     setTouched({ ...touched, [e.target.name]: true });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production: validate fully + send (EmailJS, Formspree, API route, etc.)
-    console.log("Form submitted:", formData);
-    // Optional: reset form or show toast/success state
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, formType: "contact" }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error ?? "Failed to send message.");
+      }
+
+      setStatus("success");
+      setFormData({ firstName: "", lastName: "", phone: "", email: "", message: "" });
+      setTouched({});
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+    }
   };
 
   const isFieldInvalid = (field: keyof typeof formData) =>
@@ -172,18 +196,44 @@ const ContactFormSection = () => {
                 </label>
               </div>
 
+              {/* Error message */}
+              {status === "error" && (
+                <div className="rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700 px-4 py-3 text-sm text-red-700 dark:text-red-400">
+                  {errorMsg || "Something went wrong. Please try again."}
+                </div>
+              )}
+
               {/* Submit */}
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="group w-full bg-linear-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white font-semibold text-lg py-4 px-10 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0"
+                  disabled={status === "loading"}
+                  className="group w-full bg-linear-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-lg py-4 px-10 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0"
                 >
-                  Submit
-                  <span className="text-xl transition-transform group-hover:translate-x-1">
-                    →
-                  </span>
+                  {status === "loading" ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                      </svg>
+                      Sending…
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <span className="text-xl transition-transform group-hover:translate-x-1">→</span>
+                    </>
+                  )}
                 </button>
               </div>
+
+              {/* Success message */}
+              {status === "success" && (
+                <div className="rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 px-4 py-3 text-sm text-green-700 dark:text-green-400 flex items-center gap-2">
+                  <span>✓</span>
+                  <span>Your message has been sent! We'll be in touch shortly.</span>
+                </div>
+              )}
             </form>
           </div>
 
@@ -213,16 +263,6 @@ const ContactFormSection = () => {
                 <p className="font-semibold text-gray-900 dark:text-white">Monday – Friday</p>
                 <p className="mt-1.5 font-medium">09:00 – 19:00</p>
               </div>
-
-              {/* <div className="pb-5 border-b border-gray-200/70 dark:border-gray-700">
-                <p className="font-semibold text-gray-900 dark:text-white">Saturday</p>
-                <p className="mt-1.5 font-medium">09:00 – 18:00</p>
-              </div>
-
-              <div className="pt-2">
-                <p className="font-semibold text-gray-900 dark:text-white">Sunday</p>
-                <p className="mt-1.5 font-medium text-gray-600 dark:text-gray-400">Closed</p>
-              </div> */}
             </div>
 
             {/* Optional small note or icon at bottom */}

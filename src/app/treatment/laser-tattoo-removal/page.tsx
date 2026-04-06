@@ -4,7 +4,6 @@ import Banner from "./_components/banner";
 import Consultation from "./_components/consultation";
 import OurPrices from "./_components/our-prices";
 import Procedure from "./_components/procedure";
-import RemovalSlider from "./_components/removal-slider";
 
 export const metadata: Metadata = {
   title: "Laser Tattoo Removal Dartford | Safe & Effective | Beam & Bloom",
@@ -39,7 +38,9 @@ export const metadata: Metadata = {
     title: "Laser Tattoo Removal Dartford | Safe & Effective | Beam & Bloom",
     description:
       "Advanced laser tattoo removal in Dartford. Safe, effective, and professional care.",
-    images: ["https://res.cloudinary.com/dyq0ij1yk/image/upload/v1773073036/jfhp4hqkwemzubyd0h1e.avif"],
+    images: [
+      "https://res.cloudinary.com/dyq0ij1yk/image/upload/v1773073036/jfhp4hqkwemzubyd0h1e.avif",
+    ],
   },
   alternates: {
     canonical: "https://beamandbloomclinic.com/treatment/laser-tattoo-removal",
@@ -52,7 +53,6 @@ export default function LaserTattooRemovalPage() {
       <Banner />
       <About />
       <Procedure />
-      <RemovalSlider />
       <Consultation />
       <OurPrices />
     </main>

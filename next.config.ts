@@ -4,10 +4,13 @@ const isDev = process.env.NODE_ENV === "development";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  trailingSlash: true,
   reactCompiler: !isDev,
-  cacheComponents: !isDev,
+  cacheComponents: false,
   typedRoutes: true,
   images: {
+    unoptimized: true, // Required for static export - disables Next.js Image Optimization
+    // Keep your existing image configuration
     qualities: [75, 82],
     remotePatterns: [
       {
@@ -21,13 +24,14 @@ const nextConfig: NextConfig = {
         hostname: "res.cloudinary.com",
         port: "",
         pathname: "/**",
-      }
+      },
     ],
   },
 
   experimental: {
     typedEnv: true,
     viewTransition: true,
+    ppr: false,
   },
 };
 
