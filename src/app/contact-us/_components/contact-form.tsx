@@ -6,16 +6,16 @@ type Status = "idle" | "loading" | "success" | "error";
 
 const ContactFormSection = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
+    name: "",
     email: "",
+    subject: "",
     message: "",
   });
 
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [isHuman, setIsHuman] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -34,11 +34,17 @@ const ContactFormSection = () => {
     setStatus("loading");
     setErrorMsg("");
 
+    if (!isHuman) {
+      setStatus("error");
+      setErrorMsg("Please verify that you are not a robot.");
+      return;
+    }
+
     try {
-      const res = await fetch("/api/send-email", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, formType: "contact" }),
+        body: JSON.stringify(formData),
       });
 
       const data = await res.json();
@@ -48,7 +54,7 @@ const ContactFormSection = () => {
       }
 
       setStatus("success");
-      setFormData({ firstName: "", lastName: "", phone: "", email: "", message: "" });
+      setFormData({ name: "", email: "", subject: "", message: "" });
       setTouched({});
     } catch (err) {
       setStatus("error");
@@ -73,74 +79,31 @@ const ContactFormSection = () => {
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-8">
-              {/* Name fields */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="relative">
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("firstName") ? "border-red-400" : ""
-                      }`}
-                    placeholder=" "
-                  />
-                  <label
-                    htmlFor="firstName"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
-                  >
-                    First Name *
-                  </label>
-                </div>
-
-                <div className="relative">
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("lastName") ? "border-red-400" : ""
-                      }`}
-                    placeholder=" "
-                  />
-                  <label
-                    htmlFor="lastName"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
-                  >
-                    Last Name *
-                  </label>
-                </div>
+              {/* Name */}
+              <div className="relative">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  required
+                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${
+                    isFieldInvalid("name") ? "border-red-400" : ""
+                  }`}
+                  placeholder=" "
+                />
+                <label
+                  htmlFor="name"
+                  className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                >
+                  Name *
+                </label>
               </div>
 
-              {/* Phone & Email */}
+              {/* Email & Subject */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="relative">
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("phone") ? "border-red-400" : ""
-                      }`}
-                    placeholder=" "
-                  />
-                  <label
-                    htmlFor="phone"
-                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
-                  >
-                    Phone Number *
-                  </label>
-                </div>
-
                 <div className="relative">
                   <input
                     type="email"
@@ -150,8 +113,9 @@ const ContactFormSection = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     required
-                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${isFieldInvalid("email") ? "border-red-400" : ""
-                      }`}
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${
+                      isFieldInvalid("email") ? "border-red-400" : ""
+                    }`}
                     placeholder=" "
                   />
                   <label
@@ -159,6 +123,28 @@ const ContactFormSection = () => {
                     className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
                   >
                     Email *
+                  </label>
+                </div>
+
+                <div className="relative">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    required
+                    className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white ${
+                      isFieldInvalid("subject") ? "border-red-400" : ""
+                    }`}
+                    placeholder=" "
+                  />
+                  <label
+                    htmlFor="subject"
+                    className="absolute left-4 top-2 text-xs font-medium text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-600 transition-all duration-200"
+                  >
+                    Subject *
                   </label>
                 </div>
               </div>
@@ -173,8 +159,9 @@ const ContactFormSection = () => {
                   onBlur={handleBlur}
                   required
                   rows={5}
-                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white resize-none ${isFieldInvalid("message") ? "border-red-400" : ""
-                    }`}
+                  className={`peer w-full px-4 pt-6 pb-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40 text-gray-900 dark:text-white resize-none ${
+                    isFieldInvalid("message") ? "border-red-400" : ""
+                  }`}
                   placeholder=" "
                 />
                 <label
@@ -187,12 +174,21 @@ const ContactFormSection = () => {
 
               {/* reCAPTCHA placeholder – replace with real one */}
               <div className="flex items-center gap-3">
-                <div className="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center bg-white">
-                  <div className="w-4 h-4 bg-sky-500 rounded-sm hidden peer-checked:block" />
-                </div>
-                <label className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-2 transition-colors duration-300">
+                <input
+                  type="checkbox"
+                  id="recaptcha"
+                  checked={isHuman}
+                  onChange={(e) => setIsHuman(e.target.checked)}
+                  className="w-6 h-6 border-2 border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200 bg-gray-50/40 dark:bg-gray-900/40"
+                />
+                <label
+                  htmlFor="recaptcha"
+                  className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-2 transition-colors duration-300 cursor-pointer"
+                >
                   I'm not a robot
-                  <span className="text-xs text-gray-500 dark:text-gray-500">(reCAPTCHA)</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-500">
+                    (reCAPTCHA)
+                  </span>
                 </label>
               </div>
 
@@ -212,16 +208,35 @@ const ContactFormSection = () => {
                 >
                   {status === "loading" ? (
                     <>
-                      <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                      <svg
+                        className="animate-spin h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v8z"
+                        />
                       </svg>
                       Sending…
                     </>
                   ) : (
                     <>
                       Send Message
-                      <span className="text-xl transition-transform group-hover:translate-x-1">→</span>
+                      <span className="text-xl transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
                     </>
                   )}
                 </button>
@@ -231,7 +246,9 @@ const ContactFormSection = () => {
               {status === "success" && (
                 <div className="rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 px-4 py-3 text-sm text-green-700 dark:text-green-400 flex items-center gap-2">
                   <span>✓</span>
-                  <span>Your message has been sent! We'll be in touch shortly.</span>
+                  <span>
+                    Your message has been sent! We'll be in touch shortly.
+                  </span>
                 </div>
               )}
             </form>
@@ -260,7 +277,9 @@ const ContactFormSection = () => {
 
             <div className="space-y-7 text-gray-800 dark:text-gray-200 text-base md:text-lg transition-colors duration-300">
               <div className="pb-5 border-b border-gray-200/70 dark:border-gray-700">
-                <p className="font-semibold text-gray-900 dark:text-white">Monday – Friday</p>
+                <p className="font-semibold text-gray-900 dark:text-white">
+                  Monday – Friday
+                </p>
                 <p className="mt-1.5 font-medium">09:00 – 19:00</p>
               </div>
             </div>
